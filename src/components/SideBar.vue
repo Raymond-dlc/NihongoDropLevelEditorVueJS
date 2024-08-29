@@ -26,10 +26,18 @@ const toggleMenu = () => {
       <RouterLink to="/" class="text text-xl text-mint-green">Words</RouterLink>
       <p class="text text-xl text-mint-green">Chapters</p>
       <ul>
-        <li><RouterLink class="text text-mint-green ml-4" to="/chapter/1">Chapter 1</RouterLink></li>
-        <li><RouterLink class="text text-mint-green ml-4" to="/chapter/2">Chapter 2</RouterLink></li>
-        <li><RouterLink class="text text-mint-green ml-4" to="/chapter/3">Chapter 3</RouterLink></li>
-        <li><RouterLink class="text text-mint-green ml-4" to="/chapter/4">Chapter 4</RouterLink></li>
+        <li>
+          <RouterLink class="text text-mint-green ml-4" to="/chapter/1">Chapter 1</RouterLink>
+        </li>
+        <li>
+          <RouterLink class="text text-mint-green ml-4" to="/chapter/2">Chapter 2</RouterLink>
+        </li>
+        <li>
+          <RouterLink class="text text-mint-green ml-4" to="/chapter/3">Chapter 3</RouterLink>
+        </li>
+        <li>
+          <RouterLink class="text text-mint-green ml-4" to="/chapter/4">Chapter 4</RouterLink>
+        </li>
       </ul>
     </nav>
   </aside>
