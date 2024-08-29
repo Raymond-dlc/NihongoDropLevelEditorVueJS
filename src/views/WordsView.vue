@@ -1,8 +1,9 @@
 <script lang="ts"></script>
 
 <template>
-  <main class="flex flex-1 bg-red-100 p-8">
+  <main class="flex flex-col flex-1 bg-grey-100 p-8">
     <h1>Words Page</h1>
+    <br/>
     <p>This is the words page!</p>
   </main>
 </template>
