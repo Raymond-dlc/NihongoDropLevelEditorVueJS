@@ -1,10 +1,28 @@
 <script setup lang="ts">
-import { ref } from 'vue'
+import { onMounted, ref } from 'vue'
+import axios from 'axios';
+import type { Chapter } from '@/model/Chapter';
 
 const isExpanded = ref(false)
+const isLoadingChapters = ref(true)
+const chapters = ref<Chapter[]>();
+
 const toggleMenu = () => {
   isExpanded.value = !isExpanded.value
 }
+
+onMounted(async () => {
+  try {
+    const response = await axios.get(`/api/chapters`);
+    chapters.value = response.data;
+    console.log(response.data);
+  } catch (error) {
+    console.error('Error fetching chapter', error);
+  } finally {
+    isLoadingChapters.value = false
+  }
+});
+
 </script>
 
 <template>
@@ -37,7 +55,7 @@ const toggleMenu = () => {
       :class="`${isExpanded ? 'opacity-100' : 'opacity-0'}`"
       class="transition-opacity duration-75"
     >
-      <RouterLink
+      <RouterLink 
         to="/"
         class="text text-xl text-mint-green"
       >
@@ -45,36 +63,12 @@ const toggleMenu = () => {
       </RouterLink>
       <p class="text text-xl text-mint-green">Chapters</p>
       <ul>
-        <li>
+        <li v-for="chapter in chapters" :key="chapter.id">
           <RouterLink
-            class="text text-mint-green ml-4"
-            to="/chapter/1"
+            class="text text-mint-green p-4 ml-4 transition-*"
+            :to="`/chapters/${chapter.id}`"
           >
-            Chapter 1
-          </RouterLink>
-        </li>
-        <li>
-          <RouterLink
-            class="text text-mint-green ml-4"
-            to="/chapter/2"
-          >
-            Chapter 2
-          </RouterLink>
-        </li>
-        <li>
-          <RouterLink
-            class="text text-mint-green ml-4"
-            to="/chapter/3"
-          >
-            Chapter 3
-          </RouterLink>
-        </li>
-        <li>
-          <RouterLink
-            class="text text-mint-green ml-4"
-            to="/chapter/4"
-          >
-            Chapter 4
+            {{ chapter.title }}
           </RouterLink>
         </li>
       </ul>

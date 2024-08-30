@@ -1,4 +1,4 @@
-<script lang="ts"></script>
+<script setup lang="ts"></script>
 
 <template>
   <main class="flex flex-col flex-1 bg-grey-100 p-8 pl-32 md:p-8">

@@ -10,8 +10,8 @@ const router = createRouter({
       component: WordsView
     },
     {
-      path: '/chapter/:id',
-      name: 'chapter',
+      path: '/chapters/:id',
+      name: 'chapter-details',
       // route level code-splitting
       // this generates a separate chunk (About.[hash].js) for this route
       // which is lazy-loaded when the route is visited.
