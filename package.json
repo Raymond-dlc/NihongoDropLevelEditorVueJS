@@ -10,9 +10,11 @@
     "build-only": "vite build",
     "type-check": "vue-tsc --build --force",
     "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --fix --ignore-path .gitignore",
-    "format": "prettier --write src/"
+    "format": "prettier --write src/",
+    "server": "json-server --watch src/assets/data/ --port 5000"
   },
   "dependencies": {
+    "json-server": "^1.0.0-beta.2",
     "vue": "^3.4.29",
     "vue-router": "^4.3.3"
   },

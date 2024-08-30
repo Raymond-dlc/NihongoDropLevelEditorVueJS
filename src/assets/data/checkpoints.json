@@ -1,0 +1,80 @@
+{
+    "checkpoints": [
+        {
+            "id": 0,
+            "title": "Hiragana 1"
+        },
+        {
+            "id": 1,
+            "title": "Hiragana 2"
+        },
+        {
+            "id": 2,
+            "title": "First words"
+        },
+        {
+            "id": 3,
+            "title": "Hiragana 3"
+        },
+        {
+            "id": 4,
+            "title": "Hiragana 4"
+        },
+        {
+            "id": 5,
+            "title": "Hiragana words 1"
+        },
+        {
+            "id": 6,
+            "title": "Hiragana words 2"
+        },
+        {
+            "id": 7,
+            "title": "Katakana 1"
+        },
+        {
+            "id": 8,
+            "title": "Katakana 2"
+        },
+        {
+            "id": 9,
+            "title": "Katakana 3"
+        },
+        {
+            "id": 10,
+            "title": "Katakana 4"
+        },
+        {
+            "id": 11,
+            "title": "Katakana words 1"
+        },
+        {
+            "id": 12,
+            "title": "Katakana words 2"
+        },
+        {
+            "id": 13,
+            "title": "Kanji 1"
+        },
+        {
+            "id": 14,
+            "title": "Kanji 2"
+        },
+        {
+            "id": 15,
+            "title": "Shopping"
+        },
+        {
+            "id": 16,
+            "title": "Food"
+        },
+        {
+            "id": 17,
+            "title": "School"
+        },
+        {
+            "id": 18,
+            "title": "Expressing"
+        }
+    ]
+}
