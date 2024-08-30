@@ -51,6 +51,7 @@ onMounted(async () => {
     >
       Nihongo Drop Level Editor
     </h1>
+   
     <nav
       :class="`${isExpanded ? 'opacity-100' : 'opacity-0'}`"
       class="transition-opacity duration-75"

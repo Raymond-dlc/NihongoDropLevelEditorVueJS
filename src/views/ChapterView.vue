@@ -6,8 +6,8 @@ import { type Chapter } from '@/model/Chapter';
 
 const route = useRoute();
 
-const chapterId = ref("");
-const isLoading = ref(false);
+const chapterId = ref<string | string[]>("");
+const isLoading = ref<boolean>(false);
 const chapter = ref<Chapter>();
 
 async function fetchChapter() {
