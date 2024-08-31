@@ -15,6 +15,7 @@ const route = useRoute();
 const isLoading = ref<boolean>(false);
 
 const wordsData = ref<Word[]>([]);
+const tableRef = ref<HTMLElement | null>(null);
 
 async function fetchWords() {
   isLoading.value = true
@@ -28,31 +29,27 @@ async function fetchWords() {
   }
 }
 
-onMounted(fetchWords);
-
-// Fetch data on initial render as well
-watch(route, fetchWords, { immediate: true });
-
-const tableRef = ref<HTMLElement | null>(null);
-
-watch(wordsData, () => {
+function updateTable() {
   if (tableRef.value) {
     new Handsontable(tableRef.value, {
       data: wordsData.value,
       height: 'auto',
       width: 'auto',
+      // Sort by id descending
       columnSorting: {
         initialConfig: {
           column: 0,
           sortOrder: 'desc'
         }
       },
+      // Header titles
       colHeaders: [
         "ID",
         "Japanese",
         "Furigana",
         "English"
       ],
+      // Mapping with the model
       columns(column) {
         switch (column) {
           case 0:
@@ -73,7 +70,14 @@ watch(wordsData, () => {
       licenseKey: 'non-commercial-and-evaluation',
     });
   }
-}, { immediate: true }); // Create the table immediately
+}
+
+onMounted(fetchWords);
+
+// Fetch data on initial render as well
+watch(route, fetchWords, { immediate: true });
+// Create the table immediately
+watch(wordsData, updateTable, { immediate: true }); 
 </script>
 
 <template>
