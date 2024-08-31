@@ -1,5 +1,5 @@
 export interface Word {
-    wordId: number,
+    id: string,
     japanese: string,
     furigana: string,
     english: string

@@ -58,15 +58,15 @@ onMounted(async () => {
     >
       <RouterLink 
         to="/"
-        class="text text-xl text-mint-green"
+        class="text text-xl text-mint-green-400"
       >
         Words
       </RouterLink>
-      <p class="text text-xl text-mint-green">Chapters</p>
+      <p class="text text-xl text-mint-green-400">Chapters</p>
       <ul>
         <li v-for="chapter in chapters" :key="chapter.id">
           <RouterLink
-            class="text text-mint-green p-4 ml-4 transition-*"
+            class="text text-mint-green-400 p-4 ml-4 transition-*"
             :to="`/chapters/${chapter.id}`"
           >
             {{ chapter.title }}
