@@ -25,7 +25,8 @@ async function fetchChapter() {
 
 onMounted(fetchChapter);
 
-watch(route, fetchChapter, { immediate: true }); // Fetch data on initial render as well
+// Fetch data on initial render as well
+watch(route, fetchChapter, { immediate: true }); 
 
 </script>
 
