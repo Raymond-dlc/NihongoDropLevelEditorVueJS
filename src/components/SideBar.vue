@@ -28,7 +28,7 @@ onMounted(async () => {
 <template>
   <aside
     :class="`${isExpanded ? 'w-80' : 'w-24'}`"
-    class="flex flex-col bg-sakura p-8 overflow-hidden min-h-screen duration-300 ease-in-out fixed md:static md:z-50"
+    class="flex flex-col bg-sakura p-8 overflow-hidden h-dvh duration-300 ease-in-out fixed md:static md:z-50"
   >
     <div class="relative">
       <img

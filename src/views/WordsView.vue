@@ -45,6 +45,7 @@ async function fetchWords() {
   isLoading.value = true
   try {
     const response = await axios.get(`/api/words`);
+    console.log("words loaded");
     wordsData.value = response.data;
   } catch (error) {
     console.log("Failed to load chapter", error);
@@ -58,8 +59,13 @@ function updateTable() {
     table = new Handsontable(tableRef.value, {
       data: wordsData.value,
       height: '100%',
-      width: 'auto',
+      width: '100%',
+      stretchH: 'all', //to fill container width
       allowInsertRow: false,
+      renderAllRows: true,
+      beforeRefreshDimensions() {
+        return false;
+      },
       // Sort by id descending
       columnSorting: {
         initialConfig: {
@@ -92,7 +98,7 @@ function updateTable() {
       afterChange(changes, source) {
         changes?.forEach(change => {
           var updatedRow = table?.getDataAtRow(change[0]);
-          const updatedWord:Word = {
+          const updatedWord: Word = {
             id: updatedRow?.[0].toString() ?? "",
             japanese: updatedRow?.[1] ?? "",
             furigana: updatedRow?.[2] ?? "",
@@ -123,8 +129,6 @@ const addWordRow = () => {
   table?.alter('insert_row_above', 0, 1, "addWord")
 }
 
-onMounted(fetchWords);
-
 // Fetch data on initial render as well
 watch(route, fetchWords, { immediate: true });
 // Create the table immediately
@@ -132,16 +136,21 @@ watch(wordsData, updateTable, { immediate: true });
 </script>
 
 <template>
-  <main class="flex flex-col flex-1 bg-grey-100 p-8 pl-32 md:p-8">
-    <div class="pb-4">
-      <h1 class="flex flex-1 text text-4xl font-extrabold text-sakura mb-8">Words</h1>
-      <button @click="addWordRow" class="rounded-full bg-mint-green-400 hover:bg-mint-green-500 px-4 py-2">
-        + Add word
-      </button>
+  <!-- Main -->
+  <main class="flex grow h-full h-dvh bg-mint-green-100 ">
+    <!-- content -->
+    <div class="flex flex-col grow">
+      <div class="flex-0 pb-4">
+        <h1 class="text text-4xl font-bold text-sakura mb-8">Words</h1>
+        <button @click="addWordRow"
+          class="rounded-full bg-mint-green-100 outline outline-2 outline-green-800 hover:bg-mint-green-500 px-4 py-3">
+          <span class="text text-s text-green-800 font-bold">+ Add word</span>
+        </button>
+      </div>
+      <div class="grow bg-red-500">
+        <!-- <h1 class="bg-yellow-800 h-full">This is the content now</h1> -->
+        <div ref="tableRef" id="words-table"></div>
+      </div>
     </div>
-    <div class="grow h-4">
-      <div class="full-w" ref="tableRef" id="words-table"></div>
-    </div>
-
   </main>
 </template>
