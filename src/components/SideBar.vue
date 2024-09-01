@@ -3,7 +3,7 @@ import { onMounted, ref } from 'vue'
 import axios from 'axios';
 import type { Chapter } from '@/model/Chapter';
 
-const isExpanded = ref(false)
+const isExpanded = ref(true)
 const isLoadingChapters = ref(true)
 const chapters = ref<Chapter[]>();
 
@@ -28,7 +28,7 @@ onMounted(async () => {
 <template>
   <aside
     :class="`${isExpanded ? 'w-80' : 'w-24'}`"
-    class="flex flex-col bg-sakura p-8 overflow-hidden h-dvh duration-300 ease-in-out fixed md:static md:z-50"
+    class="flex flex-col shrink-0 z-[9999999] bg-sakura p-8 overflow-hidden h-dvh duration-300 ease-in-out fixed md:static md:z-50"
   >
     <div class="relative">
       <img
