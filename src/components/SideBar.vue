@@ -1,11 +1,11 @@
 <script setup lang="ts">
 import { onMounted, ref } from 'vue'
-import axios from 'axios';
-import type { Chapter } from '@/model/Chapter';
+import axios from 'axios'
+import type { Chapter } from '@/model/Chapter'
 
 const isExpanded = ref(false)
 const isLoadingChapters = ref(true)
-const chapters = ref<Chapter[]>();
+const chapters = ref<Chapter[]>()
 
 const toggleMenu = () => {
   isExpanded.value = !isExpanded.value
@@ -13,16 +13,15 @@ const toggleMenu = () => {
 
 onMounted(async () => {
   try {
-    const response = await axios.get(`/api/chapters`);
-    chapters.value = response.data;
-    console.log(response.data);
+    const response = await axios.get(`/api/chapters`)
+    chapters.value = response.data
+    console.log(response.data)
   } catch (error) {
-    console.error('Error fetching chapter', error);
+    console.error('Error fetching chapter', error)
   } finally {
     isLoadingChapters.value = false
   }
-});
-
+})
 </script>
 
 <template>
@@ -51,12 +50,12 @@ onMounted(async () => {
     >
       Nihongo Drop Level Editor
     </h1>
-   
+
     <nav
       :class="`${isExpanded ? 'opacity-100' : 'opacity-0'}`"
       class="transition-opacity duration-75"
     >
-      <RouterLink 
+      <RouterLink
         to="/"
         class="text text-xl text-mint-green-400"
       >
@@ -64,7 +63,10 @@ onMounted(async () => {
       </RouterLink>
       <p class="text text-xl text-mint-green-400">Chapters</p>
       <ul>
-        <li v-for="chapter in chapters" :key="chapter.id">
+        <li
+          v-for="chapter in chapters"
+          :key="chapter.id"
+        >
           <RouterLink
             class="text text-mint-green-400 p-4 ml-4 transition-*"
             :to="`/chapters/${chapter.id}`"
