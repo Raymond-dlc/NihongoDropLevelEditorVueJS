@@ -140,9 +140,9 @@ watch(wordsData, updateTable, { immediate: true });
 
 <template>
   <!-- Main -->
-  <main class="flex grow h-full h-dvh bg-mint-green-100 ">
+  <main class="flex grow h-dvh bg-mint-green-100 ">
     <!-- content -->
-    <div class="flex flex-col grow">
+    <div class="flex flex-col h-full grow p-8">
       <div class="flex-0 pb-4">
         <h1 class="text text-4xl font-bold text-sakura mb-8">Words</h1>
         <button @click="addWordRow"
@@ -150,8 +150,8 @@ watch(wordsData, updateTable, { immediate: true });
           <span class="text text-s text-green-800 font-bold">+ Add word</span>
         </button>
       </div>
-      <div class="grow w-full">
-        <div ref="tableRef" class="w-full" id="words-table"></div>
+      <div class="grow w-full h-full overflow-auto">
+        <div ref="tableRef" class="w-full h-full" id="words-table"></div>
       </div>
     </div>
   </main>
