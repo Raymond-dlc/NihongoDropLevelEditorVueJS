@@ -58,7 +58,7 @@ function updateTable() {
   if (tableRef.value) {
     table = new Handsontable(tableRef.value, {
       data: wordsData.value,
-      height: '100%',
+      height: 'auto',
       width: '100%',
       stretchH: 'all', //to fill container width
       allowInsertRow: false,
@@ -150,8 +150,7 @@ watch(wordsData, updateTable, { immediate: true });
           <span class="text text-s text-green-800 font-bold">+ Add word</span>
         </button>
       </div>
-      <div class="grow w-full bg-red-500">
-        <!-- <h1 class="bg-yellow-800 w-full h-full">This is the content now</h1> -->
+      <div class="grow w-full">
         <div ref="tableRef" class="w-full" id="words-table"></div>
       </div>
     </div>
