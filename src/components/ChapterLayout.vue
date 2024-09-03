@@ -30,7 +30,8 @@ const levelButtonHalfSize = 40
 
 const layoutWidth = (cols + 1) * colWidth
 
-const layoutHeight = (rows + 1) * rowHeight
+const layoutHeight = rows * rowHeight
+const halfRowHeight = rowHeight / 2
 
 async function fetchLevels() {
   console.log('loading for ' + props.chapterId)
@@ -59,7 +60,7 @@ watch(route, fetchLevels, { immediate: true })
         v-for="y in rows"
         :key="y"
         class="absolute"
-        :style="`top: ${(y - 1) * rowHeight}px`"
+        :style="`top: ${(y - 1) * rowHeight + halfRowHeight - levelButtonHalfSize}px`"
       >
         <LevelButtonPlaceholder
           v-for="x in cols"
@@ -74,6 +75,11 @@ watch(route, fetchLevels, { immediate: true })
         v-for="level in levels"
         :key="level.id"
         :label="level.id.toString()"
+        class="absolute"
+        :style="`
+                top: ${level.worldY * rowHeight + halfRowHeight - 40}px; 
+                left: ${(level.worldX + 1) * colWidth - levelButtonHalfSize}px
+                `"
       />
     </div>
   </div>
