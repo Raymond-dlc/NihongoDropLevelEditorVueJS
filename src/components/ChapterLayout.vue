@@ -20,6 +20,8 @@ const colWidth = 150
 const cols = 3
 // Height of a row
 const rowHeight = 200
+// Half rpw height for easy calculations
+const halfRowHeight = rowHeight / 2
 // Number of rows the levels can be snapped to
 // Will always be 1 more than the last row with a level on it.
 var rows = 5
@@ -27,11 +29,10 @@ var rows = 5
 const levelButtonSize = 80
 // Half size of a button
 const levelButtonHalfSize = 40
-
+// Layout width equals 1 extra col to give some padding
 const layoutWidth = (cols + 1) * colWidth
-
-const layoutHeight = rows * rowHeight
-const halfRowHeight = rowHeight / 2
+// The height sepends on the number of rows
+var layoutHeight = rows * rowHeight
 
 async function fetchLevels() {
   console.log('loading for ' + props.chapterId)
@@ -39,6 +40,17 @@ async function fetchLevels() {
   try {
     const response = await axios.get(`/api/levels?checkpointId=${props.chapterId}`)
     levels.value = response.data
+
+    rows = 0
+    
+    levels.value?.forEach(level => {
+      rows = Math.max(rows, level.worldY) 
+    });
+
+    rows += 2;
+
+    layoutHeight = rows * rowHeight
+ 
   } catch (error) {
     console.log('Failed to load level', error)
   } finally {
@@ -48,13 +60,21 @@ async function fetchLevels() {
 
 watch(route, fetchLevels, { immediate: true })
 </script>
-
 <template>
   <div
+    class="overflow-hidden relative"
     :style="`width: ${layoutWidth}px; height: ${layoutHeight}px`"
     :class="`bg-gray-200 min-h-[500px]`"
   >
-    <div class="relative h-full">
+    <!-- Background Image -->
+    <img 
+      class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 min-w-full min-h-full object-cover z-0"
+      src="../assets/images/bg_2.jpg"
+      alt="Background Image"
+    />
+
+    <!-- Content Wrapper -->
+    <div class="relative h-full z-10">
       <!-- Placeholders -->
       <div
         v-for="y in rows"
