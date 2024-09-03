@@ -1,10 +1,11 @@
 /** @type {import('tailwindcss').Config} */
 export default {
+  mode: 'jit',
   content: ['./index.html', './src/**/*.{vue,js,ts,jsx,tsx}'],
   theme: {
     extend: {
       colors: {
-        'sakura': '#B56079',
+        sakura: '#B56079',
         'mint-green-100': '#b2f2c0',
         'mint-green-200': '#a7f0b7',
         'mint-green-300': '#9ceeae',

@@ -7,13 +7,13 @@ import ChapterLayout from '@/components/ChapterLayout.vue'
 
 const route = useRoute()
 
-const chapterId = ref<string | string[]>('')
+const chapterId = ref<string>('')
 const isLoading = ref<boolean>(false)
 const chapter = ref<Chapter>()
 
 async function fetchChapter() {
   isLoading.value = true
-  chapterId.value = route.params.id
+  chapterId.value = route.params.id as string
   try {
     const response = await axios.get(`/api/chapters/${chapterId.value}`)
     chapter.value = response.data
@@ -28,7 +28,7 @@ watch(route, fetchChapter, { immediate: true })
 </script>
 
 <template>
-  <main class="flex flex-1 flex-row bg-grey-100 p-8 pl-32 md:p-8">
+  <main class="flex flex-1 flex-row h-dvh overflow-auto bg-grey-100 p-8 pl-32 md:p-8">
     <div class="grow"></div>
     <div class="shrink">
       <h1 class="text text-center text-5xl text-extrabold mt-8 mb-16">

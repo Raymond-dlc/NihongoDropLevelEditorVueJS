@@ -27,7 +27,7 @@ onMounted(async () => {
 <template>
   <aside
     :class="`${isExpanded ? 'w-80' : 'w-24'}`"
-    class="flex flex-col shrink-0 z-[9999999] bg-sakura p-8 overflow-hidden h-dvh duration-300 ease-in-out fixed md:static md:z-50"
+    class="flex flex-col shrink-0 z-[9999999] bg-sakura overflow-auto no-scrollbar p-8 h-dvh duration-300 ease-in-out fixed md:static md:z-50"
   >
     <div class="relative">
       <img
@@ -53,22 +53,23 @@ onMounted(async () => {
 
     <nav
       :class="`${isExpanded ? 'opacity-100' : 'opacity-0'}`"
-      class="transition-opacity duration-75"
+      class="transition-opacity duration-75 h-full"
     >
       <RouterLink
         to="/"
-        class="text text-xl text-mint-green-400"
+        class="text text-xl text-mint-green-400 hover:text-mint-green-700"
       >
         Words
       </RouterLink>
       <p class="text text-xl text-mint-green-400">Chapters</p>
       <ul>
         <li
+          class="ml-4 w-full flex"
           v-for="chapter in chapters"
           :key="chapter.id"
         >
           <RouterLink
-            class="text text-mint-green-400 p-4 ml-4 transition-*"
+            class="text text-mint-green-400 hover:text-mint-green-700 h-full w-full py-2 transition-*"
             :to="`/chapters/${chapter.id}`"
           >
             {{ chapter.title }}
@@ -78,3 +79,16 @@ onMounted(async () => {
     </nav>
   </aside>
 </template>
+
+<style lang="css" scoped>
+/* Hide scrollbar for Chrome, Safari and Opera */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.no-scrollbar {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+</style>
