@@ -5,14 +5,11 @@ import LevelButtonPlaceholder from '@/components/LevelButtonPlaceholder.vue'
 import type { Level } from '@/model/Level'
 import axios from 'axios'
 import { useRoute } from 'vue-router'
+import { UseDraggable, UseElementBounding } from '@vueuse/components'
 
 const props = defineProps({
   chapterId: String
 })
-
-const route = useRoute()
-const levels = ref<Level[]>()
-const isLoading = ref<boolean>(false)
 
 // Width of one column
 const colWidth = 150
@@ -31,8 +28,14 @@ const levelButtonSize = 80
 const levelButtonHalfSize = 40
 // Layout width equals 1 extra col to give some padding
 const layoutWidth = (cols + 1) * colWidth
-// The height sepends on the number of rows
+// The height depends on the number of rows
 var layoutHeight = rows * rowHeight
+
+const levelButtonRefs = ref([])
+const route = useRoute()
+const levels = ref<Level[]>()
+const isLoading = ref<boolean>(false)
+const element = ref<HTMLElement | null>(null)
 
 async function fetchLevels() {
   console.log('loading for ' + props.chapterId)
@@ -42,15 +45,12 @@ async function fetchLevels() {
     levels.value = response.data
 
     rows = 0
-    
-    levels.value?.forEach(level => {
-      rows = Math.max(rows, level.worldY) 
-    });
-
-    rows += 2;
+    levels.value?.forEach((level) => {
+      rows = Math.max(rows, level.worldY)
+    })
+    rows += 2
 
     layoutHeight = rows * rowHeight
- 
   } catch (error) {
     console.log('Failed to load level', error)
   } finally {
@@ -67,40 +67,46 @@ watch(route, fetchLevels, { immediate: true })
     :class="`bg-gray-200 min-h-[500px]`"
   >
     <!-- Background Image -->
-    <img 
-      class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 min-w-full min-h-full object-cover z-0"
+    <img
+      class="select-none pointer-events-none absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 min-w-full min-h-full object-cover z-0"
       src="../assets/images/bg_2.jpg"
       alt="Background Image"
     />
 
     <!-- Content Wrapper -->
-    <div class="relative h-full z-10">
+    <UseElementBounding
+      v-slot="{ width, height, top, left }"
+      class="relative h-full z-10"
+    >
       <!-- Placeholders -->
       <div
-        v-for="y in rows"
-        :key="y"
+        v-for="yPos in rows"
+        :key="yPos"
         class="absolute"
-        :style="`top: ${(y - 1) * rowHeight + halfRowHeight - levelButtonHalfSize}px`"
+        :style="`top: ${(yPos - 1) * rowHeight + halfRowHeight - levelButtonHalfSize}px`"
       >
         <LevelButtonPlaceholder
-          v-for="x in cols"
-          :key="x"
-          :style="`left: ${x * colWidth - levelButtonHalfSize}px`"
+          v-for="xPos in cols"
+          :key="xPos"
+          :style="`left: ${xPos * colWidth - levelButtonHalfSize}px`"
           class="absolute"
         />
       </div>
 
       <!-- Actual levels -->
-      <LevelButton
+      <UseDraggable
         v-for="level in levels"
         :key="level.id"
-        :label="level.id.toString()"
-        class="absolute"
-        :style="`
-                top: ${level.worldY * rowHeight + halfRowHeight - 40}px; 
-                left: ${(level.worldX + 1) * colWidth - levelButtonHalfSize}px
-                `"
-      />
-    </div>
+        :ref="`element${level.id}`"
+        v-slot="{ x, y }"
+        :initial-value="{
+          x: (level.worldX + 1) * colWidth - levelButtonHalfSize + left,
+          y: level.worldY * rowHeight + halfRowHeight - 40 + top
+        }"
+        style="position: fixed"
+      >
+        <LevelButton :label="level.id.toString()" />
+      </UseDraggable>
+    </UseElementBounding>
   </div>
 </template>
