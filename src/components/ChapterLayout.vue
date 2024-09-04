@@ -62,10 +62,10 @@ var dragX = ref(0)
 var dragY = ref(0)
 
 function dragstartHandler(event: MouseEvent) {
-  console.log('DragStart')
+  console.log('DragStart: ' + event)
 }
 
-function dragHandler(event) {
+function dragHandler(event: MouseEvent) {
   console.log('Drag')
   event.preventDefault()
   dragX.value = Math.min(Math.max(event.offsetX, 0), layoutWidth)
@@ -99,16 +99,16 @@ watch(route, fetchLevels, { immediate: true })
       alt="Background Image"
     />
 
-    <LevelButton
+    <!-- <LevelButton
       id="test"
       draggable="true"
       :style="`left: ${dragX}px; top: ${dragY}px`"
       label="test"
-    />
+    /> -->
 
     <!-- Content Wrapper -->
     <UseElementBounding
-      v-slot="{ width, height, top, left }"
+      v-slot="{ top, left }"
       class="relative h-full z-10"
     >
       <!-- Placeholders -->
@@ -131,7 +131,6 @@ watch(route, fetchLevels, { immediate: true })
         v-for="level in levels"
         :key="level.id"
         :ref="`element${level.id}`"
-        v-slot="{ x, y }"
         :initial-value="{
           x: (level.worldX + 1) * colWidth - levelButtonHalfSize + left,
           y: level.worldY * rowHeight + halfRowHeight - 40 + top
