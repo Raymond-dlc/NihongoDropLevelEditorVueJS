@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { ref, watch } from 'vue'
+import { onMounted, ref, watch } from 'vue'
 import LevelButton from '@/components/LevelButton.vue'
 import LevelButtonPlaceholder from '@/components/LevelButtonPlaceholder.vue'
 import type { Level } from '@/model/Level'
@@ -58,6 +58,32 @@ async function fetchLevels() {
   }
 }
 
+var dragX = ref(0)
+var dragY = ref(0)
+
+function dragstartHandler(event: MouseEvent) {
+  console.log('DragStart')
+}
+
+function dragHandler(event) {
+  console.log('Drag')
+  event.preventDefault()
+  dragX.value = Math.min(Math.max(event.offsetX, 0), layoutWidth)
+  dragY.value = Math.min(Math.max(event.offsetY, 0), layoutHeight)
+
+  console.log(`x: ${dragX.value}, y: ${dragY.value}`)
+}
+
+onMounted(() => {
+  console.log('mounted')
+  // Get the element by id
+  const element = document.getElementById('test')
+  // Add the ondragstart event listener
+
+  element?.addEventListener('dragstart', dragstartHandler)
+  element?.addEventListener('drag', dragHandler)
+})
+
 watch(route, fetchLevels, { immediate: true })
 </script>
 <template>
@@ -71,6 +97,13 @@ watch(route, fetchLevels, { immediate: true })
       class="select-none pointer-events-none absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 min-w-full min-h-full object-cover z-0"
       src="../assets/images/bg_2.jpg"
       alt="Background Image"
+    />
+
+    <LevelButton
+      id="test"
+      draggable="true"
+      :style="`left: ${dragX}px; top: ${dragY}px`"
+      label="test"
     />
 
     <!-- Content Wrapper -->

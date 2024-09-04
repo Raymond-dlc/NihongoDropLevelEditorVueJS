@@ -5,10 +5,8 @@ const props = defineProps({
 </script>
 
 <template>
-  <div class="select-none pointer-events-none">
-    <div
-      class="select-none pointer-events-none relative w-20 h-20 flex justify-center items-center"
-    >
+  <div class="relative w-20 h-20">
+    <div class="relative w-20 h-20 flex justify-center items-center">
       <div class="select-none pointer-events-none absolute">
         <img
           class="select-none pointer-events-none flex"
