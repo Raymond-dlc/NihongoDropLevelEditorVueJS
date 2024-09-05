@@ -5,17 +5,17 @@ const props = defineProps({
 </script>
 
 <template>
-  <div class="w-20 h-20">
-    <div class="relative w-20 h-20 flex justify-center items-center">
-      <div class="select-none pointer-events-none absolute">
+  <div class="w-20 h-20 bg-red-600">
+    <!-- <div class="relative w-20 h-20 flex justify-center items-center">
+      <div class="absolute">
         <img
-          class="select-none pointer-events-none flex"
+          class="flex"
           src="../assets/images/button_sakura.png"
         />
       </div>
-      <div class="select-none pointer-events-none absolute flex justify-center items-center">
-        <span class="select-none pointer-events-none flex text text-white text text-2xl text-bold align-middle">{{ props.label }}</span>
+      <div class="absolute flex justify-center items-center">
+        <span class="flex text text-white text text-2xl text-bold align-middle">{{ props.label }}</span>
       </div>
-    </div>
+    </div> -->
   </div>
 </template>

@@ -58,40 +58,45 @@ async function fetchLevels() {
   }
 }
 
-var dragX = ref(0)
-var dragY = ref(0)
+var mouseX = ref(0)
+var mouseY = ref(0)
 
-function dragstartHandler(event: DragEvent) {
-  event.dataTransfer?.setDragImage(new Image(), 0, 0)
-  console.log('DragStart: ' + event)
+function startDrag(event: DragEvent) {
+  if (event.dataTransfer) {
+    event.dataTransfer.setDragImage(new Image(), 0, 0)
+  }
 }
 
 function dragHandler(event: DragEvent) {
+  // event.preventDefault()
   const layoutContainer = document.getElementById('layoutContainer')
 
-  console.log('scrollTop: ' + layoutScrollTop.value)
-  const relativeX = (event.clientX - layoutContainer?.offsetLeft ?? 0) - levelButtonHalfSize
-  const relativeY = (event.clientY - layoutContainer?.offsetTop ?? 0) - levelButtonHalfSize + layoutScrollTop.value
+  const relativeX = (mouseX.value - layoutContainer?.offsetLeft ?? 0) - levelButtonHalfSize
+  const relativeY = (mouseY.value - layoutContainer?.offsetTop ?? 0) - levelButtonHalfSize + layoutScrollTop.value
 
-  dragX.value = Math.min(Math.max(relativeX, 0), layoutWidth - levelButtonSize)
-  dragY.value = Math.min(Math.max(relativeY, 0), layoutHeight - levelButtonSize)
+  const dragX = Math.min(Math.max(relativeX, 0), layoutWidth - levelButtonSize)
+  const dragY = Math.min(Math.max(relativeY, 0), layoutHeight - levelButtonSize)
 
-  console.log(`x: ${dragX.value}, y: ${dragY.value}`)
+  let element = event.target as HTMLDivElement
+  element.style.left = dragX.toString() + "px"
+  element.style.top = dragY.toString() + "px"
+
+  console.log(`x: ${dragX}, y: ${dragY}`)
 }
 
-function startDrag(event: Event) {
-  console.log('start drag for: ' + event.target)
-  const element = event.target
-  element?.addEventListener('dragstart', dragstartHandler)
-  element?.addEventListener('drag', dragHandler)
+onMounted(() => {
   document.getElementById('layoutContainer')?.addEventListener('scroll', function () {
-    console.log(`layoutTop update: ${this.scrollTop}`)
     layoutScrollTop.value = this.scrollTop
   })
-}
+  window.addEventListener('dragover', (event) => {
+    mouseX.value = event.x
+    mouseY.value = event.y
+  })
+})
 
 watch(route, fetchLevels, { immediate: true })
 </script>
+
 <template>
   <div
     id="layoutContainer"
@@ -126,15 +131,18 @@ watch(route, fetchLevels, { immediate: true })
 
       <!-- Actual levels -->
       <LevelButton
-        v-for="level in levels"
+        v-for="(level, index) in levels"
         :key="level.id"
         :label="level.id.toString()"
         :style="`
                 top: ${level.worldY * rowHeight + halfRowHeight - levelButtonHalfSize}px; 
                 left: ${(level.worldX + 1) * colWidth - levelButtonHalfSize}px
-                `"
+              `"
         class="absolute"
-        @click="startDrag"
+        draggable="true"
+        :ref="`levelButton${index}`"
+        @dragstart="startDrag"
+        @drag="dragHandler"
       />
     </div>
   </div>
