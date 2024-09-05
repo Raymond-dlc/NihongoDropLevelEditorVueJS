@@ -100,7 +100,7 @@ watch(route, fetchLevels, { immediate: true })
 <template>
   <div
     id="layoutContainer"
-    class="overflow-y-auto overflow-x-hidden h-full"
+    class="overflow-y-auto overflow-x-hidden h-full no-scrollbar"
     :class="`min-h-[500px]`"
   >
     <div
@@ -141,9 +141,22 @@ watch(route, fetchLevels, { immediate: true })
         class="absolute"
         draggable="true"
         :ref="`levelButton${index}`"
-        @dragstart="startDrag"
-        @drag="dragHandler"
+        @dragstart.self="startDrag"
+        @drag.self="dragHandler"
       />
     </div>
   </div>
 </template>
+
+<style lang="css" scoped>
+/* Hide scrollbar for Chrome, Safari and Opera */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.no-scrollbar {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+</style>
