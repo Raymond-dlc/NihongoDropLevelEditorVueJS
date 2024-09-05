@@ -5,7 +5,7 @@ const props = defineProps({
 </script>
 
 <template>
-  <div class="relative w-20 h-20">
+  <div class="w-20 h-20">
     <div class="relative w-20 h-20 flex justify-center items-center">
       <div class="select-none pointer-events-none absolute">
         <img
@@ -14,10 +14,7 @@ const props = defineProps({
         />
       </div>
       <div class="select-none pointer-events-none absolute flex justify-center items-center">
-        <span
-          class="select-none pointer-events-none flex text text-white text text-2xl text-bold align-middle"
-          >{{ label }}</span
-        >
+        <span class="select-none pointer-events-none flex text text-white text text-2xl text-bold align-middle">{{ props.label }}</span>
       </div>
     </div>
   </div>

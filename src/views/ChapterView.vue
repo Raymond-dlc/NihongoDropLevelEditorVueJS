@@ -28,7 +28,7 @@ watch(route, fetchChapter, { immediate: true })
 </script>
 
 <template>
-  <main class="flex flex-1 flex-row h-dvh overflow-auto bg-grey-100 p-8 pl-32 md:p-8">
+  <main class="flex flex-1 flex-row h-dvh overflow-hidden bg-grey-100 p-8 pl-32 md:p-8">
     <div class="grow"></div>
     <div class="shrink">
       <h1 class="text text-center text-5xl text-extrabold mt-8 mb-16">
