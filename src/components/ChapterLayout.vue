@@ -34,7 +34,6 @@ const route = useRoute()
 const levels = ref<Level[]>()
 const isLoading = ref<boolean>(false)
 const layoutScrollTop = ref(0)
-const draggingElement = ref<HTMLDivElement>()
 
 const mouseX = ref(0)
 const mouseY = ref(0)
@@ -86,8 +85,8 @@ function dragHandler(event: DragEvent) {
   const offsetLeft = layoutContainer?.offsetLeft ?? 0
   const offsetTop = layoutContainer?.offsetTop ?? 0
 
-  const relativeX = (mouseX.value - offsetLeft) - levelButtonHalfSize
-  const relativeY = (mouseY.value - offsetTop) - levelButtonHalfSize + layoutScrollTop.value
+  const relativeX = mouseX.value - offsetLeft - levelButtonHalfSize
+  const relativeY = mouseY.value - offsetTop - levelButtonHalfSize + layoutScrollTop.value
 
   let dragX = Math.min(Math.max(relativeX, 0), layoutWidth - levelButtonSize)
   let dragY = Math.min(Math.max(relativeY, 0), layoutHeight - levelButtonSize)
@@ -138,16 +137,16 @@ watch(route, fetchLevels, { immediate: true })
 <template>
   <div
     id="layoutContainer"
-    class="overflow-y-auto overflow-x-hidden h-full no-scrollbar"
+    class="overflow-y-auto rounded-[20px] overflow-x-hidden h-full no-scrollbar"
     :class="`min-h-[500px]`"
   >
     <div
-      class="relative h-full"
+      class="relative h-full rounded-lg"
       :style="`width: ${layoutWidth}px; height: ${layoutHeight}px`"
     >
       <!-- Background Image -->
       <img
-        class="select-none rounded-xl pointer-events-none absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 min-w-full min-h-full object-cover z-0"
+        class="select-none pointer-events-none rounded-lg absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 min-w-full min-h-full object-cover z-0"
         src="../assets/images/bg_2.jpg"
         alt="Background Image"
       />
@@ -170,9 +169,6 @@ watch(route, fetchLevels, { immediate: true })
           @dragover.prevent
         />
       </div>
-      <!--
-      
-      @dragleave.prevent="onDragLeave($event, xPos, yPos)" -->
 
       <!-- Actual levels -->
       <LevelButton

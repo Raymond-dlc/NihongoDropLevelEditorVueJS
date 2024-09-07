@@ -31,8 +31,9 @@ onMounted(async () => {
   >
     <div class="relative">
       <img
-        class="w-16 mb-4 rounded-xl"
+        class="w-16 mb-4 transition-* duration-[20000ms]"
         src="../assets/nihongo-drop-logo.bmp"
+        :class="`${isExpanded ? 'rounded-xl' : 'rounded-md'}`"
         alt="Logo"
       />
       <button
