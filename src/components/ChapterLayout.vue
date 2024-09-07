@@ -68,7 +68,6 @@ function startDrag(event: DragEvent, level: Level) {
     event.dataTransfer.effectAllowed = 'copy'
     event.dataTransfer.setDragImage(new Image(), 0, 0)
     event.dataTransfer.setData('levelId', level.id)
-    console.log('setting the level id')
 
     const element = event.target as HTMLDivElement
     element.classList.add('pointer-events-none', 'z-50')
@@ -84,8 +83,11 @@ function stopDrag(event: DragEvent) {
 function dragHandler(event: DragEvent) {
   const layoutContainer = document.getElementById('layoutContainer')
 
-  const relativeX = (mouseX.value - layoutContainer?.offsetLeft ?? 0) - levelButtonHalfSize
-  const relativeY = (mouseY.value - layoutContainer?.offsetTop ?? 0) - levelButtonHalfSize + layoutScrollTop.value
+  const offsetLeft = layoutContainer?.offsetLeft ?? 0
+  const offsetTop = layoutContainer?.offsetTop ?? 0
+
+  const relativeX = (mouseX.value - offsetLeft) - levelButtonHalfSize
+  const relativeY = (mouseY.value - offsetTop) - levelButtonHalfSize + layoutScrollTop.value
 
   let dragX = Math.min(Math.max(relativeX, 0), layoutWidth - levelButtonSize)
   let dragY = Math.min(Math.max(relativeY, 0), layoutHeight - levelButtonSize)
@@ -103,19 +105,19 @@ function dragHandler(event: DragEvent) {
 }
 
 function onDrop(event: DragEvent, gridX: Number, gridY: Number) {
-  console.log(`Drop it at ${gridX}, ${gridY}`)
+  console.log(`update dragging element to pos ${gridX}, ${gridY}`)
   // TODO update x/y pos
   event.preventDefault()
 }
 
-function onDragEnter(event: DragEvent, gridX: Number, gridY: Number) {
+function onDragEnter(event: DragEvent) {
   const dropElement = event.target as HTMLDivElement
 
   snapX.value = dropElement.offsetLeft
   snapY.value = dropElement.parentElement?.offsetTop ?? 0
 }
 
-function onDragLeave(event: DragEvent, gridX: Number, gridY: Number) {
+function onDragLeave() {
   snapX.value = 0
   snapY.value = 0
 }
@@ -163,8 +165,8 @@ watch(route, fetchLevels, { immediate: true })
           :style="`left: ${xPos * colWidth - levelButtonHalfSize}px`"
           class="absolute"
           @drop.prevent="onDrop($event, xPos - 1, yPos - 1)"
-          @dragenter.prevent="onDragEnter($event, xPos - 1, yPos - 1)"
-          @dragleave.prevent="onDragLeave($event, xPos - 1, yPos - 1)"
+          @dragenter.prevent="onDragEnter($event)"
+          @dragleave.prevent="onDragLeave"
           @dragover.prevent
         />
       </div>
