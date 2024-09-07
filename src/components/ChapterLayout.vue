@@ -5,8 +5,6 @@ import LevelButtonPlaceholder from '@/components/LevelButtonPlaceholder.vue'
 import type { Level } from '@/model/Level'
 import axios from 'axios'
 import { useRoute } from 'vue-router'
-import { UseDraggable, UseElementBounding } from '@vueuse/components'
-import { useElementBounding } from '@vueuse/core'
 
 const props = defineProps({
   chapterId: String
@@ -36,6 +34,10 @@ const route = useRoute()
 const levels = ref<Level[]>()
 const isLoading = ref<boolean>(false)
 const layoutScrollTop = ref(0)
+const draggingElement = ref<HTMLDivElement>()
+
+var mouseX = ref(0)
+var mouseY = ref(0)
 
 async function fetchLevels() {
   console.log('loading for ' + props.chapterId)
@@ -58,17 +60,19 @@ async function fetchLevels() {
   }
 }
 
-var mouseX = ref(0)
-var mouseY = ref(0)
-
-function startDrag(event: DragEvent) {
+function startDrag(event: DragEvent, level: Level) {
   if (event.dataTransfer) {
+    event.dataTransfer.effectAllowed = 'copy'
     event.dataTransfer.setDragImage(new Image(), 0, 0)
+    event.dataTransfer.setData('levelId', level.id)
+    console.log('setting the level id')
+
+    draggingElement.value = event.target as HTMLDivElement
+    draggingElement.value.classList.add('pointer-events-none')
   }
 }
 
 function dragHandler(event: DragEvent) {
-  // event.preventDefault()
   const layoutContainer = document.getElementById('layoutContainer')
 
   const relativeX = (mouseX.value - layoutContainer?.offsetLeft ?? 0) - levelButtonHalfSize
@@ -78,10 +82,32 @@ function dragHandler(event: DragEvent) {
   const dragY = Math.min(Math.max(relativeY, 0), layoutHeight - levelButtonSize)
 
   let element = event.target as HTMLDivElement
-  element.style.left = dragX.toString() + "px"
-  element.style.top = dragY.toString() + "px"
+  element.style.left = dragX.toString() + 'px'
+  element.style.top = dragY.toString() + 'px'
 
-  console.log(`x: ${dragX}, y: ${dragY}`)
+  // console.log(`x: ${dragX}, y: ${dragY}`)
+  event.preventDefault()
+}
+
+function onDrop(event: DragEvent, gridX: Number, gridY: Number) {
+  console.log(`Drop it at ${gridX}, ${gridY}`)
+  draggingElement.value?.classList.remove('pointer-events-none')
+  event.preventDefault()
+}
+
+function onDragEnter(event: DragEvent, gridX: Number, gridY: Number) {
+  console.log(`drag enter it at ${gridX}, ${gridY}`)
+  // event.preventDefault()
+}
+
+function onDragOver(event: DragEvent, gridX: Number, gridY: Number) {
+  console.log(`drag over it at ${gridX}, ${gridY}`)
+  // event.preventDefault()
+}
+
+function onDragLeave(event: DragEvent, gridX: Number, gridY: Number) {
+  console.log(`drag leave at ${gridX}, ${gridY}`)
+  // event.preventDefault()
 }
 
 onMounted(() => {
@@ -126,8 +152,14 @@ watch(route, fetchLevels, { immediate: true })
           :key="xPos"
           :style="`left: ${xPos * colWidth - levelButtonHalfSize}px`"
           class="absolute"
+          @drop.prevent="onDrop($event, xPos, yPos)"
+          @dragover.prevent="onDragOver($event, xPos, yPos)"
+          @dragenter.prevent="onDragEnter($event, xPos, yPos)"
         />
       </div>
+      <!--
+      
+      @dragleave.prevent="onDragLeave($event, xPos, yPos)" -->
 
       <!-- Actual levels -->
       <LevelButton
@@ -141,7 +173,7 @@ watch(route, fetchLevels, { immediate: true })
         class="absolute"
         draggable="true"
         :ref="`levelButton${index}`"
-        @dragstart.self="startDrag"
+        @dragstart.self="startDrag($event, level)"
         @drag.self="dragHandler"
       />
     </div>
