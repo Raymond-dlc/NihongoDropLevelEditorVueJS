@@ -31,7 +31,7 @@ onMounted(async () => {
   >
     <div class="relative">
       <img
-        class="w-16 mb-4"
+        class="w-16 mb-4 rounded-xl"
         src="../assets/nihongo-drop-logo.bmp"
         alt="Logo"
       />

@@ -36,8 +36,11 @@ const isLoading = ref<boolean>(false)
 const layoutScrollTop = ref(0)
 const draggingElement = ref<HTMLDivElement>()
 
-var mouseX = ref(0)
-var mouseY = ref(0)
+const mouseX = ref(0)
+const mouseY = ref(0)
+
+const snapX = ref(0)
+const snapY = ref(0)
 
 async function fetchLevels() {
   console.log('loading for ' + props.chapterId)
@@ -67,9 +70,15 @@ function startDrag(event: DragEvent, level: Level) {
     event.dataTransfer.setData('levelId', level.id)
     console.log('setting the level id')
 
-    draggingElement.value = event.target as HTMLDivElement
-    draggingElement.value.classList.add('pointer-events-none')
+    const element = event.target as HTMLDivElement
+    element.classList.add('pointer-events-none', 'z-50')
   }
+}
+function stopDrag(event: DragEvent) {
+  const element = event.target as HTMLDivElement
+  element.classList.remove('pointer-events-none', 'z-50')
+
+  console.log(element)
 }
 
 function dragHandler(event: DragEvent) {
@@ -78,36 +87,37 @@ function dragHandler(event: DragEvent) {
   const relativeX = (mouseX.value - layoutContainer?.offsetLeft ?? 0) - levelButtonHalfSize
   const relativeY = (mouseY.value - layoutContainer?.offsetTop ?? 0) - levelButtonHalfSize + layoutScrollTop.value
 
-  const dragX = Math.min(Math.max(relativeX, 0), layoutWidth - levelButtonSize)
-  const dragY = Math.min(Math.max(relativeY, 0), layoutHeight - levelButtonSize)
+  let dragX = Math.min(Math.max(relativeX, 0), layoutWidth - levelButtonSize)
+  let dragY = Math.min(Math.max(relativeY, 0), layoutHeight - levelButtonSize)
+
+  if (snapX.value != 0) {
+    dragX = snapX.value
+    dragY = snapY.value
+  }
 
   let element = event.target as HTMLDivElement
   element.style.left = dragX.toString() + 'px'
   element.style.top = dragY.toString() + 'px'
 
-  // console.log(`x: ${dragX}, y: ${dragY}`)
   event.preventDefault()
 }
 
 function onDrop(event: DragEvent, gridX: Number, gridY: Number) {
   console.log(`Drop it at ${gridX}, ${gridY}`)
-  draggingElement.value?.classList.remove('pointer-events-none')
+  // TODO update x/y pos
   event.preventDefault()
 }
 
 function onDragEnter(event: DragEvent, gridX: Number, gridY: Number) {
-  console.log(`drag enter it at ${gridX}, ${gridY}`)
-  // event.preventDefault()
-}
+  const dropElement = event.target as HTMLDivElement
 
-function onDragOver(event: DragEvent, gridX: Number, gridY: Number) {
-  console.log(`drag over it at ${gridX}, ${gridY}`)
-  // event.preventDefault()
+  snapX.value = dropElement.offsetLeft
+  snapY.value = dropElement.parentElement?.offsetTop ?? 0
 }
 
 function onDragLeave(event: DragEvent, gridX: Number, gridY: Number) {
-  console.log(`drag leave at ${gridX}, ${gridY}`)
-  // event.preventDefault()
+  snapX.value = 0
+  snapY.value = 0
 }
 
 onMounted(() => {
@@ -135,7 +145,7 @@ watch(route, fetchLevels, { immediate: true })
     >
       <!-- Background Image -->
       <img
-        class="select-none pointer-events-none absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 min-w-full min-h-full object-cover z-0"
+        class="select-none rounded-xl pointer-events-none absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 min-w-full min-h-full object-cover z-0"
         src="../assets/images/bg_2.jpg"
         alt="Background Image"
       />
@@ -152,9 +162,10 @@ watch(route, fetchLevels, { immediate: true })
           :key="xPos"
           :style="`left: ${xPos * colWidth - levelButtonHalfSize}px`"
           class="absolute"
-          @drop.prevent="onDrop($event, xPos, yPos)"
-          @dragover.prevent="onDragOver($event, xPos, yPos)"
-          @dragenter.prevent="onDragEnter($event, xPos, yPos)"
+          @drop.prevent="onDrop($event, xPos - 1, yPos - 1)"
+          @dragenter.prevent="onDragEnter($event, xPos - 1, yPos - 1)"
+          @dragleave.prevent="onDragLeave($event, xPos - 1, yPos - 1)"
+          @dragover.prevent
         />
       </div>
       <!--
@@ -174,6 +185,7 @@ watch(route, fetchLevels, { immediate: true })
         draggable="true"
         :ref="`levelButton${index}`"
         @dragstart.self="startDrag($event, level)"
+        @dragend.self="stopDrag($event)"
         @drag.self="dragHandler"
       />
     </div>
