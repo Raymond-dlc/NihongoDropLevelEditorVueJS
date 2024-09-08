@@ -62,6 +62,20 @@ async function fetchLevels() {
   }
 }
 
+async function updateLevel(level: Level) {
+  console.log('updating level')
+  isLoading.value = true
+  try {
+    const response = await axios.put(`/api/levels/${level.id}`, level)
+    console.log('level updated')
+  } catch (error) {
+    console.log(level)
+    console.log('Failed to load level', error)
+  } finally {
+    isLoading.value = false
+  }
+}
+
 function startDrag(event: DragEvent, level: Level) {
   if (event.dataTransfer) {
     event.dataTransfer.effectAllowed = 'copy'
@@ -103,9 +117,18 @@ function dragHandler(event: DragEvent) {
   event.preventDefault()
 }
 
-function onDrop(event: DragEvent, gridX: Number, gridY: Number) {
-  console.log(`update dragging element to pos ${gridX}, ${gridY}`)
-  // TODO update x/y pos
+function onDrop(event: DragEvent, gridX: number, gridY: number) {
+  const levelId = event.dataTransfer?.getData('levelId')
+  const level = levels.value?.find((level) => level.id == levelId)
+  if (level != null) {
+    level.worldX = gridX
+    level.worldY = gridY
+    updateLevel(level)
+    console.log(`update dragging element to pos ${gridX}, ${gridY}`)
+  } else {
+    console.log(`Couldn't find level for levelId: ${levelId}`)
+  }
+
   event.preventDefault()
 }
 
@@ -151,7 +174,7 @@ watch(route, fetchLevels, { immediate: true })
         alt="Background Image"
       />
 
-      <!-- Placeholders -->
+      <!-- Placeholders / Dropzones -->
       <div
         v-for="yPos in rows"
         :key="yPos"
