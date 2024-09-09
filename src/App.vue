@@ -12,8 +12,6 @@ import NavigationMenu from './components/NavigationMenu.vue'
     <NavigationMenu v-bind="parentProps" />
   </SideBar>
   <RouterView />
-  <!-- <SideBar>
-  </SideBar> -->
 </template>
 
 <style scoped></style>

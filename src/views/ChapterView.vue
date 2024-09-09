@@ -4,6 +4,8 @@ import { useRoute } from 'vue-router'
 import { ref, watch } from 'vue'
 import { type Chapter } from '@/model/Chapter'
 import ChapterLayout from '@/components/ChapterLayout.vue'
+import SideBar from '../components/SideBar.vue'
+import LevelDetails from '@/components/LevelDetails.vue'
 
 const route = useRoute()
 
@@ -14,6 +16,7 @@ const chapter = ref<Chapter>()
 async function fetchChapter() {
   isLoading.value = true
   chapterId.value = route.params.id as string
+
   try {
     const response = await axios.get(`/api/chapters/${chapterId.value}`)
     chapter.value = response.data
@@ -37,5 +40,10 @@ watch(route, fetchChapter, { immediate: true })
       <ChapterLayout :chapter-id="chapterId" />
     </div>
     <div class="grow"></div>
+    <div class="absolute right-0 top-0">
+      <SideBar>
+        <LevelDetails />
+      </SideBar>
+    </div>
   </main>
 </template>
