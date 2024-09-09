@@ -77,23 +77,30 @@ async function updateLevel(level: Level) {
 }
 
 function startDrag(event: DragEvent, level: Level) {
+  console.log('start drag')
   if (event.dataTransfer) {
     event.dataTransfer.effectAllowed = 'copy'
-    event.dataTransfer.setDragImage(new Image(), 0, 0)
+    // event.dataTransfer.setDragImage(new Image(), 0, 0)
     event.dataTransfer.setData('levelId', level.id)
 
     const element = event.target as HTMLDivElement
-    element.classList.add('pointer-events-none', 'z-50')
+    element.classList.add('z-50')
   }
+
+  return false
 }
 function stopDrag(event: DragEvent) {
+  console.log('stop drag')
   const element = event.target as HTMLDivElement
-  element.classList.remove('pointer-events-none', 'z-50')
+  element.classList.remove('z-50')
 
   console.log(element)
+  event.preventDefault()
 }
 
 function dragHandler(event: DragEvent) {
+  event.preventDefault()
+  console.log('dragging')
   const layoutContainer = document.getElementById('layoutContainer')
 
   const offsetLeft = layoutContainer?.offsetLeft ?? 0
@@ -111,10 +118,8 @@ function dragHandler(event: DragEvent) {
   }
 
   let element = event.target as HTMLDivElement
-  element.style.left = dragX.toString() + 'px'
-  element.style.top = dragY.toString() + 'px'
-
-  event.preventDefault()
+  // element.style.left = dragX.toString() + 'px'
+  // element.style.top = dragY.toString() + 'px'
 }
 
 function onDrop(event: DragEvent, gridX: number, gridY: number) {
@@ -130,18 +135,23 @@ function onDrop(event: DragEvent, gridX: number, gridY: number) {
   }
 
   event.preventDefault()
+  return false
 }
 
 function onDragEnter(event: DragEvent) {
+  event.preventDefault()
   const dropElement = event.target as HTMLDivElement
+  console.log('drag enter')
 
   snapX.value = dropElement.offsetLeft
   snapY.value = dropElement.parentElement?.offsetTop ?? 0
+  return false
 }
 
 function onDragLeave() {
   snapX.value = 0
   snapY.value = 0
+  return false
 }
 
 onMounted(() => {
