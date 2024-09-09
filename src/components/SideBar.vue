@@ -17,7 +17,7 @@ const toggleMenu = () => {
 
 <template>
   <aside
-    :class="`${isExpanded ? 'w-80' : 'w-24'}`"
+    :class="`${isExpanded ? 'w-80' : 'w-24 hover:w-32'}`"
     class="flex flex-col shrink-0 z-[9999999] bg-sakura overflow-auto no-scrollbar p-8 h-dvh duration-300 ease-in-out fixed md:static md:z-50"
   >
     <div class="relative">

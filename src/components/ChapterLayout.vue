@@ -4,7 +4,7 @@ import LevelButton from '@/components/LevelButton.vue'
 import LevelButtonPlaceholder from '@/components/LevelButtonPlaceholder.vue'
 import type { Level } from '@/model/Level'
 import axios from 'axios'
-import { useRoute } from 'vue-router'
+import { useRoute, useRouter } from 'vue-router'
 
 const props = defineProps({
   chapterId: String
@@ -31,9 +31,11 @@ const layoutWidth = (cols + 1) * colWidth
 var layoutHeight = rows * rowHeight
 
 const route = useRoute()
+const router = useRouter()
 const levels = ref<Level[]>()
 const isLoading = ref<boolean>(false)
 const layoutScrollTop = ref(0)
+const selectedLevelId = ref('')
 
 const mouseX = ref(0)
 const mouseY = ref(0)
@@ -76,6 +78,12 @@ async function updateLevel(level: Level) {
   }
 }
 
+const buttonClick = (levelId: string) => {
+  console.log('clicked')
+  selectedLevelId.value = levelId
+  router.push(`/chapters/${props.chapterId}?levelid=${levelId}`)
+}
+
 function startDrag(event: DragEvent, level: Level) {
   console.log('start drag')
   if (event.dataTransfer) {
@@ -89,6 +97,7 @@ function startDrag(event: DragEvent, level: Level) {
 
   return false
 }
+
 function stopDrag(event: DragEvent) {
   console.log('stop drag')
   const element = event.target as HTMLDivElement
@@ -208,6 +217,7 @@ watch(route, fetchLevels, { immediate: true })
         v-for="(level, index) in levels"
         :key="level.id"
         :label="level.id.toString()"
+        :isSelected="level.id == selectedLevelId"
         :style="`
                 top: ${level.worldY * rowHeight + halfRowHeight - levelButtonHalfSize}px; 
                 left: ${(level.worldX + 1) * colWidth - levelButtonHalfSize}px
@@ -218,6 +228,7 @@ watch(route, fetchLevels, { immediate: true })
         @dragstart.self="startDrag($event, level)"
         @dragend.self="stopDrag($event)"
         @drag.self="dragHandler"
+        @click="buttonClick(level.id.toString())"
       />
     </div>
   </div>
