@@ -58,6 +58,27 @@ const loadLevelWords = async () => {
   }
 }
 
+const addWordToLevel = async (wordId: string) => {
+  levelId.value = route.query['levelid'] as String
+  searchInput.value = ''
+  searchResultWords.value = []
+
+  try {
+    const newLevelWord: LevelWord = {
+      id: undefined,
+      levelId: Number(levelId),
+      wordId: Number(wordId)
+    }
+    let levelWordsResponse = await axios.post(`/api/levelWords`, newLevelWord)
+    console.log('word added')
+    loadLevelWords()
+  } catch (error) {
+    console.log('Failed to load words', error)
+  } finally {
+    console.log('TODO: Handle loading')
+  }
+}
+
 const onSearchInputUpdated = (event: InputEvent) => {
   const newInput = (event.target as HTMLInputElement).value.toLocaleLowerCase() ?? ''
 
@@ -101,6 +122,7 @@ watch(route, loadAllWords, { immediate: true })
             class="px-4 py-2 hover:bg-gray-200 rounded-2xl"
             v-for="word in searchResultWords"
             :key="word.id"
+            @click="addWordToLevel(word.id)"
           >
             <p class="text text-mint-green-800">{{ word.id }} - {{ word.japanese }} [{{ word.furigana }}]</p>
             <p class="text text-mint-green-800 ml-5">- {{ word.english }}</p>
