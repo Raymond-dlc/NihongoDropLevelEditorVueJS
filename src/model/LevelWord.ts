@@ -1,5 +1,5 @@
 export interface LevelWord {
-    id: string,
+    id: string | undefined,
     levelId: number,
     wordId: number
 }
