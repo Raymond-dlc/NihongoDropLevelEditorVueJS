@@ -59,14 +59,13 @@ const loadLevelWords = async () => {
 }
 
 const addWordToLevel = async (wordId: string) => {
-  levelId.value = route.query['levelid'] as String
   searchInput.value = ''
   searchResultWords.value = []
 
   try {
     const newLevelWord: LevelWord = {
       id: undefined,
-      levelId: Number(levelId),
+      levelId: Number(levelId.value),
       wordId: Number(wordId)
     }
     let levelWordsResponse = await axios.post(`/api/levelWords`, newLevelWord)
