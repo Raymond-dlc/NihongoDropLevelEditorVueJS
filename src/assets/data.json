@@ -1787,16 +1787,6 @@
     },
     {
       "levelId": 12,
-      "wordId": 217,
-      "id": "5da7"
-    },
-    {
-      "levelId": 12,
-      "wordId": 218,
-      "id": "c301"
-    },
-    {
-      "levelId": 12,
       "wordId": 219,
       "id": "62bd"
     },
@@ -5571,24 +5561,14 @@
       "id": "b8eb"
     },
     {
-      "id": "0ca7",
-      "levelId": null,
-      "wordId": 325
+      "id": "4f71",
+      "levelId": 12,
+      "wordId": 217
     },
     {
-      "id": "dc91",
-      "levelId": null,
-      "wordId": 325
-    },
-    {
-      "id": "9045",
-      "levelId": null,
-      "wordId": 491
-    },
-    {
-      "id": "d41d",
-      "levelId": null,
-      "wordId": 0
+      "id": "2f40",
+      "levelId": 12,
+      "wordId": 218
     }
   ],
   "words": [
