@@ -3,6 +3,7 @@ import { onMounted, ref, watch, type Directive } from 'vue'
 import LevelButton from '@/components/LevelButton.vue'
 import LevelButtonPlaceholder from '@/components/LevelButtonPlaceholder.vue'
 import type { Level } from '@/model/Level'
+import type { LevelConnection } from '@/model/LevelConnection'
 import axios from 'axios'
 import { useRoute, useRouter } from 'vue-router'
 
@@ -33,6 +34,7 @@ var layoutHeight = rows * rowHeight
 const route = useRoute()
 const router = useRouter()
 const levels = ref<Level[]>()
+const levelConnections = ref<LevelConnection[]>()
 const isLoading = ref<boolean>(false)
 const layoutScrollTop = ref(0)
 const selectedLevelId = ref('')
@@ -57,6 +59,19 @@ async function fetchLevels() {
     rows += 2
 
     layoutHeight = rows * rowHeight
+  } catch (error) {
+    console.log('Failed to load level', error)
+  } finally {
+    isLoading.value = false
+  }
+}
+
+async function fetchLevelConnections() {
+  console.log('loading for ' + props.chapterId)
+  isLoading.value = true
+  try {
+    const response = await axios.get(`/api/levelConnections?checkpointId=${props.chapterId}`)
+    levelConnections.value = response.data
   } catch (error) {
     console.log('Failed to load level', error)
   } finally {
@@ -174,6 +189,7 @@ onMounted(() => {
 })
 
 watch(route, fetchLevels, { immediate: true })
+watch(route, fetchLevelConnections, { immediate: true })
 </script>
 
 <template>
