@@ -178,6 +178,27 @@ function onDragLeave() {
   return false
 }
 
+const getYOffsetFor = (worldY: number): number => {
+  console.log("get X offset for: " + worldY)
+  return worldY * rowHeight + halfRowHeight - levelButtonHalfSize
+}
+
+const getXOffsetFor = (worldX: number): number => {
+  console.log("get X offset for: " + worldX)
+  return (worldX + 1) * colWidth - levelButtonHalfSize
+}
+
+const getWorldXFor = (levelId: number): number => {
+  console.log("get for levelid : " + levelId)
+  const worldX = levels.value?.find(level => { level.id == levelId.toString()})?.worldX
+  console.log("found X for level: " +  worldX)
+  return (worldX ?? 0)
+}
+const getWorldYFor = (levelId: number): number => {
+  const worldY = levels.value?.find(level => { level.id == levelId.toString()})?.worldY
+  return (worldY ?? 0)
+}
+
 onMounted(() => {
   document.getElementById('layoutContainer')?.addEventListener('scroll', function () {
     layoutScrollTop.value = this.scrollTop
@@ -228,6 +249,17 @@ watch(route, fetchLevelConnections, { immediate: true })
         />
       </div>
 
+      <!-- Level connections -->
+      <div
+        v-for="levelConnection in levelConnections"
+        :key="levelConnection.id"
+        class="absolute origin-left w-[600px] z-50 h-2 bg-mint-green-800 rounded-lg"
+        :style="`
+                top: ${getYOffsetFor(getWorldYFor(levelConnection.startLevelId)) + levelButtonHalfSize}px; 
+                left: ${getXOffsetFor(getWorldXFor(levelConnection.startLevelId)) + levelButtonHalfSize}px
+                `"
+      ></div>
+
       <!-- Actual levels -->
       <LevelButton
         v-for="(level, index) in levels"
@@ -235,8 +267,8 @@ watch(route, fetchLevelConnections, { immediate: true })
         :label="level.id.toString()"
         :isSelected="level.id == selectedLevelId"
         :style="`
-                top: ${level.worldY * rowHeight + halfRowHeight - levelButtonHalfSize}px; 
-                left: ${(level.worldX + 1) * colWidth - levelButtonHalfSize}px
+                top: ${getYOffsetFor(level.worldY)}px; 
+                left: ${getXOffsetFor(level.worldX)}px
               `"
         class="absolute"
         draggable="true"
