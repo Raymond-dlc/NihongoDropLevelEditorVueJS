@@ -1,4 +1,4 @@
-export interface Level {
+export interface LevelConnection {
     id: string,
     checkpointId: number,
     startLevelId: number,

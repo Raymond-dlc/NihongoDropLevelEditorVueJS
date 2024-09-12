@@ -16,7 +16,7 @@ const colWidth = 150
 // Number of columns the levels can be snapped to
 const cols = 3
 // Height of a row
-const rowHeight = 200
+const rowHeight = 150
 // Half rpw height for easy calculations
 const halfRowHeight = rowHeight / 2
 // Number of rows the levels can be snapped to
@@ -179,24 +179,38 @@ function onDragLeave() {
 }
 
 const getYOffsetFor = (worldY: number): number => {
-  console.log("get X offset for: " + worldY)
   return worldY * rowHeight + halfRowHeight - levelButtonHalfSize
 }
 
 const getXOffsetFor = (worldX: number): number => {
-  console.log("get X offset for: " + worldX)
   return (worldX + 1) * colWidth - levelButtonHalfSize
 }
 
 const getWorldXFor = (levelId: number): number => {
-  console.log("get for levelid : " + levelId)
-  const worldX = levels.value?.find(level => { level.id == levelId.toString()})?.worldX
-  console.log("found X for level: " +  worldX)
-  return (worldX ?? 0)
+  const level = levels.value?.find((level) => {
+    return level.id === levelId.toString()
+  }) as Level
+  return level.worldX ?? 0
 }
+
 const getWorldYFor = (levelId: number): number => {
-  const worldY = levels.value?.find(level => { level.id == levelId.toString()})?.worldY
-  return (worldY ?? 0)
+  const worldY = levels.value?.find((level) => {
+    return level.id == levelId.toString()
+  })?.worldY
+  return worldY ?? 0
+}
+
+const getLevelConnectionStyle = (levelConnection: LevelConnection): string => {
+  console.log(levelConnection)
+  const startWorldX = getWorldXFor(levelConnection.startLevelId)
+  const startX = getXOffsetFor(startWorldX) + levelButtonHalfSize
+  const startY = getYOffsetFor(getWorldYFor(levelConnection.startLevelId)) + levelButtonHalfSize
+  const endY = getYOffsetFor(getWorldYFor(levelConnection.endLevelId)) + levelButtonHalfSize
+  const endX = getXOffsetFor(getWorldXFor(levelConnection.endLevelId)) + levelButtonHalfSize
+  const width = Math.sqrt((endX - startX) ** 2 + (endY - startY) ** 2).toFixed(0)
+  const rotation = (Math.atan2(endY - startY, endX - startX) * 180) / Math.PI
+
+  return `top: ${startY}px; left: ${startX}px; width: ${width}px; 	transform: rotate(${rotation}deg)`
 }
 
 onMounted(() => {
@@ -253,11 +267,8 @@ watch(route, fetchLevelConnections, { immediate: true })
       <div
         v-for="levelConnection in levelConnections"
         :key="levelConnection.id"
-        class="absolute origin-left w-[600px] z-50 h-2 bg-mint-green-800 rounded-lg"
-        :style="`
-                top: ${getYOffsetFor(getWorldYFor(levelConnection.startLevelId)) + levelButtonHalfSize}px; 
-                left: ${getXOffsetFor(getWorldXFor(levelConnection.startLevelId)) + levelButtonHalfSize}px
-                `"
+        class="absolute origin-left h-2 bg-mint-green-800 rounded-lg"
+        :style="`${getLevelConnectionStyle(levelConnection)}`"
       ></div>
 
       <!-- Actual levels -->
