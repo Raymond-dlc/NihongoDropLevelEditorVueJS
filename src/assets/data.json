@@ -1168,36 +1168,36 @@
     {
       "id": "78",
       "checkpointId": 15,
-      "worldX": 1,
+      "worldX": 0,
       "worldY": 1,
       "type": "normal"
     },
     {
       "id": "79",
       "checkpointId": 15,
-      "worldX": 1,
-      "worldY": 2,
+      "worldX": 2,
+      "worldY": 1,
       "type": "normal"
     },
     {
       "id": "80",
       "checkpointId": 15,
       "worldX": 1,
-      "worldY": 3,
+      "worldY": 2,
       "type": "normal"
     },
     {
       "id": "81",
       "checkpointId": 15,
-      "worldX": 1,
-      "worldY": 4,
+      "worldX": 0,
+      "worldY": 3,
       "type": "normal"
     },
     {
       "id": "82",
       "checkpointId": 15,
       "worldX": 1,
-      "worldY": 5,
+      "worldY": 3,
       "type": "normal"
     },
     {

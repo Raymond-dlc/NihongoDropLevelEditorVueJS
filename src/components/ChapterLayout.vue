@@ -93,6 +93,20 @@ async function updateLevel(level: Level) {
   }
 }
 
+async function removeLevelConnection(levelConnectionId: string) {
+  isLoading.value = true
+  try {
+    await axios.delete(`/api/levelConnections/${levelConnectionId}`)
+
+    // Reload level connections
+    fetchLevelConnections()
+  } catch (error) {
+    console.log('Failed to remove level connection', error)
+  } finally {
+    isLoading.value = false
+  }
+}
+
 const buttonClick = (levelId: string) => {
   console.log('clicked')
   selectedLevelId.value = levelId
@@ -267,9 +281,16 @@ watch(route, fetchLevelConnections, { immediate: true })
       <div
         v-for="levelConnection in levelConnections"
         :key="levelConnection.id"
-        class="absolute origin-left h-2 bg-mint-green-800 rounded-lg"
+        class="absolute w-full drop-shadow-lg outline outline-white origin-left h-2 bg-mint-green-800 rounded-lg flex justify-center items-center"
         :style="`${getLevelConnectionStyle(levelConnection)}`"
-      ></div>
+      >
+        <button
+          class="p-2 translate-y-0"
+          @click="removeLevelConnection(levelConnection.id)"
+        >
+          <span class="text-red-800 font-outline font-bold text-3xl">X</span>
+        </button>
+      </div>
 
       <!-- Actual levels -->
       <LevelButton
