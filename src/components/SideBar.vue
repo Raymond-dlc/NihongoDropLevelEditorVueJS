@@ -7,6 +7,10 @@ const props = defineProps({
   showLogo: {
     default: false,
     type: Boolean
+  },
+  showCollapseButton: {
+    default: true,
+    type: Boolean
   }
 })
 
@@ -29,6 +33,7 @@ const toggleMenu = () => {
         alt="Logo"
       />
       <button
+        v-if="showCollapseButton"
         @click="toggleMenu"
         class="transition duration-300"
         :class="`${isExpanded ? 'absolute top-0 right-0 -rotate-180' : 'static'}`"

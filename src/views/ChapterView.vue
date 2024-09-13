@@ -41,7 +41,7 @@ watch(route, fetchChapter, { immediate: true })
     </div>
     <div class="grow w-80"></div>
     <div class="absolute right-0 top-0">
-      <SideBar>
+      <SideBar :show-collapse-button="false">
         <LevelDetails />
       </SideBar>
     </div>
