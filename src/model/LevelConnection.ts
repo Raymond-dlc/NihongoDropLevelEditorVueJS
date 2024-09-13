@@ -1,5 +1,5 @@
 export interface LevelConnection {
-    id: string,
+    id: string | undefined,
     checkpointId: number,
     startLevelId: number,
     endLevelId: number,

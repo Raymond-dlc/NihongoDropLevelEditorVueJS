@@ -6,6 +6,7 @@ import type { Level } from '@/model/Level'
 import type { LevelConnection } from '@/model/LevelConnection'
 import axios from 'axios'
 import { useRoute, useRouter } from 'vue-router'
+import LevelConnectionView from './LevelConnectionView.vue'
 
 const props = defineProps({
   chapterId: String
@@ -107,14 +108,32 @@ async function removeLevelConnection(levelConnectionId: string) {
   }
 }
 
+async function addLevelConnection(startLevelId: number, endLevelId: number) {
+  isLoading.value = true
+  try {
+    const newLevelConnection: LevelConnection = {
+      id: undefined,
+      startLevelId: startLevelId,
+      endLevelId: endLevelId,
+      checkpointId: Number(props.chapterId)
+    }
+    await axios.post(`/api/levelConnections`, newLevelConnection)
+
+    // Reload level connections
+    fetchLevelConnections()
+  } catch (error) {
+    console.log('Failed to remove level connection', error)
+  } finally {
+    isLoading.value = false
+  }
+}
+
 const buttonClick = (levelId: string) => {
-  console.log('clicked')
   selectedLevelId.value = levelId
   router.push(`/chapters/${props.chapterId}?levelid=${levelId}`)
 }
 
 function startDrag(event: DragEvent, level: Level) {
-  console.log('start drag')
   if (event.dataTransfer) {
     event.dataTransfer.effectAllowed = 'copy'
     // event.dataTransfer.setDragImage(new Image(), 0, 0)
@@ -128,17 +147,13 @@ function startDrag(event: DragEvent, level: Level) {
 }
 
 function stopDrag(event: DragEvent) {
-  console.log('stop drag')
   const element = event.target as HTMLDivElement
   element.classList.remove('z-50')
-
-  console.log(element)
   event.preventDefault()
 }
 
 function dragHandler(event: DragEvent) {
   event.preventDefault()
-  console.log('dragging')
   const layoutContainer = document.getElementById('layoutContainer')
 
   const offsetLeft = layoutContainer?.offsetLeft ?? 0
@@ -160,6 +175,15 @@ function dragHandler(event: DragEvent) {
   // element.style.top = dragY.toString() + 'px'
 }
 
+const onDropOnLevel = (event: DragEvent, endLevel: Level) => {
+  const startLevelId = Number(event.dataTransfer?.getData('levelId'))
+  console.log('startLevelId ' + startLevelId)
+  console.log('endLevelId ' + endLevel.id)
+  addLevelConnection(startLevelId, Number(endLevel.id))
+  event.preventDefault()
+  return false
+}
+
 function onDrop(event: DragEvent, gridX: number, gridY: number) {
   const levelId = event.dataTransfer?.getData('levelId')
   const level = levels.value?.find((level) => level.id == levelId)
@@ -167,9 +191,6 @@ function onDrop(event: DragEvent, gridX: number, gridY: number) {
     level.worldX = gridX
     level.worldY = gridY
     updateLevel(level)
-    console.log(`update dragging element to pos ${gridX}, ${gridY}`)
-  } else {
-    console.log(`Couldn't find level for levelId: ${levelId}`)
   }
 
   event.preventDefault()
@@ -215,7 +236,6 @@ const getWorldYFor = (levelId: number): number => {
 }
 
 const getLevelConnectionStyle = (levelConnection: LevelConnection): string => {
-  console.log(levelConnection)
   const startWorldX = getWorldXFor(levelConnection.startLevelId)
   const startX = getXOffsetFor(startWorldX) + levelButtonHalfSize
   const startY = getYOffsetFor(getWorldYFor(levelConnection.startLevelId)) + levelButtonHalfSize
@@ -278,19 +298,16 @@ watch(route, fetchLevelConnections, { immediate: true })
       </div>
 
       <!-- Level connections -->
-      <div
+      <LevelConnectionView
         v-for="levelConnection in levelConnections"
         :key="levelConnection.id"
-        class="absolute w-full drop-shadow-lg outline outline-white origin-left h-2 bg-mint-green-800 rounded-lg flex justify-center items-center"
         :style="`${getLevelConnectionStyle(levelConnection)}`"
-      >
-        <button
-          class="p-2 translate-y-0"
-          @click="removeLevelConnection(levelConnection.id)"
-        >
-          <span class="text-red-800 font-outline font-bold text-3xl">X</span>
-        </button>
-      </div>
+        :onDeleteClicked="
+          () => {
+            removeLevelConnection(levelConnection.id)
+          }
+        "
+      />
 
       <!-- Actual levels -->
       <LevelButton
@@ -303,11 +320,13 @@ watch(route, fetchLevelConnections, { immediate: true })
                 left: ${getXOffsetFor(level.worldX)}px
               `"
         class="absolute"
-        draggable="true"
+        :draggable="true"
         :ref="`levelButton${index}`"
         @dragstart.self="startDrag($event, level)"
         @dragend.self="stopDrag($event)"
         @drag.self="dragHandler"
+        @drop.prevent="onDropOnLevel($event, level)"
+        @dragover.prevent
         @click="buttonClick(level.id.toString())"
       />
     </div>

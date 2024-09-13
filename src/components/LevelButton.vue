@@ -6,9 +6,9 @@ const props = defineProps({
 </script>
 
 <template>
-  <div class="w-20 h-20"
-  :class="`${isSelected ? 'hue-rotate-180' : ''}`"
-
+  <div
+    class="w-20 h-20"
+    :class="`${isSelected ? 'hue-rotate-180' : ''}`"
   >
     <div class="select-none pointer-events-none relative w-20 h-20 flex justify-center items-center">
       <div class="select-none pointer-events-none absolute">
