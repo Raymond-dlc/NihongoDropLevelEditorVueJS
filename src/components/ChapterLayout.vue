@@ -223,7 +223,12 @@ const getWorldXFor = (levelId: number): number => {
   const level = levels.value?.find((level) => {
     return level.id === levelId.toString()
   }) as Level
-  return level.worldX ?? 0
+
+  if (level == null) {
+    console.log("couldn't find level!")
+  }
+
+  return level?.worldX ?? 0
 }
 
 const getWorldYFor = (levelId: number): number => {

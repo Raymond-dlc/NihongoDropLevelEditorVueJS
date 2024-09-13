@@ -79,12 +79,6 @@
   ],
   "levelConnections": [
     {
-      "id": "1",
-      "startLevelId": 1,
-      "endLevelId": 2,
-      "checkpointId": 0
-    },
-    {
       "id": "2",
       "startLevelId": 2,
       "endLevelId": 3,
@@ -107,12 +101,6 @@
       "startLevelId": 5,
       "endLevelId": 6,
       "checkpointId": 0
-    },
-    {
-      "id": "6",
-      "startLevelId": 6,
-      "endLevelId": 7,
-      "checkpointId": 1
     },
     {
       "id": "7",
@@ -155,12 +143,6 @@
       "startLevelId": 14,
       "endLevelId": 15,
       "checkpointId": 2
-    },
-    {
-      "id": "14",
-      "startLevelId": 15,
-      "endLevelId": 16,
-      "checkpointId": 3
     },
     {
       "id": "15",
@@ -623,6 +605,12 @@
       "startLevelId": 100,
       "endLevelId": 101,
       "checkpointId": 18
+    },
+    {
+      "id": "a112",
+      "startLevelId": 1,
+      "endLevelId": 2,
+      "checkpointId": 0
     }
   ],
   "levels": [
@@ -734,7 +722,7 @@
     {
       "id": "16",
       "checkpointId": 3,
-      "worldX": 0,
+      "worldX": 1,
       "worldY": 0,
       "type": "normal"
     },
