@@ -267,7 +267,7 @@ watch(route, fetchLevelConnections, { immediate: true })
 <template>
   <div
     id="layoutContainer"
-    class="flex-1 overflow-y-auto rounded-[20px] bg-red-200 overflow-x-hidden no-scrollbar"
+    class="flex-1 overflow-y-auto rounded-[20px] overflow-x-hidden no-scrollbar"
   >
     <div
       class="relative rounded-lg"
