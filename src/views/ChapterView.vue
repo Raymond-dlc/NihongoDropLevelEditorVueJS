@@ -27,6 +27,10 @@ async function fetchChapter() {
   }
 }
 
+async function addLevel() {
+  // Figure out how to properly add level and adjust data
+}
+
 watch(route, fetchChapter, { immediate: true })
 </script>
 
@@ -37,6 +41,12 @@ watch(route, fetchChapter, { immediate: true })
       <h1 class="text text-center text-5xl text-extrabold mt-8 mb-8">
         {{ chapter?.title }}
       </h1>
+      <button
+        @click="addLevel"
+        class="self-start rounded-full bg-mint-green-100 outline mb-2 outline-2 outline-green-800 hover:bg-mint-green-500 px-4 py-3"
+      >
+        <span class="text text-s text-green-800 font-bold">+ Add level</span>
+      </button>
       <ChapterLayout :chapter-id="chapterId" />
     </div>
     <div class="grow w-80"></div>
