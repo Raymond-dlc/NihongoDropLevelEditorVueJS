@@ -177,8 +177,6 @@ function dragHandler(event: DragEvent) {
 
 const onDropOnLevel = (event: DragEvent, endLevel: Level) => {
   const startLevelId = Number(event.dataTransfer?.getData('levelId'))
-  console.log('startLevelId ' + startLevelId)
-  console.log('endLevelId ' + endLevel.id)
   addLevelConnection(startLevelId, Number(endLevel.id))
   event.preventDefault()
   return false
@@ -264,11 +262,10 @@ watch(route, fetchLevelConnections, { immediate: true })
 <template>
   <div
     id="layoutContainer"
-    class="overflow-y-auto rounded-[20px] overflow-x-hidden h-full no-scrollbar"
-    :class="`min-h-[500px]`"
+    class="flex-1 overflow-y-auto rounded-[20px] bg-red-200 overflow-x-hidden no-scrollbar"
   >
     <div
-      class="relative h-full rounded-lg"
+      class="relative rounded-lg"
       :style="`width: ${layoutWidth}px; height: ${layoutHeight}px`"
     >
       <!-- Background Image -->
@@ -304,7 +301,7 @@ watch(route, fetchLevelConnections, { immediate: true })
         :style="`${getLevelConnectionStyle(levelConnection)}`"
         :onDeleteClicked="
           () => {
-            removeLevelConnection(levelConnection.id)
+            removeLevelConnection(levelConnection.id!!)
           }
         "
       />

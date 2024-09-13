@@ -13,7 +13,7 @@ const props = defineProps({
       class="p-2 translate-y-0"
       @click="props.onDeleteClicked!!"
     >
-      <span class="text-red-800 font-outline font-bold text-3xl">X</span>
+      <span class="text-red-800 font-outline font-bold text-4xl">X</span>
     </button>
   </div>
 </template>
