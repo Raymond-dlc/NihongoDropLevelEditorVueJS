@@ -55,40 +55,50 @@ async function addLevel() {
   })
 
   // Update current latest level to not be checkpoint anymore.
+  console.log("firs tput attempt")
   latestLevel.type = 'normal'
-  const updateLatestLeveltypeResponse = await axios.put(`api/levels`, latestLevel)
+  const updateLatestLeveltypeResponse = await axios.put(`/api/levels/${latestLevel.id}`, latestLevel)
   if (updateLatestLeveltypeResponse.status == 200) {
     console.log('updated latest level')
+  } else {
+    console.log ("failed to update last level type: " + updateLatestLeveltypeResponse.status)
+    return
   }
 
   // Shift all other levels
-  const getHigherLevelsResponse = await axios.get(`/api/levels?levelId_gt=${latestLevel.id}&limit=9001`)
-  if (getHigherLevelsResponse.status == 200) {
-    console.log('loaded?')
-    const allNextLevels = getHigherLevelsResponse.data
-    allNextLevels.forEach((element: Level) => {
-      const newLevelId = element.levelId +1
-      element.levelId = newLevelId
-      element.id = newLevelId.toString()
-      axios.put(`/api/levels/${element.id}`, element)
-    })
-    console.log(allNextLevels)
-  }
-
-  // Create level inside the current chapter.
-  const newLevel: Level = {
-    id: (Number(latestLevel.id) + 1).toString(),
-    levelId: Number(latestLevel.id) + 1,
-    worldX: latestLevel.worldX,
-    worldY: latestLevel.worldY + 1,
-    checkpointId: chapterId.value,
-    type: 'checkpoint'
-  }
-
-  const addNewLevelResponse = await axios.post(`api/levels`, newLevel)
-  if (addNewLevelResponse.status == 200) {
-    console.log('added new level')
-  }
+  //const getHigherLevelsResponse = await axios.get(`/api/levels?levelId_gt=${latestLevel.id}&limit=9001`)
+  //if (getHigherLevelsResponse.status == 200) {
+  //  console.log('loaded?')
+  //  const allNextLevels = getHigherLevelsResponse.data
+  //  allNextLevels.forEach((element: Level) => {
+  //    const newLevelId = element.levelId + 1
+  //    const updatedLevel: Level = {
+  //      id: newLevelId.toString(),
+  //      levelId: newLevelId,
+  //      checkpointId: element.checkpointId,
+  //      worldX: element.worldX,
+  //      worldY: element.worldY,
+  //      type: element.type
+  //    }
+  //    axios.put(`/api/levels`, updatedLevel)
+  //  })
+  //  console.log(allNextLevels)
+  //}
+//
+  //// Create level inside the current chapter.
+  //const newLevel: Level = {
+  //  id: (Number(latestLevel.id) + 1).toString(),
+  //  levelId: Number(latestLevel.id) + 1,
+  //  worldX: latestLevel.worldX,
+  //  worldY: latestLevel.worldY + 1,
+  //  checkpointId: chapterId.value,
+  //  type: 'checkpoint'
+  //}
+//
+  //const addNewLevelResponse = await axios.post(`/api/levels`, newLevel)
+  //if (addNewLevelResponse.status == 200) {
+  //  console.log('added new level')
+  //}
 }
 
 watch(route, fetchChapter, { immediate: true })
