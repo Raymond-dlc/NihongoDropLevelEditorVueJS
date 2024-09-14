@@ -6,6 +6,7 @@ import { type Chapter } from '@/model/Chapter'
 import ChapterLayout from '@/components/ChapterLayout.vue'
 import SideBar from '../components/SideBar.vue'
 import LevelDetails from '@/components/LevelDetails.vue'
+import type { Level } from '@/model/Level'
 
 const route = useRoute()
 const router = useRouter()
@@ -35,7 +36,7 @@ async function fetchChapter() {
 
 const onSideBarToggled = () => {
   isSideBarOpen.value = !isSideBarOpen.value
-  
+
   router.push(`/chapters/${chapterId.value}`)
 }
 
@@ -44,8 +45,50 @@ const onLevelSelected = () => {
 }
 
 async function addLevel() {
-  isSideBarOpen.value = true
+  // isSideBarOpen.value = true
   // Add a level, and open the sidebar
+
+  const getLevelsResponse = await axios.get(`/api/levels?checkpointId=${chapterId.value}`)
+  const currentChapterLevels = getLevelsResponse.data as Level[]
+  const latestLevel = currentChapterLevels.reduce((prev, current) => {
+    return Number(current.id) > Number(prev.id) ? current : prev
+  })
+
+  // Update current latest level to not be checkpoint anymore.
+  latestLevel.type = 'normal'
+  const updateLatestLeveltypeResponse = await axios.put(`api/levels`, latestLevel)
+  if (updateLatestLeveltypeResponse.status == 200) {
+    console.log('updated latest level')
+  }
+
+  // Shift all other levels
+  const getHigherLevelsResponse = await axios.get(`/api/levels?levelId_gt=${latestLevel.id}&limit=9001`)
+  if (getHigherLevelsResponse.status == 200) {
+    console.log('loaded?')
+    const allNextLevels = getHigherLevelsResponse.data
+    allNextLevels.forEach((element: Level) => {
+      const newLevelId = element.levelId +1
+      element.levelId = newLevelId
+      element.id = newLevelId.toString()
+      axios.put(`/api/levels/${element.id}`, element)
+    })
+    console.log(allNextLevels)
+  }
+
+  // Create level inside the current chapter.
+  const newLevel: Level = {
+    id: (Number(latestLevel.id) + 1).toString(),
+    levelId: Number(latestLevel.id) + 1,
+    worldX: latestLevel.worldX,
+    worldY: latestLevel.worldY + 1,
+    checkpointId: chapterId.value,
+    type: 'checkpoint'
+  }
+
+  const addNewLevelResponse = await axios.post(`api/levels`, newLevel)
+  if (addNewLevelResponse.status == 200) {
+    console.log('added new level')
+  }
 }
 
 watch(route, fetchChapter, { immediate: true })
@@ -64,10 +107,13 @@ watch(route, fetchChapter, { immediate: true })
       >
         <span class="text text-s text-green-800 font-bold">+ Add level</span>
       </button>
-      <ChapterLayout :chapter-id="chapterId"
-        :on-level-selected="() => {
-          onLevelSelected()
-        }"
+      <ChapterLayout
+        :chapter-id="chapterId"
+        :on-level-selected="
+          () => {
+            onLevelSelected()
+          }
+        "
       />
     </div>
     <div class="grow w-80"></div>
