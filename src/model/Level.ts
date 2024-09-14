@@ -1,5 +1,5 @@
 export interface Level {
-    id: string,
+    id: string | undefined,
     levelId: number,
     checkpointId: string,
     worldX: number,

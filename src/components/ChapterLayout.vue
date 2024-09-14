@@ -42,7 +42,7 @@ const levels = ref<Level[]>()
 const levelConnections = ref<LevelConnection[]>()
 const isLoading = ref<boolean>(false)
 const layoutScrollTop = ref(0)
-const selectedLevelId = ref('')
+const selectedLevelId = ref()
 
 const mouseX = ref(0)
 const mouseY = ref(0)
@@ -85,7 +85,7 @@ async function fetchLevelConnections() {
 async function updateLevel(level: Level) {
   isLoading.value = true
   try {
-    const response = await axios.put(`/api/levels/${level.id}`, level)
+    const response = await axios.put(`/api/levels/${level.levelId}`, level)
   } catch (error) {
     console.log('Failed to load level', error)
   } finally {
@@ -144,7 +144,7 @@ function startDrag(event: DragEvent, level: Level) {
   if (event.dataTransfer) {
     event.dataTransfer.effectAllowed = 'copy'
     // event.dataTransfer.setDragImage(new Image(), 0, 0)
-    event.dataTransfer.setData('levelId', level.id)
+    event.dataTransfer.setData('levelId', level.levelId.toString())
 
     const element = event.target as HTMLDivElement
     element.classList.add('z-50')
@@ -184,14 +184,14 @@ function dragHandler(event: DragEvent) {
 
 const onDropOnLevel = (event: DragEvent, endLevel: Level) => {
   const startLevelId = Number(event.dataTransfer?.getData('levelId'))
-  addLevelConnection(startLevelId, Number(endLevel.id))
+  addLevelConnection(startLevelId, endLevel.levelId)
   event.preventDefault()
   return false
 }
 
 function onDrop(event: DragEvent, gridX: number, gridY: number) {
-  const levelId = event.dataTransfer?.getData('levelId')
-  const level = levels.value?.find((level) => level.id == levelId)
+  const levelId = Number(event.dataTransfer?.getData('levelId'))
+  const level = levels.value?.find((level) => level.levelId == levelId)
   if (level != null) {
     level.worldX = gridX
     level.worldY = gridY
@@ -227,7 +227,7 @@ const getXOffsetFor = (worldX: number): number => {
 
 const getWorldXFor = (levelId: number): number => {
   const level = levels.value?.find((level) => {
-    return level.id === levelId.toString()
+    return level.levelId === levelId
   }) as Level
 
   if (level == null) {
@@ -239,7 +239,7 @@ const getWorldXFor = (levelId: number): number => {
 
 const getWorldYFor = (levelId: number): number => {
   const worldY = levels.value?.find((level) => {
-    return level.id == levelId.toString()
+    return level.levelId == levelId
   })?.worldY
   return worldY ?? 0
 }
@@ -321,9 +321,9 @@ watch(route, fetchLevelConnections, { immediate: true })
       <!-- Actual levels -->
       <LevelButton
         v-for="(level, index) in levels"
-        :key="level.id"
-        :label="level.id.toString()"
-        :isSelected="level.id == selectedLevelId"
+        :key="level.levelId"
+        :label="level.levelId"
+        :isSelected="level.levelId == selectedLevelId"
         :style="`
                 top: ${getYOffsetFor(level.worldY)}px; 
                 left: ${getXOffsetFor(level.worldX)}px
@@ -336,7 +336,7 @@ watch(route, fetchLevelConnections, { immediate: true })
         @drag.self="dragHandler"
         @drop.prevent="onDropOnLevel($event, level)"
         @dragover.prevent
-        @click="buttonClick(level.id.toString())"
+        @click="buttonClick(level.levelId.toString())"
       />
     </div>
   </div>
