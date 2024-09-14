@@ -10,7 +10,6 @@ onMounted(async () => {
   try {
     const response = await axios.get(`/api/chapters`)
     chapters.value = response.data
-    console.log(response.data)
   } catch (error) {
     console.error('Error fetching chapter', error)
   } finally {
@@ -21,14 +20,14 @@ onMounted(async () => {
 
 <template>
   <h1
-    :class="`${$attrs.isExpanded ? 'opacity-100' : 'opacity-0'}`"
+    :class="`${$attrs.isSideBarOpen ? 'opacity-100' : 'opacity-0'}`"
     class="text text-white text-3xl font-extrabold mb-4 transition-opacity duration-75"
   >
     Nihongo Drop Level Editor
   </h1>
 
   <nav
-    :class="`${$attrs.isExpanded ? 'opacity-100' : 'opacity-0'}`"
+    :class="`${$attrs.isSideBarOpen ? 'opacity-100' : 'opacity-0'}`"
     class="transition-opacity duration-75 h-full"
   >
     <RouterLink

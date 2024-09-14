@@ -17,6 +17,8 @@ const searchInput = ref('')
 const isLoading = ref(false)
 
 const loadAllWords = async () => {
+  if(levelId.value == undefined) return
+
   isLoading.value = true
   try {
     const response = await axios.get(`/api/words?_limit=5000`)
@@ -29,6 +31,8 @@ const loadAllWords = async () => {
 }
 
 const loadLevelDetails = async () => {
+  if(levelId.value == undefined) return
+
   isLoading.value = true
   try {
     const response = await axios.get(`/api/levels/${levelId.value}`)
@@ -42,8 +46,10 @@ const loadLevelDetails = async () => {
 
 const loadLevelWords = async () => {
   levelId.value = route.query['levelid'] as String
-  isLoading.value = true
 
+  if(levelId.value == undefined) return
+
+  isLoading.value = true
   try {
     let levelWordsResponse = await axios.get(`/api/levelWords?levelId=${levelId.value}`)
     let wordsResponse = await axios.get('/api/words?_limit=5000')
@@ -110,8 +116,6 @@ const onSearchInputUpdated = (event: InputEvent) => {
   const filteredWords = allWords.value?.filter((word: Word) => {
     return word.english.toLocaleLowerCase().includes(newInput) || word.id == newInput
   })
-  console.log('new input' + newInput)
-  console.log('found words: ', filteredWords)
   searchResultWords.value = filteredWords
 }
 

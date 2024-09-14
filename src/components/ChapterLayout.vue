@@ -9,7 +9,11 @@ import { useRoute, useRouter } from 'vue-router'
 import LevelConnectionView from './LevelConnectionView.vue'
 
 const props = defineProps({
-  chapterId: String
+  chapterId: String,
+  onLevelSelected: {
+    type: Function,
+    required: true
+  }
 })
 
 // Width of one column
@@ -47,7 +51,6 @@ const snapX = ref(0)
 const snapY = ref(0)
 
 async function fetchLevels() {
-  console.log('loading for ' + props.chapterId)
   isLoading.value = true
   try {
     const response = await axios.get(`/api/levels?checkpointId=${props.chapterId}`)
@@ -68,7 +71,6 @@ async function fetchLevels() {
 }
 
 async function fetchLevelConnections() {
-  console.log('loading for ' + props.chapterId)
   isLoading.value = true
   try {
     const response = await axios.get(`/api/levelConnections?checkpointId=${props.chapterId}`)
@@ -81,13 +83,10 @@ async function fetchLevelConnections() {
 }
 
 async function updateLevel(level: Level) {
-  console.log('updating level')
   isLoading.value = true
   try {
     const response = await axios.put(`/api/levels/${level.id}`, level)
-    console.log('level updated')
   } catch (error) {
-    console.log(level)
     console.log('Failed to load level', error)
   } finally {
     isLoading.value = false
@@ -128,8 +127,16 @@ async function addLevelConnection(startLevelId: number, endLevelId: number) {
   }
 }
 
+const onRouteUpdate = () => {
+  const levelId = route.query['levelid'] as String
+  if (levelId == undefined) {
+    selectedLevelId.value = ''
+  }
+}
+
 const buttonClick = (levelId: string) => {
   selectedLevelId.value = levelId
+  props.onLevelSelected()
   router.push(`/chapters/${props.chapterId}?levelid=${levelId}`)
 }
 
@@ -198,7 +205,6 @@ function onDrop(event: DragEvent, gridX: number, gridY: number) {
 function onDragEnter(event: DragEvent) {
   event.preventDefault()
   const dropElement = event.target as HTMLDivElement
-  console.log('drag enter')
 
   snapX.value = dropElement.offsetLeft
   snapY.value = dropElement.parentElement?.offsetTop ?? 0
@@ -260,6 +266,7 @@ onMounted(() => {
   })
 })
 
+watch(route, onRouteUpdate, { immediate: true })
 watch(route, fetchLevels, { immediate: true })
 watch(route, fetchLevelConnections, { immediate: true })
 </script>
