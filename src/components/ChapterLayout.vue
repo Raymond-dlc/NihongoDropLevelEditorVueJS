@@ -85,7 +85,8 @@ async function fetchLevelConnections() {
 async function updateLevel(level: Level) {
   isLoading.value = true
   try {
-    const response = await axios.put(`/api/levels/${level.levelId}`, level)
+    const actualId = await (await axios.get(`/api/levels?levelId=${level.levelId}`)).data[0].id
+    const response = await axios.put(`/api/levels/${actualId}`, level)
   } catch (error) {
     console.log('Failed to load level', error)
   } finally {
