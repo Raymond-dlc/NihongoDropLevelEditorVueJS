@@ -5,7 +5,7 @@ const props = defineProps({
     type: Boolean
   },
   isClosable: {
-    defaut: false,
+    default: false,
     type: Boolean
   },
   onToggled: {

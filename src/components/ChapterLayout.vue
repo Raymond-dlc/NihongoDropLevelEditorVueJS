@@ -322,7 +322,7 @@ watch(route, fetchLevelConnections, { immediate: true })
       <LevelButton
         v-for="(level, index) in levels"
         :key="level.levelId"
-        :label="level.levelId"
+        :label="level.levelId.toString()"
         :isSelected="level.levelId == selectedLevelId"
         :style="`
                 top: ${getYOffsetFor(level.worldY)}px; 
