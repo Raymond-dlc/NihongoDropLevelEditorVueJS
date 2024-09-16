@@ -48,7 +48,6 @@ const onLevelSelected = () => {
 
 // Add a level, and open the sidebar
 async function addLevel() {
-  console.log('start')
   const latestLevel = await getLatestLevel()
   if (latestLevel == null) {
     return
@@ -58,23 +57,18 @@ async function addLevel() {
   const updated = await updateLevelType('normal', latestLevel)
   if (!updated) return
 
-  console.log(" increasing level ids")
   // Shift all other levels
   await increaseLevelIds(latestLevel.levelId.toString())
 
-  console.log("increaing level connectiosn")
   // Shift all other level connections
   await increaseLevelConnections(latestLevel.levelId.toString())
 
-  console.log("increaing level words")
   // Shift all other levelWords
   await increaseLevelWords(latestLevel.levelId.toString())
 
-  console.log("add new level")
   // Create level inside the current chapter.
   const newLevel = await addNewLevelBasedOnLatest(latestLevel)
 
-  console.log("now re-route")
   // Reroute with the new level to load the nav bar data.
   router.replace(`/chapters/${chapterId.value}?levelid=${newLevel.levelId}`) 
   
