@@ -9,6 +9,7 @@ import LevelDetails from '@/components/LevelDetails.vue'
 import type { Level } from '@/model/Level'
 import type { LevelConnection } from '@/model/LevelConnection'
 import type { LevelWord } from '@/model/LevelWord'
+import chapterService from '@/data/chapterService'
 
 const route = useRoute()
 const router = useRouter()
@@ -27,8 +28,8 @@ async function fetchChapter() {
   isSideBarOpen.value = false
 
   try {
-    const response = await axios.get(`/api/chapters/${chapterId.value}`)
-    chapter.value = response.data
+    const response = await axios.get(`/api/chapters?chapterId=${chapterId.value}`)
+    chapter.value = response.data[0]
   } catch (error) {
     console.log('Failed to load chapter', error)
   } finally {
@@ -44,6 +45,18 @@ const onSideBarToggled = () => {
 
 const onLevelSelected = () => {
   isSideBarOpen.value = true
+}
+
+const onSaveChapterTitle = async (event: KeyboardEvent) => {
+  console.log('time to update sir')
+  console.log(chapter.value)
+  if (chapter.value?.chapterId != undefined) {
+    console.log('we have level id')
+    const newTitle = event.target?.value ?? ''
+    await chapterService.updateChapterTitle(chapter.value?.chapterId, newTitle)
+
+    window.location.reload()
+  }
 }
 
 // Add a level, and open the sidebar
@@ -70,8 +83,8 @@ async function addLevel() {
   const newLevel = await addNewLevelBasedOnLatest(latestLevel)
 
   // Reroute with the new level to load the nav bar data.
-  router.replace(`/chapters/${chapterId.value}?levelid=${newLevel.levelId}`) 
-  
+  router.replace(`/chapters/${chapterId.value}?levelid=${newLevel.levelId}`)
+
   isSideBarOpen.value = true
 }
 
@@ -182,7 +195,7 @@ async function addNewLevelBasedOnLatest(latestLevel: Level): Promise<Level> {
   const addNewLevelResponse = await axios.post(`/api/levels`, newLevel)
   if (addNewLevelResponse.status < 300) {
     console.log('added new level')
-  } 
+  }
   return newLevel
 }
 watch(route, fetchChapter, { immediate: true })
@@ -192,9 +205,12 @@ watch(route, fetchChapter, { immediate: true })
   <main class="flex flex-1 flex-row h-dvh overflow-hidden bg-grey-100 px-8 pl-32 md:px-8">
     <div class="grow"></div>
     <div class="flex flex-col shrink h-dvh pb-8">
-      <h1 class="text text-center text-5xl text-extrabold mt-8 mb-8">
-        {{ chapter?.title }}
-      </h1>
+      <input
+        type="text"
+        class="text text-center text-5xl text-extrabold mt-8 mb-8"
+        :value="chapter?.title"
+        @keyup.enter="onSaveChapterTitle"
+      />
       <button
         @click="addLevel"
         class="self-start rounded-full bg-mint-green-100 outline mb-2 outline-2 outline-green-800 hover:bg-mint-green-500 px-4 py-3"

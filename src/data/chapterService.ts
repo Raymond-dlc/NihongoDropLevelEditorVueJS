@@ -20,7 +20,7 @@ export default {
         }
 
         const newChapter: Chapter = {
-            id: null,
+            id: undefined,
             chapterId: lastChapter.chapterId + 1,
             description: "New Chapter description",
             title: "New Chapter"
@@ -37,5 +37,11 @@ export default {
         }
 
         return newChapter
+    },
+
+    async updateChapterTitle(chapterId: Number, newTitle: string) {
+        const toUpdateChapter = (await axios.get(`/api/chapters?chapterId=${chapterId}`)).data[0] as Chapter
+        toUpdateChapter.title = newTitle
+        await axios.put(`/api/chapters/${toUpdateChapter.id}`, toUpdateChapter)
     }
 }
