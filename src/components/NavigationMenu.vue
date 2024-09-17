@@ -2,14 +2,14 @@
 import { onMounted, ref, useSlots } from 'vue'
 import axios from 'axios'
 import type { Chapter } from '@/model/Chapter'
-import chapterService from '@/data/chapterService'
+import ChapterService from '@/data/ChapterService'
 import router from '@/router'
 
 const isLoadingChapters = ref(true)
 const chapters = ref<Chapter[]>()
 
 const addChapter = async () => {
-  const newChapter = await chapterService.addNewChapter()
+  const newChapter = await ChapterService.addNewChapter()
   router.push(`/chapters/${newChapter.chapterId}`)
   loadChapters()
 }
