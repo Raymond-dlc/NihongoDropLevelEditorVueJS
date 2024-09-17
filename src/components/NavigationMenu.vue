@@ -2,11 +2,19 @@
 import { onMounted, ref, useSlots } from 'vue'
 import axios from 'axios'
 import type { Chapter } from '@/model/Chapter'
+import chapterService from '@/data/chapterService'
+import router from '@/router'
 
 const isLoadingChapters = ref(true)
 const chapters = ref<Chapter[]>()
 
-onMounted(async () => {
+const addChapter = async () => {
+  const newChapter = await chapterService.addNewChapter()
+  router.push(`/chapters/${newChapter.chapterId}`)
+  loadChapters()
+}
+
+const loadChapters = async () => {
   try {
     const response = await axios.get(`/api/chapters`)
     chapters.value = response.data
@@ -15,7 +23,9 @@ onMounted(async () => {
   } finally {
     isLoadingChapters.value = false
   }
-})
+}
+
+onMounted(loadChapters)
 </script>
 
 <template>
@@ -36,16 +46,24 @@ onMounted(async () => {
     >
       Words
     </RouterLink>
-    <p class="text text-xl text-mint-green-400">Chapters</p>
+    <div class="mt-4">
+      <span class="text text-xl text-white">Chapters</span>
+      <button
+        class="ml-5 rounded-full w-6 h-6 outline outline-2 outline-mint-green-400 hover:outline-mint-green-700"
+        @click="addChapter"
+      >
+        <span class="text text-mint-green-400 text-l hover:text-mint-green-700">+</span>
+      </button>
+    </div>
     <ul>
       <li
         class="ml-4 w-full flex"
         v-for="chapter in chapters"
-        :key="chapter.id"
+        :key="chapter.chapterId"
       >
         <RouterLink
           class="text text-mint-green-400 hover:text-mint-green-700 h-full w-full py-2 transition-*"
-          :to="`/chapters/${chapter.id}`"
+          :to="`/chapters/${chapter.chapterId}`"
         >
           {{ chapter.title }}
         </RouterLink>

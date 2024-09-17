@@ -1,5 +1,6 @@
 export interface Chapter {
-    id: number,
+    id: number | null,
+    chapterId: number,
     title: string,
     description: string
 }
