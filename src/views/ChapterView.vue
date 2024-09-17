@@ -70,8 +70,9 @@ async function addLevel() {
   const newLevel = await addNewLevelBasedOnLatest(latestLevel)
 
   // Reroute with the new level to load the nav bar data.
+  router.replace(`/chapters/${chapterId.value}?levelid=${newLevel.levelId}`) 
+  
   isSideBarOpen.value = true
-  router.push(`/chapters/${chapterId.value}?levelId=${newLevel.levelId}`)
 }
 
 async function increaseLevelIds(latestLevelId: string) {
@@ -145,19 +146,21 @@ async function increaseLevelWords(latestLevelId: string) {
 async function getLatestLevel(): Promise<Level | null> {
   const getLevelsResponse = await axios.get(`/api/levels?checkpointId=${chapterId.value}`)
 
-  if (getLevelsResponse.status != 200) return null
+  if (getLevelsResponse.status >= 300) return null
 
   const currentChapterLevels = getLevelsResponse.data as Level[]
   const latestLevel = currentChapterLevels.reduce((prev, current) => {
-    return Number(current.id) > Number(prev.id) ? current : prev
+    return Number(current.levelId) > Number(prev.levelId) ? current : prev
   })
+
   return latestLevel
 }
 
 async function updateLevelType(type: string, level: Level): Promise<Boolean> {
   level.type = type
-  const updateLatestLevelTypeResponse = await axios.put(`/api/levels/${level.levelId}`, level)
-  if (updateLatestLevelTypeResponse.status == 200) {
+  const actualId = await (await axios.get(`/api/levels?levelId=${level.levelId}`)).data[0].id
+  const updateLatestLevelTypeResponse = await axios.put(`/api/levels/${actualId}`, level)
+  if (updateLatestLevelTypeResponse.status < 300) {
     console.log('updated latest level')
     return true
   } else {
@@ -177,9 +180,9 @@ async function addNewLevelBasedOnLatest(latestLevel: Level): Promise<Level> {
   }
 
   const addNewLevelResponse = await axios.post(`/api/levels`, newLevel)
-  if (addNewLevelResponse.status == 200) {
+  if (addNewLevelResponse.status < 300) {
     console.log('added new level')
-  }
+  } 
   return newLevel
 }
 watch(route, fetchChapter, { immediate: true })
