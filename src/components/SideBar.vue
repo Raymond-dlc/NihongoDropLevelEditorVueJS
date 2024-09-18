@@ -21,8 +21,8 @@ const props = defineProps({
 
 <template>
   <aside
-    :class="`${props.isSideBarOpen ? 'w-80' : isClosable ? 'w-0 opacity-0' : 'w-24 hover:w-32'}`"
-    class="flex flex-col shrink-0 z-[9999999] bg-sakura overflow-auto no-scrollbar p-8 h-dvh duration-300 ease-in-out fixed md:static md:z-50"
+    :class="`${props.isSideBarOpen ? 'w-80  p-8' : isClosable ? 'w-0 opacity-0' : 'w-24 hover:w-32'}`"
+    class="flex flex-col z-[9999999] shrink-0 bg-sakura overflow-auto no-scrollbar h-dvh duration-300 ease-in-out fixed md:static md:z-50"
   >
     <div class="relative">
       <img

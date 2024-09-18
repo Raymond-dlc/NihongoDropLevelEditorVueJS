@@ -11,6 +11,7 @@ import type { LevelConnection } from '@/model/LevelConnection'
 import type { LevelWord } from '@/model/LevelWord'
 import ChapterService from '@/data/ChapterService'
 import LevelService from '@/data/LevelService'
+import ChapterDetailsSideBarContent from '@/components/ChapterDetailsSideBarContent.vue'
 
 const route = useRoute()
 const router = useRouter()
@@ -19,6 +20,7 @@ const chapterId = ref<string>('')
 const isLoading = ref<boolean>(false)
 const chapter = ref<Chapter>()
 const isSideBarOpen = ref<boolean>(false)
+const isChapterSideBarOpen = ref<boolean>(false)
 
 async function fetchChapter() {
   const newChapterId = route.params.id as string
@@ -38,21 +40,37 @@ async function fetchChapter() {
   }
 }
 
+const updateChapterDescription = async (newDescription: string) => {
+  if (chapter.value?.chapterId) {
+    const newChapter = await ChapterService.updateChapterDescription(chapter.value?.chapterId, newDescription)
+    chapter.value = newChapter
+  }
+}
+
 const onSideBarToggled = () => {
   isSideBarOpen.value = !isSideBarOpen.value
 
   router.push(`/chapters/${chapterId.value}`)
 }
 
+const onCloseChapterSideBar = () => {
+  isChapterSideBarOpen.value = false
+}
+
 const onLevelSelected = () => {
   isSideBarOpen.value = true
+  isChapterSideBarOpen.value = false
+}
+
+const onEditChapterClicked = () => {
+  isChapterSideBarOpen.value = true
+  isSideBarOpen.value = false
+  router.push(`/chapters/${chapterId.value}`)
 }
 
 const onSaveChapterTitle = async (event: KeyboardEvent) => {
-  console.log('time to update sir')
   console.log(chapter.value)
   if (chapter.value?.chapterId != undefined) {
-    console.log('we have level id')
     const newTitle = event.target?.value ?? ''
     await ChapterService.updateChapterTitle(chapter.value?.chapterId, newTitle)
 
@@ -65,14 +83,12 @@ async function addLevel() {
   var isFirstLevelInChapter = false
   var latestLevel = await LevelService.getLatestLevelForChapter(chapterId.value)
   if (latestLevel == null) {
-    console.log("no levels in this chapter, falling back to the latest latest")
     isFirstLevelInChapter = true
     latestLevel = await LevelService.getLatestLevel()
   }
 
   if (latestLevel == null) {
-    console.log("No level found at all")
-    return 
+    return
   }
 
   // Update current latest level to not be checkpoint anymore.
@@ -171,7 +187,6 @@ async function getLatestLevel(): Promise<Level | null> {
   if (getLevelsResponse.status >= 300) return null
   const currentChapterLevels = getLevelsResponse.data as Level[]
 
-
   const latestLevel = currentChapterLevels.reduce((prev, current) => {
     return Number(current.levelId) > Number(prev.levelId) ? current : prev
   })
@@ -197,7 +212,7 @@ async function addNewLevelBasedOnLatest(latestLevel: Level, isFirstLevelInChapte
     id: undefined,
     levelId: latestLevel.levelId + 1,
     worldX: isFirstLevelInChapter ? 1 : latestLevel.worldX,
-    worldY: isFirstLevelInChapter ? 0 :latestLevel.worldY + 1,
+    worldY: isFirstLevelInChapter ? 0 : latestLevel.worldY + 1,
     checkpointId: chapterId.value,
     type: 'checkpoint'
   }
@@ -215,12 +230,20 @@ watch(route, fetchChapter, { immediate: true })
   <main class="flex flex-1 flex-row h-dvh overflow-hidden bg-grey-100 px-8 pl-32 md:px-8">
     <div class="grow"></div>
     <div class="flex flex-col shrink h-dvh pb-8">
-      <input
-        type="text"
-        class="text text-center text-5xl text-extrabold mt-8 mb-8"
-        :value="chapter?.title"
-        @keyup.enter="onSaveChapterTitle"
-      />
+      <div class="flex flex-row">
+        <input
+          type="text"
+          class="w-20 flex-auto text text-center text-5xl text-extrabold mt-8 mb-8"
+          :value="chapter?.title"
+          @keyup.enter="onSaveChapterTitle"
+        />
+        <button
+          class="px-8"
+          @click="onEditChapterClicked"
+        >
+          <span class="material-symbols-outlined"> edit </span>
+        </button>
+      </div>
       <button
         @click="addLevel"
         class="self-start rounded-full bg-mint-green-100 outline mb-2 outline-2 outline-green-800 hover:bg-mint-green-500 px-4 py-3"
@@ -248,6 +271,27 @@ watch(route, fetchChapter, { immediate: true })
         "
       >
         <LevelDetails />
+      </SideBar>
+    </div>
+    <div class="absolute right-0 top-0">
+      <SideBar
+        :is-closable="true"
+        :is-side-bar-open="isChapterSideBarOpen"
+        :on-toggled="
+          () => {
+            onCloseChapterSideBar()
+          }
+        "
+      >
+        <ChapterDetailsSideBarContent
+          v-if="chapter != undefined"
+          :chapter="chapter!!"
+          :onChapterDescriptionUpdated="
+            (newDescription: string) => {
+              updateChapterDescription(newDescription)
+            }
+          "
+        />
       </SideBar>
     </div>
   </main>

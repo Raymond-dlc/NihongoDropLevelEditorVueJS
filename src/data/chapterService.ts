@@ -43,5 +43,12 @@ export default {
         const toUpdateChapter = (await axios.get(`/api/chapters?chapterId=${chapterId}`)).data[0] as Chapter
         toUpdateChapter.title = newTitle
         await axios.put(`/api/chapters/${toUpdateChapter.id}`, toUpdateChapter)
+    },
+
+    async updateChapterDescription(chapterId: Number, newDescription: string): Promise<Chapter> {
+        const toUpdateChapter = (await axios.get(`/api/chapters?chapterId=${chapterId}`)).data[0] as Chapter
+        toUpdateChapter.description = newDescription
+        await axios.put(`/api/chapters/${toUpdateChapter.id}`, toUpdateChapter)
+        return toUpdateChapter
     }
 }
