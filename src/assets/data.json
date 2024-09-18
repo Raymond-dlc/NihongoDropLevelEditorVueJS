@@ -5689,1250 +5689,2498 @@
     {
       "id": "0",
       "japanese": "あ",
+      "furigana": "",
       "english": "a",
-      "furigana": ""
+      "dutch": "a",
+      "swedish": "a",
+      "spanish": "a",
+      "portuguese": "a",
+      "french": "a",
+      "hindi": "a"
     },
     {
       "id": "1",
       "japanese": "い",
+      "furigana": "",
       "english": "i",
-      "furigana": ""
+      "dutch": "i",
+      "swedish": "i",
+      "spanish": "i",
+      "portuguese": "i",
+      "french": "i",
+      "hindi": "i"
     },
     {
       "id": "2",
       "japanese": "う",
+      "furigana": "",
       "english": "u",
-      "furigana": ""
+      "dutch": "u",
+      "swedish": "u",
+      "spanish": "u",
+      "portuguese": "u",
+      "french": "u",
+      "hindi": "u"
     },
     {
       "id": "3",
       "japanese": "え",
+      "furigana": "",
       "english": "e",
-      "furigana": ""
+      "dutch": "e",
+      "swedish": "e",
+      "spanish": "e",
+      "portuguese": "e",
+      "french": "e",
+      "hindi": "e"
     },
     {
       "id": "4",
       "japanese": "お",
+      "furigana": "",
       "english": "o",
-      "furigana": ""
+      "dutch": "o",
+      "swedish": "o",
+      "spanish": "o",
+      "portuguese": "o",
+      "french": "o",
+      "hindi": "o"
     },
     {
       "id": "5",
       "japanese": "か",
+      "furigana": "",
       "english": "ka",
-      "furigana": ""
+      "dutch": "ka",
+      "swedish": "ka",
+      "spanish": "ka",
+      "portuguese": "ka",
+      "french": "ka",
+      "hindi": "ka"
     },
     {
       "id": "6",
       "japanese": "き",
+      "furigana": "",
       "english": "ki",
-      "furigana": ""
+      "dutch": "ki",
+      "swedish": "ki",
+      "spanish": "ki",
+      "portuguese": "ki",
+      "french": "ki",
+      "hindi": "ki"
     },
     {
       "id": "7",
       "japanese": "く",
+      "furigana": "",
       "english": "ku",
-      "furigana": ""
+      "dutch": "ku",
+      "swedish": "ku",
+      "spanish": "ku",
+      "portuguese": "ku",
+      "french": "ku",
+      "hindi": "ku"
     },
     {
       "id": "8",
       "japanese": "け",
+      "furigana": "",
       "english": "ke",
-      "furigana": ""
+      "dutch": "ke",
+      "swedish": "ke",
+      "spanish": "ke",
+      "portuguese": "ke",
+      "french": "ke",
+      "hindi": "ke"
     },
     {
       "id": "9",
       "japanese": "こ",
+      "furigana": "",
       "english": "ko",
-      "furigana": ""
+      "dutch": "ko",
+      "swedish": "ko",
+      "spanish": "ko",
+      "portuguese": "ko",
+      "french": "ko",
+      "hindi": "ko"
     },
     {
       "id": "10",
       "japanese": "が",
+      "furigana": "",
       "english": "ga",
-      "furigana": ""
+      "dutch": "ga",
+      "swedish": "ga",
+      "spanish": "ga",
+      "portuguese": "ga",
+      "french": "ga",
+      "hindi": "ga"
     },
     {
       "id": "11",
       "japanese": "ぎ",
+      "furigana": "",
       "english": "gi",
-      "furigana": ""
+      "dutch": "gi",
+      "swedish": "gi",
+      "spanish": "gi",
+      "portuguese": "gi",
+      "french": "gi",
+      "hindi": "gi"
     },
     {
       "id": "12",
       "japanese": "ぐ",
+      "furigana": "",
       "english": "gu",
-      "furigana": ""
+      "dutch": "gu",
+      "swedish": "gu",
+      "spanish": "gu",
+      "portuguese": "gu",
+      "french": "gu",
+      "hindi": "gu"
     },
     {
       "id": "13",
       "japanese": "げ",
+      "furigana": "",
       "english": "ge",
-      "furigana": ""
+      "dutch": "ge",
+      "swedish": "ge",
+      "spanish": "ge",
+      "portuguese": "ge",
+      "french": "ge",
+      "hindi": "ge"
     },
     {
       "id": "14",
       "japanese": "ご",
+      "furigana": "",
       "english": "go",
-      "furigana": ""
+      "dutch": "go",
+      "swedish": "go",
+      "spanish": "go",
+      "portuguese": "go",
+      "french": "go",
+      "hindi": "go"
     },
     {
       "id": "15",
       "japanese": "さ",
+      "furigana": "",
       "english": "sa",
-      "furigana": ""
+      "dutch": "sa",
+      "swedish": "sa",
+      "spanish": "sa",
+      "portuguese": "sa",
+      "french": "sa",
+      "hindi": "sa"
     },
     {
       "id": "16",
       "japanese": "し",
+      "furigana": "",
       "english": "shi",
-      "furigana": ""
+      "dutch": "shi",
+      "swedish": "shi",
+      "spanish": "shi",
+      "portuguese": "shi",
+      "french": "shi",
+      "hindi": "shi"
     },
     {
       "id": "17",
       "japanese": "す",
+      "furigana": "",
       "english": "su",
-      "furigana": ""
+      "dutch": "su",
+      "swedish": "su",
+      "spanish": "su",
+      "portuguese": "su",
+      "french": "su",
+      "hindi": "su"
     },
     {
       "id": "18",
       "japanese": "せ",
+      "furigana": "",
       "english": "se",
-      "furigana": ""
+      "dutch": "se",
+      "swedish": "se",
+      "spanish": "se",
+      "portuguese": "se",
+      "french": "se",
+      "hindi": "se"
     },
     {
       "id": "19",
       "japanese": "そ",
+      "furigana": "",
       "english": "so",
-      "furigana": ""
+      "dutch": "so",
+      "swedish": "so",
+      "spanish": "so",
+      "portuguese": "so",
+      "french": "so",
+      "hindi": "so"
     },
     {
       "id": "20",
       "japanese": "ざ",
+      "furigana": "",
       "english": "za",
-      "furigana": ""
+      "dutch": "za",
+      "swedish": "za",
+      "spanish": "za",
+      "portuguese": "za",
+      "french": "za",
+      "hindi": "za"
     },
     {
       "id": "21",
       "japanese": "じ",
+      "furigana": "",
       "english": "ji",
-      "furigana": ""
+      "dutch": "ji",
+      "swedish": "ji",
+      "spanish": "ji",
+      "portuguese": "ji",
+      "french": "ji",
+      "hindi": "ji"
     },
     {
       "id": "22",
       "japanese": "ず",
+      "furigana": "",
       "english": "zu",
-      "furigana": ""
+      "dutch": "zu",
+      "swedish": "zu",
+      "spanish": "zu",
+      "portuguese": "zu",
+      "french": "zu",
+      "hindi": "zu"
     },
     {
       "id": "23",
       "japanese": "ぜ",
+      "furigana": "",
       "english": "ze",
-      "furigana": ""
+      "dutch": "ze",
+      "swedish": "ze",
+      "spanish": "ze",
+      "portuguese": "ze",
+      "french": "ze",
+      "hindi": "ze"
     },
     {
       "id": "24",
       "japanese": "ぞ",
+      "furigana": "",
       "english": "zo",
-      "furigana": ""
+      "dutch": "zo",
+      "swedish": "zo",
+      "spanish": "zo",
+      "portuguese": "zo",
+      "french": "zo",
+      "hindi": "zo"
     },
     {
       "id": "25",
       "japanese": "た",
+      "furigana": "",
       "english": "ta",
-      "furigana": ""
+      "dutch": "ta",
+      "swedish": "ta",
+      "spanish": "ta",
+      "portuguese": "ta",
+      "french": "ta",
+      "hindi": "ta"
     },
     {
       "id": "26",
       "japanese": "ち",
+      "furigana": "",
       "english": "chi",
-      "furigana": ""
+      "dutch": "chi",
+      "swedish": "chi",
+      "spanish": "chi",
+      "portuguese": "chi",
+      "french": "chi",
+      "hindi": "chi"
     },
     {
       "id": "27",
       "japanese": "つ",
+      "furigana": "",
       "english": "tsu",
-      "furigana": ""
+      "dutch": "tsu",
+      "swedish": "tsu",
+      "spanish": "tsu",
+      "portuguese": "tsu",
+      "french": "tsu",
+      "hindi": "tsu"
     },
     {
       "id": "28",
       "japanese": "て",
+      "furigana": "",
       "english": "te",
-      "furigana": ""
+      "dutch": "te",
+      "swedish": "te",
+      "spanish": "te",
+      "portuguese": "te",
+      "french": "te",
+      "hindi": "te"
     },
     {
       "id": "29",
       "japanese": "と",
+      "furigana": "",
       "english": "to",
-      "furigana": ""
+      "dutch": "to",
+      "swedish": "to",
+      "spanish": "to",
+      "portuguese": "to",
+      "french": "to",
+      "hindi": "to"
     },
     {
       "id": "30",
       "japanese": "だ",
+      "furigana": "",
       "english": "da",
-      "furigana": ""
+      "dutch": "da",
+      "swedish": "da",
+      "spanish": "da",
+      "portuguese": "da",
+      "french": "da",
+      "hindi": "da"
     },
     {
       "id": "31",
       "japanese": "ぢ",
+      "furigana": "",
       "english": "ji",
-      "furigana": ""
+      "dutch": "ji",
+      "swedish": "ji",
+      "spanish": "ji",
+      "portuguese": "ji",
+      "french": "ji",
+      "hindi": "ji"
     },
     {
       "id": "32",
       "japanese": "づ",
+      "furigana": "",
       "english": "zu",
-      "furigana": ""
+      "dutch": "zu",
+      "swedish": "zu",
+      "spanish": "zu",
+      "portuguese": "zu",
+      "french": "zu",
+      "hindi": "zu"
     },
     {
       "id": "33",
       "japanese": "で",
+      "furigana": "",
       "english": "de",
-      "furigana": ""
+      "dutch": "de",
+      "swedish": "de",
+      "spanish": "de",
+      "portuguese": "de",
+      "french": "de",
+      "hindi": "de"
     },
     {
       "id": "34",
       "japanese": "ど",
+      "furigana": "",
       "english": "do",
-      "furigana": ""
+      "dutch": "do",
+      "swedish": "do",
+      "spanish": "do",
+      "portuguese": "do",
+      "french": "do",
+      "hindi": "do"
     },
     {
       "id": "35",
       "japanese": "な",
+      "furigana": "",
       "english": "na",
-      "furigana": ""
+      "dutch": "na",
+      "swedish": "na",
+      "spanish": "na",
+      "portuguese": "na",
+      "french": "na",
+      "hindi": "na"
     },
     {
       "id": "36",
       "japanese": "に",
+      "furigana": "",
       "english": "ni",
-      "furigana": ""
+      "dutch": "ni",
+      "swedish": "ni",
+      "spanish": "ni",
+      "portuguese": "ni",
+      "french": "ni",
+      "hindi": "ni"
     },
     {
       "id": "37",
       "japanese": "ぬ",
+      "furigana": "",
       "english": "nu",
-      "furigana": ""
+      "dutch": "nu",
+      "swedish": "nu",
+      "spanish": "nu",
+      "portuguese": "nu",
+      "french": "nu",
+      "hindi": "nu"
     },
     {
       "id": "38",
       "japanese": "ね",
+      "furigana": "",
       "english": "ne",
-      "furigana": ""
+      "dutch": "ne",
+      "swedish": "ne",
+      "spanish": "ne",
+      "portuguese": "ne",
+      "french": "ne",
+      "hindi": "ne"
     },
     {
       "id": "39",
       "japanese": "の",
+      "furigana": "",
       "english": "no",
-      "furigana": ""
+      "dutch": "no",
+      "swedish": "no",
+      "spanish": "no",
+      "portuguese": "no",
+      "french": "no",
+      "hindi": "no"
     },
     {
       "id": "40",
       "japanese": "は",
+      "furigana": "",
       "english": "ha",
-      "furigana": ""
+      "dutch": "ha",
+      "swedish": "ha",
+      "spanish": "ha",
+      "portuguese": "ha",
+      "french": "ha",
+      "hindi": "ha"
     },
     {
       "id": "41",
       "japanese": "ひ",
+      "furigana": "",
       "english": "hi",
-      "furigana": ""
+      "dutch": "hi",
+      "swedish": "hi",
+      "spanish": "hi",
+      "portuguese": "hi",
+      "french": "hi",
+      "hindi": "hi"
     },
     {
       "id": "42",
       "japanese": "ふ",
+      "furigana": "",
       "english": "fu",
-      "furigana": ""
+      "dutch": "fu",
+      "swedish": "fu",
+      "spanish": "fu",
+      "portuguese": "fu",
+      "french": "fu",
+      "hindi": "fu"
     },
     {
       "id": "43",
       "japanese": "へ",
+      "furigana": "",
       "english": "he",
-      "furigana": ""
+      "dutch": "he",
+      "swedish": "he",
+      "spanish": "he",
+      "portuguese": "he",
+      "french": "he",
+      "hindi": "he"
     },
     {
       "id": "44",
       "japanese": "ほ",
+      "furigana": "",
       "english": "ho",
-      "furigana": ""
+      "dutch": "ho",
+      "swedish": "ho",
+      "spanish": "ho",
+      "portuguese": "ho",
+      "french": "ho",
+      "hindi": "ho"
     },
     {
       "id": "45",
       "japanese": "ば",
+      "furigana": "",
       "english": "ba",
-      "furigana": ""
+      "dutch": "ba",
+      "swedish": "ba",
+      "spanish": "ba",
+      "portuguese": "ba",
+      "french": "ba",
+      "hindi": "ba"
     },
     {
       "id": "46",
       "japanese": "び",
+      "furigana": "",
       "english": "bi",
-      "furigana": ""
+      "dutch": "bi",
+      "swedish": "bi",
+      "spanish": "bi",
+      "portuguese": "bi",
+      "french": "bi",
+      "hindi": "bi"
     },
     {
       "id": "47",
       "japanese": "ぶ",
+      "furigana": "",
       "english": "bu",
-      "furigana": ""
+      "dutch": "bu",
+      "swedish": "bu",
+      "spanish": "bu",
+      "portuguese": "bu",
+      "french": "bu",
+      "hindi": "bu"
     },
     {
       "id": "48",
       "japanese": "べ",
+      "furigana": "",
       "english": "be",
-      "furigana": ""
+      "dutch": "be",
+      "swedish": "be",
+      "spanish": "be",
+      "portuguese": "be",
+      "french": "be",
+      "hindi": "be"
     },
     {
       "id": "49",
       "japanese": "ぼ",
+      "furigana": "",
       "english": "bo",
-      "furigana": ""
+      "dutch": "bo",
+      "swedish": "bo",
+      "spanish": "bo",
+      "portuguese": "bo",
+      "french": "bo",
+      "hindi": "bo"
     },
     {
       "id": "50",
       "japanese": "ぱ",
+      "furigana": "",
       "english": "pa",
-      "furigana": ""
+      "dutch": "pa",
+      "swedish": "pa",
+      "spanish": "pa",
+      "portuguese": "pa",
+      "french": "pa",
+      "hindi": "pa"
     },
     {
       "id": "51",
       "japanese": "ぴ",
+      "furigana": "",
       "english": "pi",
-      "furigana": ""
+      "dutch": "pi",
+      "swedish": "pi",
+      "spanish": "pi",
+      "portuguese": "pi",
+      "french": "pi",
+      "hindi": "pi"
     },
     {
       "id": "52",
       "japanese": "ぷ",
+      "furigana": "",
       "english": "pu",
-      "furigana": ""
+      "dutch": "pu",
+      "swedish": "pu",
+      "spanish": "pu",
+      "portuguese": "pu",
+      "french": "pu",
+      "hindi": "pu"
     },
     {
       "id": "53",
       "japanese": "ぺ",
+      "furigana": "",
       "english": "pe",
-      "furigana": ""
+      "dutch": "pe",
+      "swedish": "pe",
+      "spanish": "pe",
+      "portuguese": "pe",
+      "french": "pe",
+      "hindi": "pe"
     },
     {
       "id": "54",
       "japanese": "ぽ",
+      "furigana": "",
       "english": "po",
-      "furigana": ""
+      "dutch": "po",
+      "swedish": "po",
+      "spanish": "po",
+      "portuguese": "po",
+      "french": "po",
+      "hindi": "po"
     },
     {
       "id": "55",
       "japanese": "ま",
+      "furigana": "",
       "english": "ma",
-      "furigana": ""
+      "dutch": "ma",
+      "swedish": "ma",
+      "spanish": "ma",
+      "portuguese": "ma",
+      "french": "ma",
+      "hindi": "ma"
     },
     {
       "id": "56",
       "japanese": "み",
+      "furigana": "",
       "english": "mi",
-      "furigana": ""
+      "dutch": "mi",
+      "swedish": "mi",
+      "spanish": "mi",
+      "portuguese": "mi",
+      "french": "mi",
+      "hindi": "mi"
     },
     {
       "id": "57",
       "japanese": "む",
+      "furigana": "",
       "english": "mu",
-      "furigana": ""
+      "dutch": "mu",
+      "swedish": "mu",
+      "spanish": "mu",
+      "portuguese": "mu",
+      "french": "mu",
+      "hindi": "mu"
     },
     {
       "id": "58",
       "japanese": "め",
+      "furigana": "",
       "english": "me",
-      "furigana": ""
+      "dutch": "me",
+      "swedish": "me",
+      "spanish": "me",
+      "portuguese": "me",
+      "french": "me",
+      "hindi": "me"
     },
     {
       "id": "59",
       "japanese": "も",
+      "furigana": "",
       "english": "mo",
-      "furigana": ""
+      "dutch": "mo",
+      "swedish": "mo",
+      "spanish": "mo",
+      "portuguese": "mo",
+      "french": "mo",
+      "hindi": "mo"
     },
     {
       "id": "60",
       "japanese": "や",
+      "furigana": "",
       "english": "ya",
-      "furigana": ""
+      "dutch": "ya",
+      "swedish": "ya",
+      "spanish": "ya",
+      "portuguese": "ya",
+      "french": "ya",
+      "hindi": "ya"
     },
     {
       "id": "61",
       "japanese": "ゆ",
+      "furigana": "",
       "english": "yu",
-      "furigana": ""
+      "dutch": "yu",
+      "swedish": "yu",
+      "spanish": "yu",
+      "portuguese": "yu",
+      "french": "yu",
+      "hindi": "yu"
     },
     {
       "id": "62",
       "japanese": "よ",
+      "furigana": "",
       "english": "yo",
-      "furigana": ""
+      "dutch": "yo",
+      "swedish": "yo",
+      "spanish": "yo",
+      "portuguese": "yo",
+      "french": "yo",
+      "hindi": "yo"
     },
     {
       "id": "63",
       "japanese": "ら",
+      "furigana": "",
       "english": "ra",
-      "furigana": ""
+      "dutch": "ra",
+      "swedish": "ra",
+      "spanish": "ra",
+      "portuguese": "ra",
+      "french": "ra",
+      "hindi": "ra"
     },
     {
       "id": "64",
       "japanese": "り",
+      "furigana": "",
       "english": "ri",
-      "furigana": ""
+      "dutch": "ri",
+      "swedish": "ri",
+      "spanish": "ri",
+      "portuguese": "ri",
+      "french": "ri",
+      "hindi": "ri"
     },
     {
       "id": "65",
       "japanese": "る",
+      "furigana": "",
       "english": "ru",
-      "furigana": ""
+      "dutch": "ru",
+      "swedish": "ru",
+      "spanish": "ru",
+      "portuguese": "ru",
+      "french": "ru",
+      "hindi": "ru"
     },
     {
       "id": "66",
       "japanese": "れ",
+      "furigana": "",
       "english": "re",
-      "furigana": ""
+      "dutch": "re",
+      "swedish": "re",
+      "spanish": "re",
+      "portuguese": "re",
+      "french": "re",
+      "hindi": "re"
     },
     {
       "id": "67",
       "japanese": "ろ",
+      "furigana": "",
       "english": "ro",
-      "furigana": ""
+      "dutch": "ro",
+      "swedish": "ro",
+      "spanish": "ro",
+      "portuguese": "ro",
+      "french": "ro",
+      "hindi": "ro"
     },
     {
       "id": "68",
       "japanese": "わ",
+      "furigana": "",
       "english": "wa",
-      "furigana": ""
+      "dutch": "wa",
+      "swedish": "wa",
+      "spanish": "wa",
+      "portuguese": "wa",
+      "french": "wa",
+      "hindi": "wa"
     },
     {
       "id": "69",
       "japanese": "を",
+      "furigana": "",
       "english": "o",
-      "furigana": ""
+      "dutch": "o",
+      "swedish": "o",
+      "spanish": "o",
+      "portuguese": "o",
+      "french": "o",
+      "hindi": "o"
     },
     {
       "id": "70",
       "japanese": "ん",
+      "furigana": "",
       "english": "n",
-      "furigana": ""
+      "dutch": "n",
+      "swedish": "n",
+      "spanish": "n",
+      "portuguese": "n",
+      "french": "n",
+      "hindi": "n"
     },
     {
       "id": "71",
       "japanese": "きゃ",
+      "furigana": "",
       "english": "kya",
-      "furigana": ""
+      "dutch": "kya",
+      "swedish": "kya",
+      "spanish": "kya",
+      "portuguese": "kya",
+      "french": "kya",
+      "hindi": "kya"
     },
     {
       "id": "72",
       "japanese": "きゅ",
+      "furigana": "",
       "english": "kyu",
-      "furigana": ""
+      "dutch": "kyu",
+      "swedish": "kyu",
+      "spanish": "kyu",
+      "portuguese": "kyu",
+      "french": "kyu",
+      "hindi": "kyu"
     },
     {
       "id": "73",
       "japanese": "きょ",
+      "furigana": "",
       "english": "kyo",
-      "furigana": ""
+      "dutch": "kyo",
+      "swedish": "kyo",
+      "spanish": "kyo",
+      "portuguese": "kyo",
+      "french": "kyo",
+      "hindi": "kyo"
     },
     {
       "id": "74",
       "japanese": "ぎゃ",
+      "furigana": "",
       "english": "gya",
-      "furigana": ""
+      "dutch": "gya",
+      "swedish": "gya",
+      "spanish": "gya",
+      "portuguese": "gya",
+      "french": "gya",
+      "hindi": "gya"
     },
     {
       "id": "75",
       "japanese": "ぎゅ",
+      "furigana": "",
       "english": "gyu",
-      "furigana": ""
+      "dutch": "gyu",
+      "swedish": "gyu",
+      "spanish": "gyu",
+      "portuguese": "gyu",
+      "french": "gyu",
+      "hindi": "gyu"
     },
     {
       "id": "76",
       "japanese": "ぎょ",
+      "furigana": "",
       "english": "gyo",
-      "furigana": ""
+      "dutch": "gyo",
+      "swedish": "gyo",
+      "spanish": "gyo",
+      "portuguese": "gyo",
+      "french": "gyo",
+      "hindi": "gyo"
     },
     {
       "id": "77",
       "japanese": "しゃ",
+      "furigana": "",
       "english": "sha",
-      "furigana": ""
+      "dutch": "sha",
+      "swedish": "sha",
+      "spanish": "sha",
+      "portuguese": "sha",
+      "french": "sha",
+      "hindi": "sha"
     },
     {
       "id": "78",
       "japanese": "しゅ",
+      "furigana": "",
       "english": "shu",
-      "furigana": ""
+      "dutch": "shu",
+      "swedish": "shu",
+      "spanish": "shu",
+      "portuguese": "shu",
+      "french": "shu",
+      "hindi": "shu"
     },
     {
       "id": "79",
       "japanese": "しょ",
+      "furigana": "",
       "english": "sho",
-      "furigana": ""
+      "dutch": "sho",
+      "swedish": "sho",
+      "spanish": "sho",
+      "portuguese": "sho",
+      "french": "sho",
+      "hindi": "sho"
     },
     {
       "id": "80",
       "japanese": "じゃ",
+      "furigana": "",
       "english": "ja",
-      "furigana": ""
+      "dutch": "ja",
+      "swedish": "ja",
+      "spanish": "ja",
+      "portuguese": "ja",
+      "french": "ja",
+      "hindi": "ja"
     },
     {
       "id": "81",
       "japanese": "じゅ",
+      "furigana": "",
       "english": "ju",
-      "furigana": ""
+      "dutch": "ju",
+      "swedish": "ju",
+      "spanish": "ju",
+      "portuguese": "ju",
+      "french": "ju",
+      "hindi": "ju"
     },
     {
       "id": "82",
       "japanese": "じょ",
+      "furigana": "",
       "english": "jo",
-      "furigana": ""
+      "dutch": "jo",
+      "swedish": "jo",
+      "spanish": "jo",
+      "portuguese": "jo",
+      "french": "jo",
+      "hindi": "jo"
     },
     {
       "id": "83",
       "japanese": "ちゃ",
+      "furigana": "",
       "english": "cha",
-      "furigana": ""
+      "dutch": "cha",
+      "swedish": "cha",
+      "spanish": "cha",
+      "portuguese": "cha",
+      "french": "cha",
+      "hindi": "cha"
     },
     {
       "id": "84",
       "japanese": "ちゅ",
+      "furigana": "",
       "english": "chu",
-      "furigana": ""
+      "dutch": "chu",
+      "swedish": "chu",
+      "spanish": "chu",
+      "portuguese": "chu",
+      "french": "chu",
+      "hindi": "chu"
     },
     {
       "id": "85",
       "japanese": "ちょ",
+      "furigana": "",
       "english": "cho",
-      "furigana": ""
+      "dutch": "cho",
+      "swedish": "cho",
+      "spanish": "cho",
+      "portuguese": "cho",
+      "french": "cho",
+      "hindi": "cho"
     },
     {
       "id": "86",
       "japanese": "にゃ",
+      "furigana": "",
       "english": "nya",
-      "furigana": ""
+      "dutch": "nya",
+      "swedish": "nya",
+      "spanish": "nya",
+      "portuguese": "nya",
+      "french": "nya",
+      "hindi": "nya"
     },
     {
       "id": "87",
       "japanese": "にゅ",
+      "furigana": "",
       "english": "nyu",
-      "furigana": ""
+      "dutch": "nyu",
+      "swedish": "nyu",
+      "spanish": "nyu",
+      "portuguese": "nyu",
+      "french": "nyu",
+      "hindi": "nyu"
     },
     {
       "id": "88",
       "japanese": "にょ",
+      "furigana": "",
       "english": "nyo",
-      "furigana": ""
+      "dutch": "nyo",
+      "swedish": "nyo",
+      "spanish": "nyo",
+      "portuguese": "nyo",
+      "french": "nyo",
+      "hindi": "nyo"
     },
     {
       "id": "89",
       "japanese": "ひゃ",
+      "furigana": "",
       "english": "hya",
-      "furigana": ""
+      "dutch": "hya",
+      "swedish": "hya",
+      "spanish": "hya",
+      "portuguese": "hya",
+      "french": "hya",
+      "hindi": "hya"
     },
     {
       "id": "90",
       "japanese": "ひゅ",
+      "furigana": "",
       "english": "hyu",
-      "furigana": ""
+      "dutch": "hyu",
+      "swedish": "hyu",
+      "spanish": "hyu",
+      "portuguese": "hyu",
+      "french": "hyu",
+      "hindi": "hyu"
     },
     {
       "id": "91",
       "japanese": "ひょ",
+      "furigana": "",
       "english": "hyo",
-      "furigana": ""
+      "dutch": "hyo",
+      "swedish": "hyo",
+      "spanish": "hyo",
+      "portuguese": "hyo",
+      "french": "hyo",
+      "hindi": "hyo"
     },
     {
       "id": "92",
       "japanese": "びゃ",
+      "furigana": "",
       "english": "bya",
-      "furigana": ""
+      "dutch": "bya",
+      "swedish": "bya",
+      "spanish": "bya",
+      "portuguese": "bya",
+      "french": "bya",
+      "hindi": "bya"
     },
     {
       "id": "93",
       "japanese": "びゅ",
+      "furigana": "",
       "english": "byu",
-      "furigana": ""
+      "dutch": "byu",
+      "swedish": "byu",
+      "spanish": "byu",
+      "portuguese": "byu",
+      "french": "byu",
+      "hindi": "byu"
     },
     {
       "id": "94",
       "japanese": "びょ",
+      "furigana": "",
       "english": "byo",
-      "furigana": ""
+      "dutch": "byo",
+      "swedish": "byo",
+      "spanish": "byo",
+      "portuguese": "byo",
+      "french": "byo",
+      "hindi": "byo"
     },
     {
       "id": "95",
       "japanese": "ぴゃ",
+      "furigana": "",
       "english": "pya",
-      "furigana": ""
+      "dutch": "pya",
+      "swedish": "pya",
+      "spanish": "pya",
+      "portuguese": "pya",
+      "french": "pya",
+      "hindi": "pya"
     },
     {
       "id": "96",
       "japanese": "ぴゅ",
+      "furigana": "",
       "english": "pyu",
-      "furigana": ""
+      "dutch": "pyu",
+      "swedish": "pyu",
+      "spanish": "pyu",
+      "portuguese": "pyu",
+      "french": "pyu",
+      "hindi": "pyu"
     },
     {
       "id": "97",
       "japanese": "ぴょ",
+      "furigana": "",
       "english": "pyo",
-      "furigana": ""
+      "dutch": "pyo",
+      "swedish": "pyo",
+      "spanish": "pyo",
+      "portuguese": "pyo",
+      "french": "pyo",
+      "hindi": "pyo"
     },
     {
       "id": "98",
       "japanese": "みゃ",
+      "furigana": "",
       "english": "mya",
-      "furigana": ""
+      "dutch": "mya",
+      "swedish": "mya",
+      "spanish": "mya",
+      "portuguese": "mya",
+      "french": "mya",
+      "hindi": "mya"
     },
     {
       "id": "99",
       "japanese": "みゅ",
+      "furigana": "",
       "english": "myu",
-      "furigana": ""
+      "dutch": "myu",
+      "swedish": "myu",
+      "spanish": "myu",
+      "portuguese": "myu",
+      "french": "myu",
+      "hindi": "myu"
     },
     {
       "id": "100",
       "japanese": "みょ",
+      "furigana": "",
       "english": "myo",
-      "furigana": ""
+      "dutch": "myo",
+      "swedish": "myo",
+      "spanish": "myo",
+      "portuguese": "myo",
+      "french": "myo",
+      "hindi": "myo"
     },
     {
       "id": "101",
       "japanese": "りゃ",
+      "furigana": "",
       "english": "rya",
-      "furigana": ""
+      "dutch": "rya",
+      "swedish": "rya",
+      "spanish": "rya",
+      "portuguese": "rya",
+      "french": "rya",
+      "hindi": "rya"
     },
     {
       "id": "102",
       "japanese": "りゅ",
+      "furigana": "",
       "english": "ryu",
-      "furigana": ""
+      "dutch": "ryu",
+      "swedish": "ryu",
+      "spanish": "ryu",
+      "portuguese": "ryu",
+      "french": "ryu",
+      "hindi": "ryu"
     },
     {
       "id": "103",
       "japanese": "りょ",
+      "furigana": "",
       "english": "ryo",
-      "furigana": ""
+      "dutch": "ryo",
+      "swedish": "ryo",
+      "spanish": "ryo",
+      "portuguese": "ryo",
+      "french": "ryo",
+      "hindi": "ryo"
     },
     {
       "id": "104",
       "japanese": "ア",
+      "furigana": "",
       "english": "a",
-      "furigana": ""
+      "dutch": "a",
+      "swedish": "a",
+      "spanish": "a",
+      "portuguese": "a",
+      "french": "a",
+      "hindi": "a"
     },
     {
       "id": "105",
       "japanese": "イ",
+      "furigana": "",
       "english": "i",
-      "furigana": ""
+      "dutch": "i",
+      "swedish": "i",
+      "spanish": "i",
+      "portuguese": "i",
+      "french": "i",
+      "hindi": "i"
     },
     {
       "id": "106",
       "japanese": "ウ",
+      "furigana": "",
       "english": "u",
-      "furigana": ""
+      "dutch": "u",
+      "swedish": "u",
+      "spanish": "u",
+      "portuguese": "u",
+      "french": "u",
+      "hindi": "u"
     },
     {
       "id": "107",
       "japanese": "エ",
+      "furigana": "",
       "english": "e",
-      "furigana": ""
+      "dutch": "e",
+      "swedish": "e",
+      "spanish": "e",
+      "portuguese": "e",
+      "french": "e",
+      "hindi": "e"
     },
     {
       "id": "108",
       "japanese": "オ",
+      "furigana": "",
       "english": "o",
-      "furigana": ""
+      "dutch": "o",
+      "swedish": "o",
+      "spanish": "o",
+      "portuguese": "o",
+      "french": "o",
+      "hindi": "o"
     },
     {
       "id": "109",
       "japanese": "カ",
+      "furigana": "",
       "english": "ka",
-      "furigana": ""
+      "dutch": "ka",
+      "swedish": "ka",
+      "spanish": "ka",
+      "portuguese": "ka",
+      "french": "ka",
+      "hindi": "ka"
     },
     {
       "id": "110",
       "japanese": "キ",
+      "furigana": "",
       "english": "ki",
-      "furigana": ""
+      "dutch": "ki",
+      "swedish": "ki",
+      "spanish": "ki",
+      "portuguese": "ki",
+      "french": "ki",
+      "hindi": "ki"
     },
     {
       "id": "111",
       "japanese": "ク",
+      "furigana": "",
       "english": "ku",
-      "furigana": ""
+      "dutch": "ku",
+      "swedish": "ku",
+      "spanish": "ku",
+      "portuguese": "ku",
+      "french": "ku",
+      "hindi": "ku"
     },
     {
       "id": "112",
       "japanese": "ケ",
+      "furigana": "",
       "english": "ke",
-      "furigana": ""
+      "dutch": "ke",
+      "swedish": "ke",
+      "spanish": "ke",
+      "portuguese": "ke",
+      "french": "ke",
+      "hindi": "ke"
     },
     {
       "id": "113",
       "japanese": "コ",
+      "furigana": "",
       "english": "ko",
-      "furigana": ""
+      "dutch": "ko",
+      "swedish": "ko",
+      "spanish": "ko",
+      "portuguese": "ko",
+      "french": "ko",
+      "hindi": "ko"
     },
     {
       "id": "114",
       "japanese": "ガ",
+      "furigana": "",
       "english": "ga",
-      "furigana": ""
+      "dutch": "ga",
+      "swedish": "ga",
+      "spanish": "ga",
+      "portuguese": "ga",
+      "french": "ga",
+      "hindi": "ga"
     },
     {
       "id": "115",
       "japanese": "ギ",
+      "furigana": "",
       "english": "gi",
-      "furigana": ""
+      "dutch": "gi",
+      "swedish": "gi",
+      "spanish": "gi",
+      "portuguese": "gi",
+      "french": "gi",
+      "hindi": "gi"
     },
     {
       "id": "116",
       "japanese": "グ",
+      "furigana": "",
       "english": "gu",
-      "furigana": ""
+      "dutch": "gu",
+      "swedish": "gu",
+      "spanish": "gu",
+      "portuguese": "gu",
+      "french": "gu",
+      "hindi": "gu"
     },
     {
       "id": "117",
       "japanese": "ゲ",
+      "furigana": "",
       "english": "ge",
-      "furigana": ""
+      "dutch": "ge",
+      "swedish": "ge",
+      "spanish": "ge",
+      "portuguese": "ge",
+      "french": "ge",
+      "hindi": "ge"
     },
     {
       "id": "118",
       "japanese": "ゴ",
+      "furigana": "",
       "english": "go",
-      "furigana": ""
+      "dutch": "go",
+      "swedish": "go",
+      "spanish": "go",
+      "portuguese": "go",
+      "french": "go",
+      "hindi": "go"
     },
     {
       "id": "119",
       "japanese": "サ",
+      "furigana": "",
       "english": "sa",
-      "furigana": ""
+      "dutch": "sa",
+      "swedish": "sa",
+      "spanish": "sa",
+      "portuguese": "sa",
+      "french": "sa",
+      "hindi": "sa"
     },
     {
       "id": "120",
       "japanese": "シ",
+      "furigana": "",
       "english": "shi",
-      "furigana": ""
+      "dutch": "shi",
+      "swedish": "shi",
+      "spanish": "shi",
+      "portuguese": "shi",
+      "french": "shi",
+      "hindi": "shi"
     },
     {
       "id": "121",
       "japanese": "ス",
+      "furigana": "",
       "english": "su",
-      "furigana": ""
+      "dutch": "su",
+      "swedish": "su",
+      "spanish": "su",
+      "portuguese": "su",
+      "french": "su",
+      "hindi": "su"
     },
     {
       "id": "122",
       "japanese": "セ",
+      "furigana": "",
       "english": "se",
-      "furigana": ""
+      "dutch": "se",
+      "swedish": "se",
+      "spanish": "se",
+      "portuguese": "se",
+      "french": "se",
+      "hindi": "se"
     },
     {
       "id": "123",
       "japanese": "ソ",
+      "furigana": "",
       "english": "so",
-      "furigana": ""
+      "dutch": "so",
+      "swedish": "so",
+      "spanish": "so",
+      "portuguese": "so",
+      "french": "so",
+      "hindi": "so"
     },
     {
       "id": "124",
       "japanese": "ザ",
+      "furigana": "",
       "english": "za",
-      "furigana": ""
+      "dutch": "za",
+      "swedish": "za",
+      "spanish": "za",
+      "portuguese": "za",
+      "french": "za",
+      "hindi": "za"
     },
     {
       "id": "125",
       "japanese": "ジ",
+      "furigana": "",
       "english": "ji",
-      "furigana": ""
+      "dutch": "ji",
+      "swedish": "ji",
+      "spanish": "ji",
+      "portuguese": "ji",
+      "french": "ji",
+      "hindi": "ji"
     },
     {
       "id": "126",
       "japanese": "ズ",
+      "furigana": "",
       "english": "zu",
-      "furigana": ""
+      "dutch": "zu",
+      "swedish": "zu",
+      "spanish": "zu",
+      "portuguese": "zu",
+      "french": "zu",
+      "hindi": "zu"
     },
     {
       "id": "127",
       "japanese": "ゼ",
+      "furigana": "",
       "english": "ze",
-      "furigana": ""
+      "dutch": "ze",
+      "swedish": "ze",
+      "spanish": "ze",
+      "portuguese": "ze",
+      "french": "ze",
+      "hindi": "ze"
     },
     {
       "id": "128",
       "japanese": "ゾ",
+      "furigana": "",
       "english": "zo",
-      "furigana": ""
+      "dutch": "zo",
+      "swedish": "zo",
+      "spanish": "zo",
+      "portuguese": "zo",
+      "french": "zo",
+      "hindi": "zo"
     },
     {
       "id": "129",
       "japanese": "タ",
+      "furigana": "",
       "english": "ta",
-      "furigana": ""
+      "dutch": "ta",
+      "swedish": "ta",
+      "spanish": "ta",
+      "portuguese": "ta",
+      "french": "ta",
+      "hindi": "ta"
     },
     {
       "id": "130",
       "japanese": "チ",
+      "furigana": "",
       "english": "chi",
-      "furigana": ""
+      "dutch": "chi",
+      "swedish": "chi",
+      "spanish": "chi",
+      "portuguese": "chi",
+      "french": "chi",
+      "hindi": "chi"
     },
     {
       "id": "131",
       "japanese": "ツ",
+      "furigana": "",
       "english": "tsu",
-      "furigana": ""
+      "dutch": "tsu",
+      "swedish": "tsu",
+      "spanish": "tsu",
+      "portuguese": "tsu",
+      "french": "tsu",
+      "hindi": "tsu"
     },
     {
       "id": "132",
       "japanese": "テ",
+      "furigana": "",
       "english": "te",
-      "furigana": ""
+      "dutch": "te",
+      "swedish": "te",
+      "spanish": "te",
+      "portuguese": "te",
+      "french": "te",
+      "hindi": "te"
     },
     {
       "id": "133",
       "japanese": "ト",
+      "furigana": "",
       "english": "to",
-      "furigana": ""
+      "dutch": "to",
+      "swedish": "to",
+      "spanish": "to",
+      "portuguese": "to",
+      "french": "to",
+      "hindi": "to"
     },
     {
       "id": "134",
       "japanese": "ダ",
+      "furigana": "",
       "english": "da",
-      "furigana": ""
+      "dutch": "da",
+      "swedish": "da",
+      "spanish": "da",
+      "portuguese": "da",
+      "french": "da",
+      "hindi": "da"
     },
     {
       "id": "135",
       "japanese": "ヂ",
+      "furigana": "",
       "english": "ji",
-      "furigana": ""
+      "dutch": "ji",
+      "swedish": "ji",
+      "spanish": "ji",
+      "portuguese": "ji",
+      "french": "ji",
+      "hindi": "ji"
     },
     {
       "id": "136",
       "japanese": "ヅ",
+      "furigana": "",
       "english": "zu",
-      "furigana": ""
+      "dutch": "zu",
+      "swedish": "zu",
+      "spanish": "zu",
+      "portuguese": "zu",
+      "french": "zu",
+      "hindi": "zu"
     },
     {
       "id": "137",
       "japanese": "デ",
+      "furigana": "",
       "english": "de",
-      "furigana": ""
+      "dutch": "de",
+      "swedish": "de",
+      "spanish": "de",
+      "portuguese": "de",
+      "french": "de",
+      "hindi": "de"
     },
     {
       "id": "138",
       "japanese": "ド",
+      "furigana": "",
       "english": "do",
-      "furigana": ""
+      "dutch": "do",
+      "swedish": "do",
+      "spanish": "do",
+      "portuguese": "do",
+      "french": "do",
+      "hindi": "do"
     },
     {
       "id": "139",
       "japanese": "ナ",
+      "furigana": "",
       "english": "na",
-      "furigana": ""
+      "dutch": "na",
+      "swedish": "na",
+      "spanish": "na",
+      "portuguese": "na",
+      "french": "na",
+      "hindi": "na"
     },
     {
       "id": "140",
       "japanese": "ニ",
+      "furigana": "",
       "english": "ni",
-      "furigana": ""
+      "dutch": "ni",
+      "swedish": "ni",
+      "spanish": "ni",
+      "portuguese": "ni",
+      "french": "ni",
+      "hindi": "ni"
     },
     {
       "id": "141",
       "japanese": "ヌ",
+      "furigana": "",
       "english": "nu",
-      "furigana": ""
+      "dutch": "nu",
+      "swedish": "nu",
+      "spanish": "nu",
+      "portuguese": "nu",
+      "french": "nu",
+      "hindi": "nu"
     },
     {
       "id": "142",
       "japanese": "ネ",
+      "furigana": "",
       "english": "ne",
-      "furigana": ""
+      "dutch": "ne",
+      "swedish": "ne",
+      "spanish": "ne",
+      "portuguese": "ne",
+      "french": "ne",
+      "hindi": "ne"
     },
     {
       "id": "143",
       "japanese": "ノ",
+      "furigana": "",
       "english": "no",
-      "furigana": ""
+      "dutch": "no",
+      "swedish": "no",
+      "spanish": "no",
+      "portuguese": "no",
+      "french": "no",
+      "hindi": "no"
     },
     {
       "id": "144",
       "japanese": "ハ",
+      "furigana": "",
       "english": "ha",
-      "furigana": ""
+      "dutch": "ha",
+      "swedish": "ha",
+      "spanish": "ha",
+      "portuguese": "ha",
+      "french": "ha",
+      "hindi": "ha"
     },
     {
       "id": "145",
       "japanese": "ヒ",
+      "furigana": "",
       "english": "hi",
-      "furigana": ""
+      "dutch": "hi",
+      "swedish": "hi",
+      "spanish": "hi",
+      "portuguese": "hi",
+      "french": "hi",
+      "hindi": "hi"
     },
     {
       "id": "146",
       "japanese": "フ",
+      "furigana": "",
       "english": "fu",
-      "furigana": ""
+      "dutch": "fu",
+      "swedish": "fu",
+      "spanish": "fu",
+      "portuguese": "fu",
+      "french": "fu",
+      "hindi": "fu"
     },
     {
       "id": "147",
       "japanese": "ヘ",
+      "furigana": "",
       "english": "he",
-      "furigana": ""
+      "dutch": "he",
+      "swedish": "he",
+      "spanish": "he",
+      "portuguese": "he",
+      "french": "he",
+      "hindi": "he"
     },
     {
       "id": "148",
       "japanese": "ホ",
+      "furigana": "",
       "english": "ho",
-      "furigana": ""
+      "dutch": "ho",
+      "swedish": "ho",
+      "spanish": "ho",
+      "portuguese": "ho",
+      "french": "ho",
+      "hindi": "ho"
     },
     {
       "id": "149",
       "japanese": "バ",
+      "furigana": "",
       "english": "ba",
-      "furigana": ""
+      "dutch": "ba",
+      "swedish": "ba",
+      "spanish": "ba",
+      "portuguese": "ba",
+      "french": "ba",
+      "hindi": "ba"
     },
     {
       "id": "150",
       "japanese": "ビ",
+      "furigana": "",
       "english": "bi",
-      "furigana": ""
+      "dutch": "bi",
+      "swedish": "bi",
+      "spanish": "bi",
+      "portuguese": "bi",
+      "french": "bi",
+      "hindi": "bi"
     },
     {
       "id": "151",
       "japanese": "ブ",
+      "furigana": "",
       "english": "bu",
-      "furigana": ""
+      "dutch": "bu",
+      "swedish": "bu",
+      "spanish": "bu",
+      "portuguese": "bu",
+      "french": "bu",
+      "hindi": "bu"
     },
     {
       "id": "152",
       "japanese": "ベ",
+      "furigana": "",
       "english": "be",
-      "furigana": ""
+      "dutch": "be",
+      "swedish": "be",
+      "spanish": "be",
+      "portuguese": "be",
+      "french": "be",
+      "hindi": "be"
     },
     {
       "id": "153",
       "japanese": "ボ",
+      "furigana": "",
       "english": "bo",
-      "furigana": ""
+      "dutch": "bo",
+      "swedish": "bo",
+      "spanish": "bo",
+      "portuguese": "bo",
+      "french": "bo",
+      "hindi": "bo"
     },
     {
       "id": "154",
       "japanese": "パ",
+      "furigana": "",
       "english": "pa",
-      "furigana": ""
+      "dutch": "pa",
+      "swedish": "pa",
+      "spanish": "pa",
+      "portuguese": "pa",
+      "french": "pa",
+      "hindi": "pa"
     },
     {
       "id": "155",
       "japanese": "ピ",
+      "furigana": "",
       "english": "pi",
-      "furigana": ""
+      "dutch": "pi",
+      "swedish": "pi",
+      "spanish": "pi",
+      "portuguese": "pi",
+      "french": "pi",
+      "hindi": "pi"
     },
     {
       "id": "156",
       "japanese": "プ",
+      "furigana": "",
       "english": "pu",
-      "furigana": ""
+      "dutch": "pu",
+      "swedish": "pu",
+      "spanish": "pu",
+      "portuguese": "pu",
+      "french": "pu",
+      "hindi": "pu"
     },
     {
       "id": "157",
       "japanese": "ペ",
+      "furigana": "",
       "english": "pe",
-      "furigana": ""
+      "dutch": "pe",
+      "swedish": "pe",
+      "spanish": "pe",
+      "portuguese": "pe",
+      "french": "pe",
+      "hindi": "pe"
     },
     {
       "id": "158",
       "japanese": "ポ",
+      "furigana": "",
       "english": "po",
-      "furigana": ""
+      "dutch": "po",
+      "swedish": "po",
+      "spanish": "po",
+      "portuguese": "po",
+      "french": "po",
+      "hindi": "po"
     },
     {
       "id": "159",
       "japanese": "マ",
+      "furigana": "",
       "english": "ma",
-      "furigana": ""
+      "dutch": "ma",
+      "swedish": "ma",
+      "spanish": "ma",
+      "portuguese": "ma",
+      "french": "ma",
+      "hindi": "ma"
     },
     {
       "id": "160",
       "japanese": "ミ",
+      "furigana": "",
       "english": "mi",
-      "furigana": ""
+      "dutch": "mi",
+      "swedish": "mi",
+      "spanish": "mi",
+      "portuguese": "mi",
+      "french": "mi",
+      "hindi": "mi"
     },
     {
       "id": "161",
       "japanese": "ム",
+      "furigana": "",
       "english": "mu",
-      "furigana": ""
+      "dutch": "mu",
+      "swedish": "mu",
+      "spanish": "mu",
+      "portuguese": "mu",
+      "french": "mu",
+      "hindi": "mu"
     },
     {
       "id": "162",
       "japanese": "メ",
+      "furigana": "",
       "english": "me",
-      "furigana": ""
+      "dutch": "me",
+      "swedish": "me",
+      "spanish": "me",
+      "portuguese": "me",
+      "french": "me",
+      "hindi": "me"
     },
     {
       "id": "163",
       "japanese": "モ",
+      "furigana": "",
       "english": "mo",
-      "furigana": ""
+      "dutch": "mo",
+      "swedish": "mo",
+      "spanish": "mo",
+      "portuguese": "mo",
+      "french": "mo",
+      "hindi": "mo"
     },
     {
       "id": "164",
       "japanese": "ヤ",
+      "furigana": "",
       "english": "ya",
-      "furigana": ""
+      "dutch": "ya",
+      "swedish": "ya",
+      "spanish": "ya",
+      "portuguese": "ya",
+      "french": "ya",
+      "hindi": "ya"
     },
     {
       "id": "165",
       "japanese": "ユ",
+      "furigana": "",
       "english": "yu",
-      "furigana": ""
+      "dutch": "yu",
+      "swedish": "yu",
+      "spanish": "yu",
+      "portuguese": "yu",
+      "french": "yu",
+      "hindi": "yu"
     },
     {
       "id": "166",
       "japanese": "ヨ",
+      "furigana": "",
       "english": "yo",
-      "furigana": ""
+      "dutch": "yo",
+      "swedish": "yo",
+      "spanish": "yo",
+      "portuguese": "yo",
+      "french": "yo",
+      "hindi": "yo"
     },
     {
       "id": "167",
       "japanese": "ラ",
+      "furigana": "",
       "english": "ra",
-      "furigana": ""
+      "dutch": "ra",
+      "swedish": "ra",
+      "spanish": "ra",
+      "portuguese": "ra",
+      "french": "ra",
+      "hindi": "ra"
     },
     {
       "id": "168",
       "japanese": "リ",
+      "furigana": "",
       "english": "ri",
-      "furigana": ""
+      "dutch": "ri",
+      "swedish": "ri",
+      "spanish": "ri",
+      "portuguese": "ri",
+      "french": "ri",
+      "hindi": "ri"
     },
     {
       "id": "169",
       "japanese": "ル",
+      "furigana": "",
       "english": "ru",
-      "furigana": ""
+      "dutch": "ru",
+      "swedish": "ru",
+      "spanish": "ru",
+      "portuguese": "ru",
+      "french": "ru",
+      "hindi": "ru"
     },
     {
       "id": "170",
       "japanese": "レ",
+      "furigana": "",
       "english": "re",
-      "furigana": ""
+      "dutch": "re",
+      "swedish": "re",
+      "spanish": "re",
+      "portuguese": "re",
+      "french": "re",
+      "hindi": "re"
     },
     {
       "id": "171",
       "japanese": "ロ",
+      "furigana": "",
       "english": "ro",
-      "furigana": ""
+      "dutch": "ro",
+      "swedish": "ro",
+      "spanish": "ro",
+      "portuguese": "ro",
+      "french": "ro",
+      "hindi": "ro"
     },
     {
       "id": "172",
       "japanese": "ワ",
+      "furigana": "",
       "english": "wa",
-      "furigana": ""
+      "dutch": "wa",
+      "swedish": "wa",
+      "spanish": "wa",
+      "portuguese": "wa",
+      "french": "wa",
+      "hindi": "wa"
     },
     {
       "id": "173",
       "japanese": "ヲ",
+      "furigana": "",
       "english": "wo",
-      "furigana": ""
+      "dutch": "wo",
+      "swedish": "wo",
+      "spanish": "wo",
+      "portuguese": "wo",
+      "french": "wo",
+      "hindi": "wo"
     },
     {
       "id": "174",
       "japanese": "ン",
+      "furigana": "",
       "english": "n",
-      "furigana": ""
+      "dutch": "n",
+      "swedish": "n",
+      "spanish": "n",
+      "portuguese": "n",
+      "french": "n",
+      "hindi": "n"
     },
     {
       "id": "175",
       "japanese": "キャ",
+      "furigana": "",
       "english": "kya",
-      "furigana": ""
+      "dutch": "kya",
+      "swedish": "kya",
+      "spanish": "kya",
+      "portuguese": "kya",
+      "french": "kya",
+      "hindi": "kya"
     },
     {
       "id": "176",
       "japanese": "キュ",
+      "furigana": "",
       "english": "kyu",
-      "furigana": ""
+      "dutch": "kyu",
+      "swedish": "kyu",
+      "spanish": "kyu",
+      "portuguese": "kyu",
+      "french": "kyu",
+      "hindi": "kyu"
     },
     {
       "id": "177",
       "japanese": "キョ",
+      "furigana": "",
       "english": "kyo",
-      "furigana": ""
+      "dutch": "kyo",
+      "swedish": "kyo",
+      "spanish": "kyo",
+      "portuguese": "kyo",
+      "french": "kyo",
+      "hindi": "kyo"
     },
     {
       "id": "178",
       "japanese": "ギャ",
+      "furigana": "",
       "english": "gya",
-      "furigana": ""
+      "dutch": "gya",
+      "swedish": "gya",
+      "spanish": "gya",
+      "portuguese": "gya",
+      "french": "gya",
+      "hindi": "gya"
     },
     {
       "id": "179",
       "japanese": "ギュ",
+      "furigana": "",
       "english": "gyu",
-      "furigana": ""
+      "dutch": "gyu",
+      "swedish": "gyu",
+      "spanish": "gyu",
+      "portuguese": "gyu",
+      "french": "gyu",
+      "hindi": "gyu"
     },
     {
       "id": "180",
       "japanese": "ギョ",
+      "furigana": "",
       "english": "gyo",
-      "furigana": ""
+      "dutch": "gyo",
+      "swedish": "gyo",
+      "spanish": "gyo",
+      "portuguese": "gyo",
+      "french": "gyo",
+      "hindi": "gyo"
     },
     {
       "id": "181",
       "japanese": "シャ",
+      "furigana": "",
       "english": "sha",
-      "furigana": ""
+      "dutch": "sha",
+      "swedish": "sha",
+      "spanish": "sha",
+      "portuguese": "sha",
+      "french": "sha",
+      "hindi": "sha"
     },
     {
       "id": "182",
       "japanese": "シュ",
+      "furigana": "",
       "english": "shu",
-      "furigana": ""
+      "dutch": "shu",
+      "swedish": "shu",
+      "spanish": "shu",
+      "portuguese": "shu",
+      "french": "shu",
+      "hindi": "shu"
     },
     {
       "id": "183",
       "japanese": "ショ",
+      "furigana": "",
       "english": "sho",
-      "furigana": ""
+      "dutch": "sho",
+      "swedish": "sho",
+      "spanish": "sho",
+      "portuguese": "sho",
+      "french": "sho",
+      "hindi": "sho"
     },
     {
       "id": "184",
       "japanese": "ジャ",
+      "furigana": "",
       "english": "ja",
-      "furigana": ""
+      "dutch": "ja",
+      "swedish": "ja",
+      "spanish": "ja",
+      "portuguese": "ja",
+      "french": "ja",
+      "hindi": "ja"
     },
     {
       "id": "185",
       "japanese": "ジュ",
+      "furigana": "",
       "english": "ju",
-      "furigana": ""
+      "dutch": "ju",
+      "swedish": "ju",
+      "spanish": "ju",
+      "portuguese": "ju",
+      "french": "ju",
+      "hindi": "ju"
     },
     {
       "id": "186",
       "japanese": "ジョ",
+      "furigana": "",
       "english": "jo",
-      "furigana": ""
+      "dutch": "jo",
+      "swedish": "jo",
+      "spanish": "jo",
+      "portuguese": "jo",
+      "french": "jo",
+      "hindi": "jo"
     },
     {
       "id": "187",
       "japanese": "チャ",
+      "furigana": "",
       "english": "cha",
-      "furigana": ""
+      "dutch": "cha",
+      "swedish": "cha",
+      "spanish": "cha",
+      "portuguese": "cha",
+      "french": "cha",
+      "hindi": "cha"
     },
     {
       "id": "188",
       "japanese": "チュ",
+      "furigana": "",
       "english": "chu",
-      "furigana": ""
+      "dutch": "chu",
+      "swedish": "chu",
+      "spanish": "chu",
+      "portuguese": "chu",
+      "french": "chu",
+      "hindi": "chu"
     },
     {
       "id": "189",
       "japanese": "チョ",
+      "furigana": "",
       "english": "cho",
-      "furigana": ""
+      "dutch": "cho",
+      "swedish": "cho",
+      "spanish": "cho",
+      "portuguese": "cho",
+      "french": "cho",
+      "hindi": "cho"
     },
     {
       "id": "190",
       "japanese": "ニャ",
+      "furigana": "",
       "english": "nya",
-      "furigana": ""
+      "dutch": "nya",
+      "swedish": "nya",
+      "spanish": "nya",
+      "portuguese": "nya",
+      "french": "nya",
+      "hindi": "nya"
     },
     {
       "id": "191",
       "japanese": "ニュ",
+      "furigana": "",
       "english": "nyu",
-      "furigana": ""
+      "dutch": "nyu",
+      "swedish": "nyu",
+      "spanish": "nyu",
+      "portuguese": "nyu",
+      "french": "nyu",
+      "hindi": "nyu"
     },
     {
       "id": "192",
       "japanese": "ニョ",
+      "furigana": "",
       "english": "nyo",
-      "furigana": ""
+      "dutch": "nyo",
+      "swedish": "nyo",
+      "spanish": "nyo",
+      "portuguese": "nyo",
+      "french": "nyo",
+      "hindi": "nyo"
     },
     {
       "id": "193",
       "japanese": "ヒャ",
+      "furigana": "",
       "english": "hya",
-      "furigana": ""
+      "dutch": "hya",
+      "swedish": "hya",
+      "spanish": "hya",
+      "portuguese": "hya",
+      "french": "hya",
+      "hindi": "hya"
     },
     {
       "id": "194",
       "japanese": "ヒュ",
+      "furigana": "",
       "english": "hyu",
-      "furigana": ""
+      "dutch": "hyu",
+      "swedish": "hyu",
+      "spanish": "hyu",
+      "portuguese": "hyu",
+      "french": "hyu",
+      "hindi": "hyu"
     },
     {
       "id": "195",
       "japanese": "ヒョ",
+      "furigana": "",
       "english": "hyo",
-      "furigana": ""
+      "dutch": "hyo",
+      "swedish": "hyo",
+      "spanish": "hyo",
+      "portuguese": "hyo",
+      "french": "hyo",
+      "hindi": "hyo"
     },
     {
       "id": "196",
       "japanese": "ビャ",
+      "furigana": "",
       "english": "bya",
-      "furigana": ""
+      "dutch": "bya",
+      "swedish": "bya",
+      "spanish": "bya",
+      "portuguese": "bya",
+      "french": "bya",
+      "hindi": "bya"
     },
     {
       "id": "197",
       "japanese": "ビュ",
+      "furigana": "",
       "english": "byu",
-      "furigana": ""
+      "dutch": "byu",
+      "swedish": "byu",
+      "spanish": "byu",
+      "portuguese": "byu",
+      "french": "byu",
+      "hindi": "byu"
     },
     {
       "id": "198",
       "japanese": "ビョ",
+      "furigana": "",
       "english": "byo",
-      "furigana": ""
+      "dutch": "byo",
+      "swedish": "byo",
+      "spanish": "byo",
+      "portuguese": "byo",
+      "french": "byo",
+      "hindi": "byo"
     },
     {
       "id": "199",
       "japanese": "ピャ",
+      "furigana": "",
       "english": "pya",
-      "furigana": ""
+      "dutch": "pya",
+      "swedish": "pya",
+      "spanish": "pya",
+      "portuguese": "pya",
+      "french": "pya",
+      "hindi": "pya"
     },
     {
       "id": "200",
       "japanese": "ピュ",
+      "furigana": "",
       "english": "pyu",
-      "furigana": ""
+      "dutch": "pyu",
+      "swedish": "pyu",
+      "spanish": "pyu",
+      "portuguese": "pyu",
+      "french": "pyu",
+      "hindi": "pyu"
     },
     {
       "id": "201",
       "japanese": "ピョ",
+      "furigana": "",
       "english": "pyo",
-      "furigana": ""
+      "dutch": "pyo",
+      "swedish": "pyo",
+      "spanish": "pyo",
+      "portuguese": "pyo",
+      "french": "pyo",
+      "hindi": "pyo"
     },
     {
       "id": "202",
       "japanese": "ミャ",
+      "furigana": "",
       "english": "mya",
-      "furigana": ""
+      "dutch": "mya",
+      "swedish": "mya",
+      "spanish": "mya",
+      "portuguese": "mya",
+      "french": "mya",
+      "hindi": "mya"
     },
     {
       "id": "203",
       "japanese": "ミュ",
+      "furigana": "",
       "english": "myu",
-      "furigana": ""
+      "dutch": "myu",
+      "swedish": "myu",
+      "spanish": "myu",
+      "portuguese": "myu",
+      "french": "myu",
+      "hindi": "myu"
     },
     {
       "id": "204",
       "japanese": "ミョ",
+      "furigana": "",
       "english": "myo",
-      "furigana": ""
+      "dutch": "myo",
+      "swedish": "myo",
+      "spanish": "myo",
+      "portuguese": "myo",
+      "french": "myo",
+      "hindi": "myo"
     },
     {
       "id": "205",
       "japanese": "リャ",
+      "furigana": "",
       "english": "rya",
-      "furigana": ""
+      "dutch": "rya",
+      "swedish": "rya",
+      "spanish": "rya",
+      "portuguese": "rya",
+      "french": "rya",
+      "hindi": "rya"
     },
     {
       "id": "206",
       "japanese": "リュ",
+      "furigana": "",
       "english": "ryu",
-      "furigana": ""
+      "dutch": "ryu",
+      "swedish": "ryu",
+      "spanish": "ryu",
+      "portuguese": "ryu",
+      "french": "ryu",
+      "hindi": "ryu"
     },
     {
       "id": "207",
       "japanese": "リョ",
+      "furigana": "",
       "english": "ryo",
-      "furigana": ""
+      "dutch": "ryo",
+      "swedish": "ryo",
+      "spanish": "ryo",
+      "portuguese": "ryo",
+      "french": "ryo",
+      "hindi": "ryo"
     },
     {
       "id": "208",

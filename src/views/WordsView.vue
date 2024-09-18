@@ -61,7 +61,7 @@ function updateTable() {
       data: wordsData.value,
       height: 'auto',
       width: '100%',
-      // stretchH: 'all', //to fill container width
+      stretchH: 'all', //to fill container width
       allowInsertRow: false,
       renderAllRows: true,
       beforeChangeRender(changes, source) {
@@ -82,18 +82,6 @@ function updateTable() {
       // Mapping with the model
       columns(column) {
         return { data: languages[column].toLocaleLowerCase() }
-        // switch (column) {
-        //   case 0:
-        //     return { data: 'id' }
-        //   case 1:
-        //     return { data: 'japanese' }
-        //   case 2:
-        //     return { data: 'furigana' }
-        //   case 3:
-        //     return { data: 'english' }
-        //   default:
-        //     return {}
-        // }
       },
       afterChange(changes, source) {
         changes?.forEach((change) => {
