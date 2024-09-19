@@ -2,6 +2,14 @@ import type { Chapter } from '@/model/Chapter'
 import axios from 'axios'
 
 export default {
+    async getAllChapters(): Promise<Chapter[]> {
+        const response = await axios.get(`/api/chapters?limit=9001`)
+
+        if (response.status != 200) return Promise.reject("failed to load chapters")
+
+        return response.data as Chapter[]
+    },
+
     async getLatestChapter(): Promise<Chapter> {
         const response = await axios.get(`/api/chapters?_sort=-chapterId&limit=9000`)
         if (response.status != 200) return Promise.reject("failed to load chapters")

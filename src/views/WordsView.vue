@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import axios from 'axios'
-import { onMounted, ref, watch } from 'vue'
+import { ref, watch } from 'vue'
 import { registerAllModules } from 'handsontable/registry'
 import { useRoute } from 'vue-router'
 import Handsontable from 'handsontable'

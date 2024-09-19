@@ -41,8 +41,14 @@ onMounted(loadChapters)
     class="transition-opacity duration-75 h-full"
   >
     <RouterLink
+      to="/data-export"
+      class="text text-xl text-mint-green-400 hover:text-mint-green-700 block"
+    >
+      Data export
+    </RouterLink>
+    <RouterLink
       to="/"
-      class="text text-xl text-mint-green-400 hover:text-mint-green-700"
+      class="text text-xl text-mint-green-400 hover:text-mint-green-700 mt-4 block"
     >
       Words
     </RouterLink>
