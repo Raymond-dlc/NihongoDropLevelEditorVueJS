@@ -93,11 +93,6 @@ const loadLevelConnections = async () => {
 }
 
 const copyToClipboard = (content: string) => {
-  //   if (!navigator.clipboard) {
-  //     fallbackCopyTextToClipboard(textToCopy)
-  //     return
-  //   }
-
   navigator.clipboard
     .writeText(content)
     .then(function () {
@@ -113,7 +108,7 @@ onMounted(loadData)
 </script>
 
 <template>
-  <div class="w-full p-8">
+  <div class="w-full bg-mint-green-100 p-8">
     <h1 class="text text-4xl font-bold text-sakura mb-8">Export Data</h1>
 
     <div class="my-2 font-bold text-sakura">
