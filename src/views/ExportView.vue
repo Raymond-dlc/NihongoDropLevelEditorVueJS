@@ -92,6 +92,23 @@ const loadLevelConnections = async () => {
   )
 }
 
+const copyToClipboard = (content: string) => {
+  //   if (!navigator.clipboard) {
+  //     fallbackCopyTextToClipboard(textToCopy)
+  //     return
+  //   }
+
+  navigator.clipboard
+    .writeText(content)
+    .then(function () {
+      console.log('Text copied to clipboard!')
+    })
+    .catch(function (err) {
+      console.error('Failed to copy: ', err)
+      console.log('Failed to copy to clipboard!')
+    })
+}
+
 onMounted(loadData)
 </script>
 
@@ -99,31 +116,57 @@ onMounted(loadData)
   <div class="w-full p-8">
     <h1 class="text text-4xl font-bold text-sakura mb-8">Export Data</h1>
 
-    <h3 class="text text-2xl font-bold text-sakura my-2">Words</h3>
+    <div class="my-2 font-bold text-sakura">
+      <h3 class="text text-2xl font-bold text-sakura inline">Words</h3>
+      <button @click="copyToClipboard(exportWords)">
+        <span class="material-symbols-outlined hover:text-mint-green-700"> content_copy </span>
+      </button>
+    </div>
+
     <textarea
       class="w-full h-20 outline outline-1 outline-black rounded-xl p-2"
       v-model="exportWords"
     ></textarea>
 
-    <h3 class="text text-2xl font-bold text-sakura my-2">Chapters</h3>
+    <div class="my-2 font-bold text-sakura">
+      <h3 class="text text-2xl inline">Chapters</h3>
+      <button @click="copyToClipboard(exportChapters)">
+        <span class="material-symbols-outlined hover:text-mint-green-700"> content_copy </span>
+      </button>
+    </div>
     <textarea
       class="w-full h-20 outline outline-1 outline-black rounded-xl p-2"
       v-model="exportChapters"
     ></textarea>
 
-    <h3 class="text text-2xl font-bold text-sakura my-2">Levels</h3>
+    <div class="my-2 font-bold text-sakura">
+      <h3 class="text text-2xl inline">Levels</h3>
+      <button @click="copyToClipboard(exportLevels)">
+        <span class="material-symbols-outlined hover:text-mint-green-700"> content_copy </span>
+      </button>
+    </div>
     <textarea
       class="w-full h-20 outline outline-1 outline-black rounded-xl p-2"
       v-model="exportLevels"
     ></textarea>
 
-    <h3 class="text text-2xl font-bold text-sakura my-2">Level Words</h3>
+    <div class="my-2 font-bold text-sakura">
+      <h3 class="text text-2xl inline">Level Words</h3>
+      <button @click="copyToClipboard(exportLevelWords)">
+        <span class="material-symbols-outlined hover:text-mint-green-700"> content_copy </span>
+      </button>
+    </div>
     <textarea
       class="w-full h-20 outline outline-1 outline-black rounded-xl p-2"
       v-model="exportLevelWords"
     ></textarea>
 
-    <h3 class="text text-2xl font-bold text-sakura my-2">Level Connections</h3>
+    <div class="my-2 font-bold text-sakura">
+      <h3 class="text text-2xl inline">Level Connections</h3>
+      <button @click="copyToClipboard(exportLevelConnections)">
+        <span class="material-symbols-outlined hover:text-mint-green-700"> content_copy </span>
+      </button>
+    </div>
     <textarea
       class="w-full h-20 outline outline-1 outline-black rounded-xl p-2"
       v-model="exportLevelConnections"
