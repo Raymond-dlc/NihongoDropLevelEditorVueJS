@@ -9283,20 +9283,38 @@
     {
       "id": "390",
       "japanese": "朝ご飯",
+      "furigana": "あさごはん",
       "english": "breakfast",
-      "furigana": "あさごはん"
+      "dutch": "",
+      "swedish": "",
+      "spanish": "",
+      "portuguese": "",
+      "french": "",
+      "hindi": ""
     },
     {
       "id": "391",
       "japanese": "あさって",
+      "furigana": "",
       "english": "the day after tomorrow",
-      "furigana": ""
+      "dutch": "",
+      "swedish": "",
+      "spanish": "",
+      "portuguese": "",
+      "french": "",
+      "hindi": ""
     },
     {
       "id": "392",
       "japanese": "遊ぶ",
+      "furigana": "あそぶ",
       "english": "to play",
-      "furigana": "あそぶ"
+      "dutch": "",
+      "swedish": "",
+      "spanish": "",
+      "portuguese": "",
+      "french": "",
+      "hindi": ""
     },
     {
       "id": "393",
@@ -10531,188 +10549,374 @@
     {
       "id": "598",
       "japanese": "咲く",
+      "furigana": "さく",
       "english": "to blossom",
-      "furigana": "さく"
+      "dutch": "bloeien",
+      "swedish": "",
+      "spanish": "",
+      "portuguese": "",
+      "french": "",
+      "hindi": ""
     },
     {
       "id": "599",
       "japanese": "作文",
+      "furigana": "さくぶん",
       "english": "composition",
-      "furigana": "さくぶん"
+      "dutch": "compositie",
+      "swedish": "",
+      "spanish": "",
+      "portuguese": "",
+      "french": "",
+      "hindi": ""
     },
     {
       "id": "600",
       "japanese": "さす",
+      "furigana": "",
       "english": "to open an umbrella",
-      "furigana": ""
+      "dutch": "een paraplu openen",
+      "swedish": "",
+      "spanish": "",
+      "portuguese": "",
+      "french": "",
+      "hindi": ""
     },
     {
       "id": "601",
       "japanese": "~冊",
+      "furigana": "〜さつ",
       "english": "counter for books",
-      "furigana": "〜さつ"
+      "dutch": "teller voor boeken",
+      "swedish": "",
+      "spanish": "",
+      "portuguese": "",
+      "french": "",
+      "hindi": ""
     },
     {
       "id": "602",
       "japanese": "雑誌",
+      "furigana": "ざっし",
       "english": "magazine",
-      "furigana": "ざっし"
+      "dutch": "tijdschrift",
+      "swedish": "",
+      "spanish": "",
+      "portuguese": "",
+      "french": "",
+      "hindi": ""
     },
     {
       "id": "603",
       "japanese": "再来年",
+      "furigana": "さらいねん",
       "english": "the year after next year",
-      "furigana": "さらいねん"
+      "dutch": "Het jaar na volgend jaar",
+      "swedish": "",
+      "spanish": "",
+      "portuguese": "",
+      "french": "",
+      "hindi": ""
     },
     {
       "id": "604",
       "japanese": "〜さん",
+      "furigana": "",
       "english": "Mr., Mrs.",
-      "furigana": ""
+      "dutch": "meneer, mevrouw",
+      "swedish": "",
+      "spanish": "",
+      "portuguese": "",
+      "french": "",
+      "hindi": ""
     },
     {
       "id": "605",
       "japanese": "散歩",
+      "furigana": "さんぽ",
       "english": "to take a walk",
-      "furigana": "さんぽ"
+      "dutch": "wandelen",
+      "swedish": "",
+      "spanish": "",
+      "portuguese": "",
+      "french": "",
+      "hindi": ""
     },
     {
       "id": "606",
       "japanese": "〜時",
+      "furigana": "〜じ",
       "english": "o’clock",
-      "furigana": "〜じ"
+      "dutch": "~uur",
+      "swedish": "",
+      "spanish": "",
+      "portuguese": "",
+      "french": "",
+      "hindi": ""
     },
     {
       "id": "607",
       "japanese": "しかし",
+      "furigana": "",
       "english": "however, but",
-      "furigana": ""
+      "dutch": "hoewel, maar",
+      "swedish": "",
+      "spanish": "",
+      "portuguese": "",
+      "french": "",
+      "hindi": ""
     },
     {
       "id": "608",
       "japanese": "時間",
+      "furigana": "じかん",
       "english": "time",
-      "furigana": "じかん"
+      "dutch": "tijd",
+      "swedish": "",
+      "spanish": "",
+      "portuguese": "",
+      "french": "",
+      "hindi": ""
     },
     {
       "id": "609",
       "japanese": "仕事",
+      "furigana": "しごと",
       "english": "work",
-      "furigana": "しごと"
+      "dutch": "werk",
+      "swedish": "",
+      "spanish": "",
+      "portuguese": "",
+      "french": "",
+      "hindi": ""
     },
     {
       "id": "610",
       "japanese": "辞書",
+      "furigana": "じしょ",
       "english": "dictionary",
-      "furigana": "じしょ"
+      "dutch": "woordenboek",
+      "swedish": "",
+      "spanish": "",
+      "portuguese": "",
+      "french": "",
+      "hindi": ""
     },
     {
       "id": "611",
       "japanese": "静か",
+      "furigana": "しずか",
       "english": "quiet",
-      "furigana": "しずか"
+      "dutch": "stil",
+      "swedish": "",
+      "spanish": "",
+      "portuguese": "",
+      "french": "",
+      "hindi": ""
     },
     {
       "id": "612",
       "japanese": "下",
+      "furigana": "した",
       "english": "under, below",
-      "furigana": "した"
+      "dutch": "onder",
+      "swedish": "",
+      "spanish": "",
+      "portuguese": "",
+      "french": "",
+      "hindi": ""
     },
     {
       "id": "613",
       "japanese": "質問",
+      "furigana": "しつもん",
       "english": "question",
-      "furigana": "しつもん"
+      "dutch": "vraag",
+      "swedish": "",
+      "spanish": "",
+      "portuguese": "",
+      "french": "",
+      "hindi": ""
     },
     {
       "id": "614",
       "japanese": "自転車",
+      "furigana": "じてんしゃ",
       "english": "bicycle",
-      "furigana": "じてんしゃ"
+      "dutch": "fiets",
+      "swedish": "",
+      "spanish": "",
+      "portuguese": "",
+      "french": "",
+      "hindi": ""
     },
     {
       "id": "615",
       "japanese": "自動車",
+      "furigana": "じどうしゃ",
       "english": "car, vehicle",
-      "furigana": "じどうしゃ"
+      "dutch": "auto, voertuig",
+      "swedish": "",
+      "spanish": "",
+      "portuguese": "",
+      "french": "",
+      "hindi": ""
     },
     {
       "id": "616",
       "japanese": "字引",
+      "furigana": "じびき",
       "english": "dictionary",
-      "furigana": "じびき"
+      "dutch": "woordenboek",
+      "swedish": "",
+      "spanish": "",
+      "portuguese": "",
+      "french": "",
+      "hindi": ""
     },
     {
       "id": "617",
       "japanese": "自分",
+      "furigana": "じぶん",
       "english": "oneself",
-      "furigana": "じぶん"
+      "dutch": "zelf",
+      "swedish": "",
+      "spanish": "",
+      "portuguese": "",
+      "french": "",
+      "hindi": ""
     },
     {
       "id": "618",
       "japanese": "閉まる",
+      "furigana": "しまる",
       "english": "to close",
-      "furigana": "しまる"
+      "dutch": "sluiten",
+      "swedish": "",
+      "spanish": "",
+      "portuguese": "",
+      "french": "",
+      "hindi": ""
     },
     {
       "id": "619",
       "japanese": "閉める",
+      "furigana": "しめる",
       "english": "to close",
-      "furigana": "しめる"
+      "dutch": "sluiten",
+      "swedish": "",
+      "spanish": "",
+      "portuguese": "",
+      "french": "",
+      "hindi": ""
     },
     {
       "id": "620",
       "japanese": "締める",
+      "furigana": "しめる",
       "english": "to fasten a seatbelt",
-      "furigana": "しめる"
+      "dutch": "gordel omdoen",
+      "swedish": "",
+      "spanish": "",
+      "portuguese": "",
+      "french": "",
+      "hindi": ""
     },
     {
       "id": "621",
       "japanese": "じゃ",
+      "furigana": "",
       "english": "well, then",
-      "furigana": ""
+      "dutch": "nou, dan",
+      "swedish": "",
+      "spanish": "",
+      "portuguese": "",
+      "french": "",
+      "hindi": ""
     },
     {
       "id": "622",
       "japanese": "写真",
+      "furigana": "しゃしん",
       "english": "photo",
-      "furigana": "しゃしん"
+      "dutch": "foto",
+      "swedish": "",
+      "spanish": "",
+      "portuguese": "",
+      "french": "",
+      "hindi": ""
     },
     {
       "id": "623",
       "japanese": "シャツ",
+      "furigana": "",
       "english": "shirt",
-      "furigana": ""
+      "dutch": "shirt",
+      "swedish": "",
+      "spanish": "",
+      "portuguese": "",
+      "french": "",
+      "hindi": ""
     },
     {
       "id": "624",
       "japanese": "~週間",
-      "english": "x weeks",
-      "furigana": "〜しゅうかん"
+      "furigana": "〜しゅうかん",
+      "english": "(number of) weeks",
+      "dutch": "(aantal) weken",
+      "swedish": "",
+      "spanish": "",
+      "portuguese": "",
+      "french": "",
+      "hindi": ""
     },
     {
       "id": "625",
       "japanese": "授業",
+      "furigana": "じゅぎょう",
       "english": "lesson, class",
-      "furigana": "じゅぎょう"
+      "dutch": "les, klas",
+      "swedish": "",
+      "spanish": "",
+      "portuguese": "",
+      "french": "",
+      "hindi": ""
     },
     {
       "id": "626",
       "japanese": "宿題",
+      "furigana": "しゅくだい",
       "english": "homework",
-      "furigana": "しゅくだい"
+      "dutch": "huiswerk",
+      "swedish": "",
+      "spanish": "",
+      "portuguese": "",
+      "french": "",
+      "hindi": ""
     },
     {
       "id": "627",
       "japanese": "上手",
+      "furigana": "じょうず",
       "english": "to be good at something",
-      "furigana": "じょうず"
+      "dutch": "ergens goed in zijn",
+      "swedish": "",
+      "spanish": "",
+      "portuguese": "",
+      "french": "",
+      "hindi": ""
     },
     {
       "id": "628",
       "japanese": "丈夫",
+      "furigana": "じょうぶ",
       "english": "to be strong, durable",
-      "furigana": "じょうぶ"
+      "dutch": "sterk zijn, robuust",
+      "swedish": "",
+      "spanish": "",
+      "portuguese": "",
+      "french": "",
+      "hindi": ""
     },
     {
       "id": "629",
