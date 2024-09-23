@@ -10717,854 +10717,1706 @@
     {
       "id": "629",
       "japanese": "醤油",
+      "furigana": "しょうゆ",
       "english": "soy sauce",
-      "furigana": "しょうゆ"
+      "dutch": "sojasaus",
+      "swedish": "",
+      "spanish": "",
+      "portuguese": "",
+      "french": "",
+      "hindi": ""
     },
     {
       "id": "630",
       "japanese": "知る",
+      "furigana": "しる",
       "english": "to know",
-      "furigana": "しる"
+      "dutch": "weten",
+      "swedish": "",
+      "spanish": "",
+      "portuguese": "",
+      "french": "",
+      "hindi": ""
     },
     {
       "id": "631",
       "japanese": "〜人",
+      "furigana": "〜じん",
       "english": "~an, ~ese (nationality)",
-      "furigana": "〜じん"
+      "dutch": "~ner, ~ees (nationaliteit)",
+      "swedish": "",
+      "spanish": "",
+      "portuguese": "",
+      "french": "",
+      "hindi": ""
     },
     {
       "id": "632",
       "japanese": "新聞",
+      "furigana": "しんぶん",
       "english": "newspaper",
-      "furigana": "しんぶん"
+      "dutch": "krant",
+      "swedish": "",
+      "spanish": "",
+      "portuguese": "",
+      "french": "",
+      "hindi": ""
     },
     {
       "id": "633",
       "japanese": "水曜日",
+      "furigana": "すいようび",
       "english": "Wednesday",
-      "furigana": "すいようび"
+      "dutch": "woensdag",
+      "swedish": "",
+      "spanish": "",
+      "portuguese": "",
+      "french": "",
+      "hindi": ""
     },
     {
       "id": "634",
       "japanese": "吸う",
+      "furigana": "すう",
       "english": "to breathe, to smoke",
-      "furigana": "すう"
+      "dutch": "inademen, inhaleren, roken",
+      "swedish": "",
+      "spanish": "",
+      "portuguese": "",
+      "french": "",
+      "hindi": ""
     },
     {
       "id": "635",
       "japanese": "好き",
+      "furigana": "すき",
       "english": "to like",
-      "furigana": "すき"
+      "dutch": "leuk vinden",
+      "swedish": "",
+      "spanish": "",
+      "portuguese": "",
+      "french": "",
+      "hindi": ""
     },
     {
       "id": "636",
       "japanese": "〜過ぎ",
+      "furigana": "〜すぎ",
       "english": "past, over",
-      "furigana": "〜すぎ"
+      "dutch": "na, over",
+      "swedish": "",
+      "spanish": "",
+      "portuguese": "",
+      "french": "",
+      "hindi": ""
     },
     {
       "id": "637",
       "japanese": "すぐに",
+      "furigana": "",
       "english": "at once",
-      "furigana": ""
+      "dutch": "meteen",
+      "swedish": "",
+      "spanish": "",
+      "portuguese": "",
+      "french": "",
+      "hindi": ""
     },
     {
       "id": "638",
       "japanese": "少し",
+      "furigana": "すこし",
       "english": "a little",
-      "furigana": "すこし"
+      "dutch": "een beetje",
+      "swedish": "",
+      "spanish": "",
+      "portuguese": "",
+      "french": "",
+      "hindi": ""
     },
     {
       "id": "639",
       "japanese": "涼しい",
+      "furigana": "すずしい",
       "english": "cool",
-      "furigana": "すずしい"
+      "dutch": "cool, gaaf",
+      "swedish": "",
+      "spanish": "",
+      "portuguese": "",
+      "french": "",
+      "hindi": ""
     },
     {
       "id": "640",
       "japanese": "〜ずつ",
+      "furigana": "",
       "english": "each",
-      "furigana": ""
+      "dutch": "per stuk",
+      "swedish": "",
+      "spanish": "",
+      "portuguese": "",
+      "french": "",
+      "hindi": ""
     },
     {
       "id": "641",
       "japanese": "スポーツ",
+      "furigana": "",
       "english": "sports",
-      "furigana": ""
+      "dutch": "sport",
+      "swedish": "",
+      "spanish": "",
+      "portuguese": "",
+      "french": "",
+      "hindi": ""
     },
     {
       "id": "642",
       "japanese": "ズボン",
+      "furigana": "",
       "english": "trousers/pants",
-      "furigana": ""
+      "dutch": "broek",
+      "swedish": "",
+      "spanish": "",
+      "portuguese": "",
+      "french": "",
+      "hindi": ""
     },
     {
       "id": "643",
       "japanese": "住む",
+      "furigana": "すむ",
       "english": "to live, to reside somewhere",
-      "furigana": "すむ"
+      "dutch": "ergens wonen",
+      "swedish": "",
+      "spanish": "",
+      "portuguese": "",
+      "french": "",
+      "hindi": ""
     },
     {
       "id": "644",
       "japanese": "スリッパ",
+      "furigana": "",
       "english": "slipper",
-      "furigana": ""
+      "dutch": "slipper",
+      "swedish": "",
+      "spanish": "",
+      "portuguese": "",
+      "french": "",
+      "hindi": ""
     },
     {
       "id": "645",
       "japanese": "する",
+      "furigana": "する",
       "english": "to do",
-      "furigana": "する"
+      "dutch": "doen",
+      "swedish": "",
+      "spanish": "",
+      "portuguese": "",
+      "french": "",
+      "hindi": ""
     },
     {
       "id": "646",
       "japanese": "座る",
+      "furigana": "すわる",
       "english": "to sit",
-      "furigana": "すわる"
+      "dutch": "zitten",
+      "swedish": "",
+      "spanish": "",
+      "portuguese": "",
+      "french": "",
+      "hindi": ""
     },
     {
       "id": "647",
       "japanese": "背",
+      "furigana": "せい",
       "english": "height",
-      "furigana": "せい"
+      "dutch": "hoogte, lengte",
+      "swedish": "",
+      "spanish": "",
+      "portuguese": "",
+      "french": "",
+      "hindi": ""
     },
     {
       "id": "648",
       "japanese": "生徒",
+      "furigana": "せいと",
       "english": "student",
-      "furigana": "せいと"
+      "dutch": "student",
+      "swedish": "",
+      "spanish": "",
+      "portuguese": "",
+      "french": "",
+      "hindi": ""
     },
     {
       "id": "649",
       "japanese": "セーター",
+      "furigana": "",
       "english": "sweater",
-      "furigana": ""
+      "dutch": "trui",
+      "swedish": "",
+      "spanish": "",
+      "portuguese": "",
+      "french": "",
+      "hindi": ""
     },
     {
       "id": "650",
       "japanese": "石鹸",
+      "furigana": "せっけん",
       "english": "soap",
-      "furigana": "せっけん"
+      "dutch": "zeep",
+      "swedish": "",
+      "spanish": "",
+      "portuguese": "",
+      "french": "",
+      "hindi": ""
     },
     {
       "id": "651",
       "japanese": "背広",
+      "furigana": "せびろ",
       "english": "jacket, suit",
-      "furigana": "せびろ"
+      "dutch": "pak",
+      "swedish": "",
+      "spanish": "",
+      "portuguese": "",
+      "french": "",
+      "hindi": ""
     },
     {
       "id": "652",
       "japanese": "狭い",
+      "furigana": "せまい",
       "english": "narrow",
-      "furigana": "せまい"
+      "dutch": "nauw",
+      "swedish": "",
+      "spanish": "",
+      "portuguese": "",
+      "french": "",
+      "hindi": ""
     },
     {
       "id": "653",
       "japanese": "ゼロ",
+      "furigana": "",
       "english": "zero",
-      "furigana": ""
+      "dutch": "nul",
+      "swedish": "",
+      "spanish": "",
+      "portuguese": "",
+      "french": "",
+      "hindi": ""
     },
     {
       "id": "654",
       "japanese": "千",
+      "furigana": "せん",
       "english": "1,000, thousand",
-      "furigana": "せん"
+      "dutch": "1,000 duizend",
+      "swedish": "",
+      "spanish": "",
+      "portuguese": "",
+      "french": "",
+      "hindi": ""
     },
     {
       "id": "655",
       "japanese": "先月",
+      "furigana": "せんげつ",
       "english": "last month",
-      "furigana": "せんげつ"
+      "dutch": "vorige maand",
+      "swedish": "",
+      "spanish": "",
+      "portuguese": "",
+      "french": "",
+      "hindi": ""
     },
     {
       "id": "656",
       "japanese": "先週",
+      "furigana": "せんしゅう",
       "english": "last week",
-      "furigana": "せんしゅう"
+      "dutch": "vorige week",
+      "swedish": "",
+      "spanish": "",
+      "portuguese": "",
+      "french": "",
+      "hindi": ""
     },
     {
       "id": "657",
       "japanese": "先生",
+      "furigana": "せんせい",
       "english": "teacher",
-      "furigana": "せんせい"
+      "dutch": "leraar",
+      "swedish": "",
+      "spanish": "",
+      "portuguese": "",
+      "french": "",
+      "hindi": ""
     },
     {
       "id": "658",
       "japanese": "洗濯",
+      "furigana": "せんたく",
       "english": "washing, to wash",
-      "furigana": "せんたく"
+      "dutch": "wassen",
+      "swedish": "",
+      "spanish": "",
+      "portuguese": "",
+      "french": "",
+      "hindi": ""
     },
     {
       "id": "659",
       "japanese": "全部",
+      "furigana": "ぜんぶ",
       "english": "all",
-      "furigana": "ぜんぶ"
+      "dutch": "alle, alles",
+      "swedish": "",
+      "spanish": "",
+      "portuguese": "",
+      "french": "",
+      "hindi": ""
     },
     {
       "id": "660",
       "japanese": "そう",
+      "furigana": "",
       "english": "so",
-      "furigana": ""
+      "dutch": "(dat is) zo",
+      "swedish": "",
+      "spanish": "",
+      "portuguese": "",
+      "french": "",
+      "hindi": ""
     },
     {
       "id": "661",
       "japanese": "掃除",
+      "furigana": "そうじ",
       "english": "to clean",
-      "furigana": "そうじ"
+      "dutch": "schoonmaken",
+      "swedish": "",
+      "spanish": "",
+      "portuguese": "",
+      "french": "",
+      "hindi": ""
     },
     {
       "id": "662",
       "japanese": "そうして",
+      "furigana": "",
       "english": "and then",
-      "furigana": ""
+      "dutch": "en dan",
+      "swedish": "",
+      "spanish": "",
+      "portuguese": "",
+      "french": "",
+      "hindi": ""
     },
     {
       "id": "663",
       "japanese": "そちら",
+      "furigana": "",
       "english": "there, near you (polite)",
-      "furigana": ""
+      "dutch": "daar, bij jou (beleefd)",
+      "swedish": "",
+      "spanish": "",
+      "portuguese": "",
+      "french": "",
+      "hindi": ""
     },
     {
       "id": "664",
       "japanese": "外",
+      "furigana": "そと",
       "english": "outside",
-      "furigana": "そと"
+      "dutch": "buiten",
+      "swedish": "",
+      "spanish": "",
+      "portuguese": "",
+      "french": "",
+      "hindi": ""
     },
     {
       "id": "665",
       "japanese": "その",
+      "furigana": "",
       "english": "that [something]",
-      "furigana": ""
+      "dutch": "die [iets]",
+      "swedish": "",
+      "spanish": "",
+      "portuguese": "",
+      "french": "",
+      "hindi": ""
     },
     {
       "id": "666",
       "japanese": "そば",
+      "furigana": "",
       "english": "next to",
-      "furigana": ""
+      "dutch": "naast",
+      "swedish": "",
+      "spanish": "",
+      "portuguese": "",
+      "french": "",
+      "hindi": ""
     },
     {
       "id": "667",
       "japanese": "それ",
+      "furigana": "",
       "english": "that",
-      "furigana": ""
+      "dutch": "dat",
+      "swedish": "",
+      "spanish": "",
+      "portuguese": "",
+      "french": "",
+      "hindi": ""
     },
     {
       "id": "668",
       "japanese": "それから",
+      "furigana": "",
       "english": "after that",
-      "furigana": ""
+      "dutch": "daarna",
+      "swedish": "",
+      "spanish": "",
+      "portuguese": "",
+      "french": "",
+      "hindi": ""
     },
     {
       "id": "669",
       "japanese": "それでは",
+      "furigana": "",
       "english": "then, well",
-      "furigana": ""
+      "dutch": "dan, nou",
+      "swedish": "",
+      "spanish": "",
+      "portuguese": "",
+      "french": "",
+      "hindi": ""
     },
     {
       "id": "670",
       "japanese": "〜台",
+      "furigana": "〜だい",
       "english": "counter for machines",
-      "furigana": "〜だい"
+      "dutch": "teller voor machines",
+      "swedish": "",
+      "spanish": "",
+      "portuguese": "",
+      "french": "",
+      "hindi": ""
     },
     {
       "id": "671",
       "japanese": "大学",
+      "furigana": "だいがく",
       "english": "university",
-      "furigana": "だいがく"
+      "dutch": "universiteit",
+      "swedish": "",
+      "spanish": "",
+      "portuguese": "",
+      "french": "",
+      "hindi": ""
     },
     {
       "id": "672",
       "japanese": "大使館",
+      "furigana": "たいしかん",
       "english": "embassy",
-      "furigana": "たいしかん"
+      "dutch": "ambassade",
+      "swedish": "",
+      "spanish": "",
+      "portuguese": "",
+      "french": "",
+      "hindi": ""
     },
     {
       "id": "673",
       "japanese": "大丈夫",
+      "furigana": "だいじょうぶ",
       "english": "OK",
-      "furigana": "だいじょうぶ"
+      "dutch": "oke, in orde",
+      "swedish": "",
+      "spanish": "",
+      "portuguese": "",
+      "french": "",
+      "hindi": ""
     },
     {
       "id": "674",
       "japanese": "大好き",
+      "furigana": "だいすき",
       "english": "to be very fond of",
-      "furigana": "だいすき"
+      "dutch": "houden van",
+      "swedish": "",
+      "spanish": "",
+      "portuguese": "",
+      "french": "",
+      "hindi": ""
     },
     {
       "id": "675",
       "japanese": "大切",
+      "furigana": "たいせつ",
       "english": "very important",
-      "furigana": "たいせつ"
+      "dutch": "heel belangrijk",
+      "swedish": "",
+      "spanish": "",
+      "portuguese": "",
+      "french": "",
+      "hindi": ""
     },
     {
       "id": "676",
       "japanese": "たいてい",
+      "furigana": "",
       "english": "mostly, usually",
-      "furigana": ""
+      "dutch": "meestal, gewoonlijk",
+      "swedish": "",
+      "spanish": "",
+      "portuguese": "",
+      "french": "",
+      "hindi": ""
     },
     {
       "id": "677",
       "japanese": "大変",
+      "furigana": "たいへん",
       "english": "very, serious",
-      "furigana": "たいへん"
+      "dutch": "moeilijk, serieus",
+      "swedish": "",
+      "spanish": "",
+      "portuguese": "",
+      "french": "",
+      "hindi": ""
     },
     {
       "id": "678",
       "japanese": "沢山",
+      "furigana": "たくさん",
       "english": "many, much",
-      "furigana": "たくさん"
+      "dutch": "veel",
+      "swedish": "",
+      "spanish": "",
+      "portuguese": "",
+      "french": "",
+      "hindi": ""
     },
     {
       "id": "679",
       "japanese": "出す",
+      "furigana": "だす",
       "english": "to take out, hand in",
-      "furigana": "だす"
+      "dutch": "uitnemen",
+      "swedish": "",
+      "spanish": "",
+      "portuguese": "",
+      "french": "",
+      "hindi": ""
     },
     {
       "id": "680",
       "japanese": "~達",
+      "furigana": "〜たち",
       "english": "more than one, and others",
-      "furigana": "〜たち"
+      "dutch": "meer dan een, en anderen",
+      "swedish": "",
+      "spanish": "",
+      "portuguese": "",
+      "french": "",
+      "hindi": ""
     },
     {
       "id": "681",
       "japanese": "立つ",
+      "furigana": "たつ",
       "english": "to stand",
-      "furigana": "たつ"
+      "dutch": "staan",
+      "swedish": "",
+      "spanish": "",
+      "portuguese": "",
+      "french": "",
+      "hindi": ""
     },
     {
       "id": "682",
       "japanese": "楽しい",
+      "furigana": "たのしい",
       "english": "pleasant, enjoyable",
-      "furigana": "たのしい"
+      "dutch": "plezier, plesant",
+      "swedish": "",
+      "spanish": "",
+      "portuguese": "",
+      "french": "",
+      "hindi": ""
     },
     {
       "id": "683",
       "japanese": "頼む",
+      "furigana": "たのむ",
       "english": "to ask, to request",
-      "furigana": "たのむ"
+      "dutch": "vragen, verzoeken",
+      "swedish": "",
+      "spanish": "",
+      "portuguese": "",
+      "french": "",
+      "hindi": ""
     },
     {
       "id": "684",
       "japanese": "たばこ",
+      "furigana": "",
       "english": "cigarette, tabaco",
-      "furigana": ""
+      "dutch": "sigaretten, tabak",
+      "swedish": "",
+      "spanish": "",
+      "portuguese": "",
+      "french": "",
+      "hindi": ""
     },
     {
       "id": "685",
       "japanese": "多分",
+      "furigana": " たぶん ",
       "english": "perhaps, probably",
-      "furigana": ""
+      "dutch": "misschien, mogeljik",
+      "swedish": "",
+      "spanish": "",
+      "portuguese": "",
+      "french": "",
+      "hindi": ""
     },
     {
       "id": "686",
       "japanese": "誰",
+      "furigana": "だれ",
       "english": "who",
-      "furigana": "だれ"
+      "dutch": "wie",
+      "swedish": "",
+      "spanish": "",
+      "portuguese": "",
+      "french": "",
+      "hindi": ""
     },
     {
       "id": "687",
       "japanese": "誕生日",
+      "furigana": "たんじょうび",
       "english": "birthday",
-      "furigana": "たんじょうび"
+      "dutch": "verjaardag",
+      "swedish": "",
+      "spanish": "",
+      "portuguese": "",
+      "french": "",
+      "hindi": ""
     },
     {
       "id": "688",
       "japanese": "だんだん",
+      "furigana": "",
       "english": "gradually",
-      "furigana": ""
+      "dutch": "geleidelijk",
+      "swedish": "",
+      "spanish": "",
+      "portuguese": "",
+      "french": "",
+      "hindi": ""
     },
     {
       "id": "689",
       "japanese": "小さい",
+      "furigana": "ちいさい",
       "english": "small",
-      "furigana": "ちいさい"
+      "dutch": "klein",
+      "swedish": "",
+      "spanish": "",
+      "portuguese": "",
+      "french": "",
+      "hindi": ""
     },
     {
       "id": "690",
       "japanese": "違う",
+      "furigana": "ちがう",
       "english": "different",
-      "furigana": "ちがう"
+      "dutch": "anders",
+      "swedish": "",
+      "spanish": "",
+      "portuguese": "",
+      "french": "",
+      "hindi": ""
     },
     {
       "id": "691",
       "japanese": "〜中",
+      "furigana": "〜ちゅう",
       "english": "in the middle of",
-      "furigana": "〜ちゅう"
+      "dutch": "in het midden van",
+      "swedish": "",
+      "spanish": "",
+      "portuguese": "",
+      "french": "",
+      "hindi": ""
     },
     {
       "id": "692",
       "japanese": "ちょうど",
+      "furigana": "",
       "english": "just",
-      "furigana": ""
+      "dutch": "juist",
+      "swedish": "",
+      "spanish": "",
+      "portuguese": "",
+      "french": "",
+      "hindi": ""
     },
     {
       "id": "693",
       "japanese": "ちょっと",
+      "furigana": "",
       "english": "a little",
-      "furigana": ""
+      "dutch": "een beetje",
+      "swedish": "",
+      "spanish": "",
+      "portuguese": "",
+      "french": "",
+      "hindi": ""
     },
     {
       "id": "694",
       "japanese": "一日",
+      "furigana": "ついたち",
       "english": "the 1st day of a month",
-      "furigana": "ついたち"
+      "dutch": "de 1e dag van de maand",
+      "swedish": "",
+      "spanish": "",
+      "portuguese": "",
+      "french": "",
+      "hindi": ""
     },
     {
       "id": "695",
       "japanese": "使う",
+      "furigana": "つかう",
       "english": "to use",
-      "furigana": "つかう"
+      "dutch": "gebruiken",
+      "swedish": "",
+      "spanish": "",
+      "portuguese": "",
+      "french": "",
+      "hindi": ""
     },
     {
       "id": "696",
       "japanese": "疲れる",
+      "furigana": "つかれる",
       "english": "to get tired",
-      "furigana": "つかれる"
+      "dutch": "moe worden",
+      "swedish": "",
+      "spanish": "",
+      "portuguese": "",
+      "french": "",
+      "hindi": ""
     },
     {
       "id": "697",
       "japanese": "次",
+      "furigana": "つぎ",
       "english": "next",
-      "furigana": "つぎ"
+      "dutch": "volgende",
+      "swedish": "",
+      "spanish": "",
+      "portuguese": "",
+      "french": "",
+      "hindi": ""
     },
     {
       "id": "698",
       "japanese": "机",
+      "furigana": "つくえ",
       "english": "desk",
-      "furigana": "つくえ"
+      "dutch": "bureau",
+      "swedish": "",
+      "spanish": "",
+      "portuguese": "",
+      "french": "",
+      "hindi": ""
     },
     {
       "id": "699",
       "japanese": "作る",
+      "furigana": "つくる",
       "english": "to make, to produce",
-      "furigana": "つくる"
+      "dutch": "maken, produceren",
+      "swedish": "",
+      "spanish": "",
+      "portuguese": "",
+      "french": "",
+      "hindi": ""
     },
     {
       "id": "700",
       "japanese": "点ける",
+      "furigana": "つける",
       "english": "to turn on",
-      "furigana": "つける"
+      "dutch": "aanzetten",
+      "swedish": "",
+      "spanish": "",
+      "portuguese": "",
+      "french": "",
+      "hindi": ""
     },
     {
       "id": "701",
       "japanese": "勤める",
+      "furigana": "つとめる",
       "english": "to work for someone",
-      "furigana": "つとめる"
+      "dutch": "voor iemand werken",
+      "swedish": "",
+      "spanish": "",
+      "portuguese": "",
+      "french": "",
+      "hindi": ""
     },
     {
       "id": "702",
       "japanese": "詰らない",
+      "furigana": "つまらない",
       "english": "uninteresting",
-      "furigana": "つまらない"
+      "dutch": "oninteressant",
+      "swedish": "",
+      "spanish": "",
+      "portuguese": "",
+      "french": "",
+      "hindi": ""
     },
     {
       "id": "703",
       "japanese": "冷たい",
+      "furigana": "つめたい",
       "english": "cold",
-      "furigana": "つめたい"
+      "dutch": "koud",
+      "swedish": "",
+      "spanish": "",
+      "portuguese": "",
+      "french": "",
+      "hindi": ""
     },
     {
       "id": "704",
       "japanese": "強い",
+      "furigana": "つよい",
       "english": "strong",
-      "furigana": "つよい"
+      "dutch": "sterk",
+      "swedish": "",
+      "spanish": "",
+      "portuguese": "",
+      "french": "",
+      "hindi": ""
     },
     {
       "id": "705",
       "japanese": "手",
+      "furigana": "て",
       "english": "hand",
-      "furigana": "て"
+      "dutch": "hand",
+      "swedish": "",
+      "spanish": "",
+      "portuguese": "",
+      "french": "",
+      "hindi": ""
     },
     {
       "id": "706",
       "japanese": "テープ",
+      "furigana": "",
       "english": "tape",
-      "furigana": ""
+      "dutch": "tape",
+      "swedish": "",
+      "spanish": "",
+      "portuguese": "",
+      "french": "",
+      "hindi": ""
     },
     {
       "id": "707",
       "japanese": "テープレコーダー",
+      "furigana": "",
       "english": "tape recorder",
-      "furigana": ""
+      "dutch": "taperecorder",
+      "swedish": "",
+      "spanish": "",
+      "portuguese": "",
+      "french": "",
+      "hindi": ""
     },
     {
       "id": "708",
       "japanese": "テーブル",
+      "furigana": "",
       "english": "table",
-      "furigana": ""
+      "dutch": "tafel",
+      "swedish": "",
+      "spanish": "",
+      "portuguese": "",
+      "french": "",
+      "hindi": ""
     },
     {
       "id": "709",
       "japanese": "出かける",
+      "furigana": "でかける",
       "english": "to go out",
-      "furigana": "でかける"
+      "dutch": "uitgaan, naar buiten gaan",
+      "swedish": "",
+      "spanish": "",
+      "portuguese": "",
+      "french": "",
+      "hindi": ""
     },
     {
       "id": "710",
       "japanese": "手紙",
+      "furigana": "てがみ",
       "english": "letter",
-      "furigana": "てがみ"
+      "dutch": "brief",
+      "swedish": "",
+      "spanish": "",
+      "portuguese": "",
+      "french": "",
+      "hindi": ""
     },
     {
       "id": "711",
       "japanese": "出来る",
+      "furigana": "できる",
       "english": "to be able to do",
-      "furigana": "できる"
+      "dutch": "in staat zijn, kunnen",
+      "swedish": "",
+      "spanish": "",
+      "portuguese": "",
+      "french": "",
+      "hindi": ""
     },
     {
       "id": "712",
       "japanese": "出口",
-      "english": "でぐち",
-      "furigana": "exit"
+      "furigana": "でぐち",
+      "english": "exit",
+      "dutch": "uitgang",
+      "swedish": "",
+      "spanish": "",
+      "portuguese": "",
+      "french": "",
+      "hindi": ""
     },
     {
       "id": "713",
       "japanese": "テスト",
+      "furigana": "",
       "english": "test",
-      "furigana": ""
+      "dutch": "test",
+      "swedish": "",
+      "spanish": "",
+      "portuguese": "",
+      "french": "",
+      "hindi": ""
     },
     {
       "id": "714",
       "japanese": "では",
+      "furigana": "",
       "english": "then, well",
-      "furigana": ""
+      "dutch": "dan, nou",
+      "swedish": "",
+      "spanish": "",
+      "portuguese": "",
+      "french": "",
+      "hindi": ""
     },
     {
       "id": "715",
       "japanese": "でも",
+      "furigana": "",
       "english": "but",
-      "furigana": ""
+      "dutch": "maar",
+      "swedish": "",
+      "spanish": "",
+      "portuguese": "",
+      "french": "",
+      "hindi": ""
     },
     {
       "id": "716",
       "japanese": "出ます",
+      "furigana": "でます",
       "english": "to leave",
-      "furigana": "でます"
+      "dutch": "verlaten",
+      "swedish": "",
+      "spanish": "",
+      "portuguese": "",
+      "french": "",
+      "hindi": ""
     },
     {
       "id": "717",
       "japanese": "天気",
+      "furigana": "てんき",
       "english": "weather",
-      "furigana": "てんき"
+      "dutch": "weer",
+      "swedish": "",
+      "spanish": "",
+      "portuguese": "",
+      "french": "",
+      "hindi": ""
     },
     {
       "id": "718",
       "japanese": "電気",
+      "furigana": "でんき",
       "english": "electricity",
-      "furigana": "でんき"
+      "dutch": "elektriciteit",
+      "swedish": "",
+      "spanish": "",
+      "portuguese": "",
+      "french": "",
+      "hindi": ""
     },
     {
       "id": "719",
       "japanese": "電話",
+      "furigana": "でんわ",
       "english": "phone",
-      "furigana": "でんわ"
+      "dutch": "telefoon",
+      "swedish": "",
+      "spanish": "",
+      "portuguese": "",
+      "french": "",
+      "hindi": ""
     },
     {
       "id": "720",
       "japanese": "〜度",
+      "furigana": "〜ど",
       "english": "~times, ~degree",
-      "furigana": "〜ど"
+      "dutch": "~keer, ~graad",
+      "swedish": "",
+      "spanish": "",
+      "portuguese": "",
+      "french": "",
+      "hindi": ""
     },
     {
       "id": "721",
       "japanese": "ドア",
+      "furigana": "",
       "english": "door",
-      "furigana": ""
+      "dutch": "deur",
+      "swedish": "",
+      "spanish": "",
+      "portuguese": "",
+      "french": "",
+      "hindi": ""
     },
     {
       "id": "722",
       "japanese": "どう",
+      "furigana": "",
       "english": "how?",
-      "furigana": ""
+      "dutch": "hoe",
+      "swedish": "",
+      "spanish": "",
+      "portuguese": "",
+      "french": "",
+      "hindi": ""
     },
     {
       "id": "723",
       "japanese": "どうして",
+      "furigana": "",
       "english": "why?",
-      "furigana": ""
+      "dutch": "waarom?",
+      "swedish": "",
+      "spanish": "",
+      "portuguese": "",
+      "french": "",
+      "hindi": ""
     },
     {
       "id": "724",
       "japanese": "どうぞ",
+      "furigana": "",
       "english": "please, here you are",
-      "furigana": ""
+      "dutch": "alsjeblieft",
+      "swedish": "",
+      "spanish": "",
+      "portuguese": "",
+      "french": "",
+      "hindi": ""
     },
     {
       "id": "725",
       "japanese": "動物",
+      "furigana": "どうぶつ",
       "english": "animal",
-      "furigana": "どうぶつ"
+      "dutch": "dier",
+      "swedish": "",
+      "spanish": "",
+      "portuguese": "",
+      "french": "",
+      "hindi": ""
     },
     {
       "id": "726",
       "japanese": "どうも",
+      "furigana": "",
       "english": "thanks",
-      "furigana": ""
+      "dutch": "dankje",
+      "swedish": "",
+      "spanish": "",
+      "portuguese": "",
+      "french": "",
+      "hindi": ""
     },
     {
       "id": "727",
       "japanese": "遠い",
+      "furigana": "とおい",
       "english": "far",
-      "furigana": "とおい"
+      "dutch": "ver",
+      "swedish": "",
+      "spanish": "",
+      "portuguese": "",
+      "french": "",
+      "hindi": ""
     },
     {
       "id": "728",
       "japanese": "時々",
+      "furigana": "ときどき",
       "english": "sometimes",
-      "furigana": "ときどき"
+      "dutch": "soms",
+      "swedish": "",
+      "spanish": "",
+      "portuguese": "",
+      "french": "",
+      "hindi": ""
     },
     {
       "id": "729",
       "japanese": "時計",
+      "furigana": "とけい",
       "english": "clock",
-      "furigana": "とけい"
+      "dutch": "klok",
+      "swedish": "",
+      "spanish": "",
+      "portuguese": "",
+      "french": "",
+      "hindi": ""
     },
     {
       "id": "730",
       "japanese": "所",
+      "furigana": "ところ",
       "english": "place",
-      "furigana": "ところ"
+      "dutch": "plek",
+      "swedish": "",
+      "spanish": "",
+      "portuguese": "",
+      "french": "",
+      "hindi": ""
     },
     {
       "id": "731",
       "japanese": "図書館",
+      "furigana": "としょかん",
       "english": "library",
-      "furigana": "としょかん"
+      "dutch": "bibliotheek",
+      "swedish": "",
+      "spanish": "",
+      "portuguese": "",
+      "french": "",
+      "hindi": ""
     },
     {
       "id": "732",
       "japanese": "どちら",
+      "furigana": "",
       "english": "which, where (polite)",
-      "furigana": ""
+      "dutch": "welke, waar (beleefd",
+      "swedish": "",
+      "spanish": "",
+      "portuguese": "",
+      "french": "",
+      "hindi": ""
     },
     {
       "id": "733",
       "japanese": "とても",
+      "furigana": "",
       "english": "very much, quiet",
-      "furigana": ""
+      "dutch": "heel erg, behoorlijk",
+      "swedish": "",
+      "spanish": "",
+      "portuguese": "",
+      "french": "",
+      "hindi": ""
     },
     {
       "id": "734",
       "japanese": "どなた",
+      "furigana": "",
       "english": "who (polite)",
-      "furigana": ""
+      "dutch": "wie (beleefd)",
+      "swedish": "",
+      "spanish": "",
+      "portuguese": "",
+      "french": "",
+      "hindi": ""
     },
     {
       "id": "735",
       "japanese": "隣り",
+      "furigana": "となり",
       "english": "next to",
-      "furigana": "となり"
+      "dutch": "naast",
+      "swedish": "",
+      "spanish": "",
+      "portuguese": "",
+      "french": "",
+      "hindi": ""
     },
     {
       "id": "736",
       "japanese": "どの",
+      "furigana": "",
       "english": "which?",
-      "furigana": ""
+      "dutch": "welke?",
+      "swedish": "",
+      "spanish": "",
+      "portuguese": "",
+      "french": "",
+      "hindi": ""
     },
     {
       "id": "737",
       "japanese": "飛ぶ",
+      "furigana": "とぶ",
       "english": "to fly",
-      "furigana": "とぶ"
+      "dutch": "vliegen",
+      "swedish": "",
+      "spanish": "",
+      "portuguese": "",
+      "french": "",
+      "hindi": ""
     },
     {
       "id": "738",
       "japanese": "止まる",
+      "furigana": "とまる",
       "english": "to stop",
-      "furigana": "とまる"
+      "dutch": "stoppen",
+      "swedish": "",
+      "spanish": "",
+      "portuguese": "",
+      "french": "",
+      "hindi": ""
     },
     {
       "id": "739",
       "japanese": "友達",
+      "furigana": "ともだち",
       "english": "friend",
-      "furigana": "ともだち"
+      "dutch": "vriend",
+      "swedish": "",
+      "spanish": "",
+      "portuguese": "",
+      "french": "",
+      "hindi": ""
     },
     {
       "id": "740",
       "japanese": "土曜日",
+      "furigana": "どようび",
       "english": "Saturday",
-      "furigana": "どようび"
+      "dutch": "zaterdag",
+      "swedish": "",
+      "spanish": "",
+      "portuguese": "",
+      "french": "",
+      "hindi": ""
     },
     {
       "id": "741",
       "japanese": "鳥",
+      "furigana": "とり",
       "english": "bird",
-      "furigana": "とり"
+      "dutch": "vogel",
+      "swedish": "",
+      "spanish": "",
+      "portuguese": "",
+      "french": "",
+      "hindi": ""
     },
     {
       "id": "742",
       "japanese": "取る",
+      "furigana": "とる",
       "english": "to take",
-      "furigana": "とる"
+      "dutch": "nemen",
+      "swedish": "",
+      "spanish": "",
+      "portuguese": "",
+      "french": "",
+      "hindi": ""
     },
     {
       "id": "743",
       "japanese": "撮る",
+      "furigana": "とる",
       "english": "to take a photo",
-      "furigana": "とる"
+      "dutch": "een foto nemen",
+      "swedish": "",
+      "spanish": "",
+      "portuguese": "",
+      "french": "",
+      "hindi": ""
     },
     {
       "id": "744",
       "japanese": "どれ",
+      "furigana": "",
       "english": "which?",
-      "furigana": ""
+      "dutch": "welke?",
+      "swedish": "",
+      "spanish": "",
+      "portuguese": "",
+      "french": "",
+      "hindi": ""
     },
     {
       "id": "745",
       "japanese": "どんな",
+      "furigana": "",
       "english": "what kind of?",
-      "furigana": ""
+      "dutch": "what voor soort?",
+      "swedish": "",
+      "spanish": "",
+      "portuguese": "",
+      "french": "",
+      "hindi": ""
     },
     {
       "id": "746",
       "japanese": "ナイフ",
+      "furigana": "",
       "english": "knife",
-      "furigana": ""
+      "dutch": "mes",
+      "swedish": "",
+      "spanish": "",
+      "portuguese": "",
+      "french": "",
+      "hindi": ""
     },
     {
       "id": "747",
       "japanese": "中",
+      "furigana": "なか",
       "english": "inside",
-      "furigana": "なか"
+      "dutch": "binnen",
+      "swedish": "",
+      "spanish": "",
+      "portuguese": "",
+      "french": "",
+      "hindi": ""
     },
     {
       "id": "748",
       "japanese": "長い",
+      "furigana": "ながい",
       "english": "long",
-      "furigana": "ながい"
+      "dutch": "lang",
+      "swedish": "",
+      "spanish": "",
+      "portuguese": "",
+      "french": "",
+      "hindi": ""
     },
     {
       "id": "749",
       "japanese": "鳴く",
+      "furigana": "なく",
       "english": "to sing, mew, moo",
-      "furigana": "なく"
+      "dutch": "zingen (geluid van een dier)",
+      "swedish": "",
+      "spanish": "",
+      "portuguese": "",
+      "french": "",
+      "hindi": ""
     },
     {
       "id": "750",
       "japanese": "夏休み",
+      "furigana": "なつやすみ",
       "english": "summer vacation",
-      "furigana": "なつやすみ"
+      "dutch": "zomervakantie",
+      "swedish": "",
+      "spanish": "",
+      "portuguese": "",
+      "french": "",
+      "hindi": ""
     },
     {
       "id": "751",
       "japanese": "〜など",
+      "furigana": "",
       "english": "and so on",
-      "furigana": ""
+      "dutch": "enzovoort, etc",
+      "swedish": "",
+      "spanish": "",
+      "portuguese": "",
+      "french": "",
+      "hindi": ""
     },
     {
       "id": "752",
       "japanese": "何",
+      "furigana": "なに",
       "english": "what?",
-      "furigana": "なに"
+      "dutch": "wat?",
+      "swedish": "",
+      "spanish": "",
+      "portuguese": "",
+      "french": "",
+      "hindi": ""
     },
     {
       "id": "753",
       "japanese": "名前",
+      "furigana": "なまえ",
       "english": "name",
-      "furigana": "なまえ"
+      "dutch": "naam",
+      "swedish": "",
+      "spanish": "",
+      "portuguese": "",
+      "french": "",
+      "hindi": ""
     },
     {
       "id": "754",
       "japanese": "習う",
+      "furigana": "ならう",
       "english": "to learn",
-      "furigana": "ならう"
+      "dutch": "leren",
+      "swedish": "",
+      "spanish": "",
+      "portuguese": "",
+      "french": "",
+      "hindi": ""
     },
     {
       "id": "755",
       "japanese": "並ぶ",
+      "furigana": "ならぶ",
       "english": "to form a line",
-      "furigana": "ならぶ"
+      "dutch": "een rij vormen",
+      "swedish": "",
+      "spanish": "",
+      "portuguese": "",
+      "french": "",
+      "hindi": ""
     },
     {
       "id": "756",
       "japanese": "並べる",
+      "furigana": "ならべる",
       "english": "to line up",
-      "furigana": "ならべる"
+      "dutch": "in de rij wachten",
+      "swedish": "",
+      "spanish": "",
+      "portuguese": "",
+      "french": "",
+      "hindi": ""
     },
     {
       "id": "757",
       "japanese": "なる",
+      "furigana": "",
       "english": "to become",
-      "furigana": ""
+      "dutch": "worden",
+      "swedish": "",
+      "spanish": "",
+      "portuguese": "",
+      "french": "",
+      "hindi": ""
     },
     {
       "id": "758",
       "japanese": "賑やか",
+      "furigana": "にぎやか",
       "english": "lively",
-      "furigana": "にぎやか"
+      "dutch": "levendig",
+      "swedish": "",
+      "spanish": "",
+      "portuguese": "",
+      "french": "",
+      "hindi": ""
     },
     {
       "id": "759",
       "japanese": "日曜日",
+      "furigana": "にちようび",
       "english": "Sunday",
-      "furigana": "にちようび"
+      "dutch": "zondag",
+      "swedish": "",
+      "spanish": "",
+      "portuguese": "",
+      "french": "",
+      "hindi": ""
     },
     {
       "id": "760",
       "japanese": "荷物",
+      "furigana": "にもつ",
       "english": "luggage",
-      "furigana": "にもつ"
+      "dutch": "beggage",
+      "swedish": "",
+      "spanish": "",
+      "portuguese": "",
+      "french": "",
+      "hindi": ""
     },
     {
       "id": "761",
       "japanese": "庭",
+      "furigana": "にわ",
       "english": "garden",
-      "furigana": "にわ"
+      "dutch": "tuin",
+      "swedish": "",
+      "spanish": "",
+      "portuguese": "",
+      "french": "",
+      "hindi": ""
     },
     {
       "id": "762",
       "japanese": "〜人",
+      "furigana": "〜にん",
       "english": "~people",
-      "furigana": "〜にん"
+      "dutch": "~mensen",
+      "swedish": "",
+      "spanish": "",
+      "portuguese": "",
+      "french": "",
+      "hindi": ""
     },
     {
       "id": "763",
       "japanese": "脱ぐ",
+      "furigana": "ぬぐ",
       "english": "to take off clothes",
-      "furigana": "ぬぐ"
+      "dutch": "uitkleden",
+      "swedish": "",
+      "spanish": "",
+      "portuguese": "",
+      "french": "",
+      "hindi": ""
     },
     {
       "id": "764",
       "japanese": "ネクタイ",
+      "furigana": "",
       "english": "tie",
-      "furigana": ""
+      "dutch": "stropdas",
+      "swedish": "",
+      "spanish": "",
+      "portuguese": "",
+      "french": "",
+      "hindi": ""
     },
     {
       "id": "765",
       "japanese": "寝る",
+      "furigana": "ねる",
       "english": "to go to bed, to sleep",
-      "furigana": "ねる"
+      "dutch": "naar bed gaan, slapen",
+      "swedish": "",
+      "spanish": "",
+      "portuguese": "",
+      "french": "",
+      "hindi": ""
     },
     {
       "id": "766",
       "japanese": "〜年",
+      "furigana": "〜ねん",
       "english": "~years",
-      "furigana": "〜ねん"
+      "dutch": "~jaar",
+      "swedish": "",
+      "spanish": "",
+      "portuguese": "",
+      "french": "",
+      "hindi": ""
     },
     {
       "id": "767",
       "japanese": "登る",
+      "furigana": "のぼる",
       "english": "to climb up",
-      "furigana": "のぼる"
+      "dutch": "klimmen",
+      "swedish": "",
+      "spanish": "",
+      "portuguese": "",
+      "french": "",
+      "hindi": ""
     },
     {
       "id": "768",
       "japanese": "乗る",
+      "furigana": "のる",
       "english": "to take, to ride",
-      "furigana": "のる"
+      "dutch": "instappen",
+      "swedish": "",
+      "spanish": "",
+      "portuguese": "",
+      "french": "",
+      "hindi": ""
     },
     {
       "id": "769",
       "japanese": "歯",
+      "furigana": "は",
       "english": "teeth",
-      "furigana": "は"
+      "dutch": "tanden",
+      "swedish": "",
+      "spanish": "",
+      "portuguese": "",
+      "french": "",
+      "hindi": ""
     },
     {
       "id": "770",
       "japanese": "パーテイー",
+      "furigana": "",
       "english": "party",
-      "furigana": ""
+      "dutch": "feest",
+      "swedish": "",
+      "spanish": "",
+      "portuguese": "",
+      "french": "",
+      "hindi": ""
     },
     {
       "id": "771",
