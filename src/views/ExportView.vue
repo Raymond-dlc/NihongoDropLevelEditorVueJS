@@ -28,10 +28,11 @@ const loadWords = async () => {
   exportWords.value = JSON.stringify(
     words.map((word) => {
       return {
-        wordId: word.id,
+        wordId: Number(word.id),
         japanese: word.japanese,
         furigana: word.furigana,
-        english: word.english
+        english: word.english,
+        dutch: word.dutch
       }
     })
   )
@@ -43,7 +44,7 @@ const loadChapters = async () => {
   exportChapters.value = JSON.stringify(
     chapters.map((chapter) => {
       return {
-        id: chapter.id,
+        id: Number(chapter.id),
         title: chapter.title,
         description: chapter.description
       }
