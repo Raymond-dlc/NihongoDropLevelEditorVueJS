@@ -8635,32 +8635,62 @@
     {
       "id": "282",
       "japanese": "私",
+      "furigana": "わたし",
       "english": "I,me (formal or female)",
-      "furigana": "わたし"
+      "dutch": "ik,me (formeel of vrouwelijk)",
+      "swedish": "",
+      "spanish": "",
+      "portuguese": "",
+      "french": "",
+      "hindi": ""
     },
     {
       "id": "283",
       "japanese": "母",
+      "furigana": "はは",
       "english": "mother",
-      "furigana": "はは"
+      "dutch": "moeder",
+      "swedish": "",
+      "spanish": "",
+      "portuguese": "",
+      "french": "",
+      "hindi": ""
     },
     {
       "id": "284",
       "japanese": "父",
+      "furigana": "ちち",
       "english": "father",
-      "furigana": "ちち"
+      "dutch": "vader",
+      "swedish": "",
+      "spanish": "",
+      "portuguese": "",
+      "french": "",
+      "hindi": ""
     },
     {
       "id": "285",
       "japanese": "姉",
+      "furigana": "あね",
       "english": "older sister",
-      "furigana": "あね"
+      "dutch": "oudere zus",
+      "swedish": "",
+      "spanish": "",
+      "portuguese": "",
+      "french": "",
+      "hindi": ""
     },
     {
       "id": "286",
       "japanese": "兄",
+      "furigana": "あに",
       "english": "older brother",
-      "furigana": "あに"
+      "dutch": "oudere broer",
+      "swedish": "",
+      "spanish": "",
+      "portuguese": "",
+      "french": "",
+      "hindi": ""
     },
     {
       "id": "287",
