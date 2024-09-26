@@ -10453,128 +10453,254 @@
     {
       "id": "577",
       "japanese": "午後",
+      "furigana": "ごご",
       "english": "afternoon, p.m.",
-      "furigana": "ごご"
+      "dutch": "avond",
+      "swedish": "",
+      "spanish": "",
+      "portuguese": "",
+      "french": "",
+      "hindi": ""
     },
     {
       "id": "578",
       "japanese": "ご主人",
+      "furigana": "ごしゅじん",
       "english": "someone else’s husband",
-      "furigana": "ごしゅじん"
+      "dutch": "iemand's echtgenoot",
+      "swedish": "",
+      "spanish": "",
+      "portuguese": "",
+      "french": "",
+      "hindi": ""
     },
     {
       "id": "579",
       "japanese": "午前",
+      "furigana": "ごぜん",
       "english": "morning, a.m.",
-      "furigana": "ごぜん"
+      "dutch": "ochtend",
+      "swedish": "",
+      "spanish": "",
+      "portuguese": "",
+      "french": "",
+      "hindi": ""
     },
     {
       "id": "580",
       "japanese": "答える",
+      "furigana": "こたえる",
       "english": "to answer",
-      "furigana": "こたえる"
+      "dutch": "beantwoorden",
+      "swedish": "",
+      "spanish": "",
+      "portuguese": "",
+      "french": "",
+      "hindi": ""
     },
     {
       "id": "581",
       "japanese": "こちら",
+      "furigana": "",
       "english": "this side, this place",
-      "furigana": ""
+      "dutch": "deze kant, deze plek",
+      "swedish": "",
+      "spanish": "",
+      "portuguese": "",
+      "french": "",
+      "hindi": ""
     },
     {
       "id": "582",
       "japanese": "コップ",
+      "furigana": "",
       "english": "cup, glass",
-      "furigana": ""
+      "dutch": "glas",
+      "swedish": "",
+      "spanish": "",
+      "portuguese": "",
+      "french": "",
+      "hindi": ""
     },
     {
       "id": "583",
       "japanese": "今年",
+      "furigana": "ことし",
       "english": "this year",
-      "furigana": "ことし"
+      "dutch": "dit jaar",
+      "swedish": "",
+      "spanish": "",
+      "portuguese": "",
+      "french": "",
+      "hindi": ""
     },
     {
       "id": "584",
       "japanese": "言葉",
-      "english": "phrase, language",
-      "furigana": "ことば"
+      "furigana": "ことば",
+      "english": "word, phrase, language",
+      "dutch": "woord, uitspraak, taal",
+      "swedish": "",
+      "spanish": "",
+      "portuguese": "",
+      "french": "",
+      "hindi": ""
     },
     {
       "id": "585",
       "japanese": "子供",
+      "furigana": "こども",
       "english": "child",
-      "furigana": "こども"
+      "dutch": "kind",
+      "swedish": "",
+      "spanish": "",
+      "portuguese": "",
+      "french": "",
+      "hindi": ""
     },
     {
       "id": "586",
       "japanese": "この",
+      "furigana": "",
       "english": "this [something]",
-      "furigana": ""
+      "dutch": "dit/deze [iets]",
+      "swedish": "",
+      "spanish": "",
+      "portuguese": "",
+      "french": "",
+      "hindi": ""
     },
     {
       "id": "587",
       "japanese": "困る",
+      "furigana": "こまる",
       "english": "to be in trouble",
-      "furigana": "こまる"
+      "dutch": "in de problemen zitten",
+      "swedish": "",
+      "spanish": "",
+      "portuguese": "",
+      "french": "",
+      "hindi": ""
     },
     {
       "id": "588",
       "japanese": "これ",
+      "furigana": "",
       "english": "this",
-      "furigana": ""
+      "dutch": "dit",
+      "swedish": "",
+      "spanish": "",
+      "portuguese": "",
+      "french": "",
+      "hindi": ""
     },
     {
       "id": "589",
       "japanese": "ごろ",
+      "furigana": "",
       "english": "around…",
-      "furigana": ""
+      "dutch": "ongeveer...",
+      "swedish": "",
+      "spanish": "",
+      "portuguese": "",
+      "french": "",
+      "hindi": ""
     },
     {
       "id": "590",
       "japanese": "今月",
+      "furigana": "こんげつ",
       "english": "this month",
-      "furigana": "こんげつ"
+      "dutch": "deze maand",
+      "swedish": "",
+      "spanish": "",
+      "portuguese": "",
+      "french": "",
+      "hindi": ""
     },
     {
       "id": "591",
       "japanese": "今週",
+      "furigana": "こんしゅう",
       "english": "this week",
-      "furigana": "こんしゅう"
+      "dutch": "deze week",
+      "swedish": "",
+      "spanish": "",
+      "portuguese": "",
+      "french": "",
+      "hindi": ""
     },
     {
       "id": "592",
       "japanese": "こんな",
+      "furigana": "",
       "english": "this sort of, this kind of",
-      "furigana": ""
+      "dutch": "dit soort",
+      "swedish": "",
+      "spanish": "",
+      "portuguese": "",
+      "french": "",
+      "hindi": ""
     },
     {
       "id": "593",
       "japanese": "今晩",
+      "furigana": "",
       "english": "this evening",
-      "furigana": ""
+      "dutch": "deze avond",
+      "swedish": "",
+      "spanish": "",
+      "portuguese": "",
+      "french": "",
+      "hindi": ""
     },
     {
       "id": "594",
       "japanese": "さあ",
+      "furigana": "",
       "english": "well…",
-      "furigana": ""
+      "dutch": "nou...",
+      "swedish": "",
+      "spanish": "",
+      "portuguese": "",
+      "french": "",
+      "hindi": ""
     },
     {
       "id": "595",
       "japanese": "〜歳",
+      "furigana": "〜さい",
       "english": "years old",
-      "furigana": "〜さい"
+      "dutch": "~jaar oud",
+      "swedish": "",
+      "spanish": "",
+      "portuguese": "",
+      "french": "",
+      "hindi": ""
     },
     {
       "id": "596",
       "japanese": "魚",
+      "furigana": "さかな",
       "english": "fish",
-      "furigana": "さかな"
+      "dutch": "vis",
+      "swedish": "",
+      "spanish": "",
+      "portuguese": "",
+      "french": "",
+      "hindi": ""
     },
     {
       "id": "597",
       "japanese": "先",
+      "furigana": "さき",
       "english": "earlier, former",
-      "furigana": "さき"
+      "dutch": "eerder, voorheen",
+      "swedish": "",
+      "spanish": "",
+      "portuguese": "",
+      "french": "",
+      "hindi": ""
     },
     {
       "id": "598",
