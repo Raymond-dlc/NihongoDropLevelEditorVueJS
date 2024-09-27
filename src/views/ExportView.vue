@@ -46,7 +46,7 @@ const loadChapters = async () => {
       return {
         id: Number(chapter.id),
         title: chapter.title,
-        description: chapter.description
+        description: chapter.description ?? ''
       }
     })
   )
