@@ -2,7 +2,7 @@
 import { onMounted, ref, useSlots } from 'vue'
 import axios from 'axios'
 import type { Chapter } from '@/model/Chapter'
-import ChapterService from '@/data/ChapterService'
+import ChapterService from '@/data/chapterService'
 import router from '@/router'
 
 const isLoadingChapters = ref(true)

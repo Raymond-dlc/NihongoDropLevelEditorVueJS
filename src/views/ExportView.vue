@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import ChapterService from '@/data/ChapterService'
+import ChapterService from '@/data/chapterService'
 import LevelConnectionService from '@/data/LevelConnectionService'
 import LevelService from '@/data/LevelService'
 import LevelWordService from '@/data/LevelWordService'

@@ -1,10 +1,10 @@
 <script setup lang="ts">
-import axios from 'axios'
-import { ref } from 'vue'
-import { useRoute } from 'vue-router'
+import { ref, watch } from 'vue'
 import type { Chapter } from '@/model/Chapter'
-
-const route = useRoute()
+import DropDownMenu from './inputs/DropDownMenu.vue'
+import TextArea from './inputs/TextArea.vue'
+import { Language } from '@/model/enums/Language';
+import chapterService from '@/data/chapterService';
 
 const props = defineProps({
   chapter: {
@@ -17,32 +17,46 @@ const props = defineProps({
   }
 })
 
-const descriptionInput = ref(props.chapter.description)
+const loadDataForSelectedLanguage = async () => {
+  const chapter = await chapterService.getChapterForLanguage(props.chapter.chapterId, selectedLanguage.value)
+  titleInput.value = chapter.title
+  descriptionInput.value = chapter.description
+}
 
+const titleInput = ref(props.chapter.title)
+const descriptionInput = ref(props.chapter.description)
 const isLoading = ref(false)
+const selectedLanguage = ref(Language.English)
+
+watch(selectedLanguage, loadDataForSelectedLanguage)
 </script>
 
 <template>
   <div>
     <h1 class="mt-8 mb-4 text text-3xl text-bold text-white text-center">{{ props.chapter.title }}</h1>
-    <span class="text text-xl text-bold text-white">Description</span>
-    <span
-      class="text text-xl text-bold text-white transition-opacity transition-duration-1000"
-      :class="`${isLoading ? 'opacity-100' : 'opacity-0'}`"
-    >
-      - loading</span
-    >
-    <textarea
-      class="w-full h-80 rounded-xl mt-4 p-4"
+    <DropDownMenu
+      name="Language"
+      v-model="selectedLanguage"
+      :options="Object.values(Language)"
+    />
+    <TextArea
+      name="Title"
+      height="h-20"
+      v-model="titleInput"
+      placeholder="Chapter title"
+    />
+    <TextArea
+      name="Description"
+      height="h-40"
       v-model="descriptionInput"
       placeholder="Chapter description"
-    ></textarea>
+    />
 
     <button
       @click="
         () => {
           isLoading = true
-          onChapterDescriptionUpdated(descriptionInput)
+          onChapterDescriptionUpdated(titleInput, descriptionInput, selectedLanguage)
           isLoading = false
         }
       "

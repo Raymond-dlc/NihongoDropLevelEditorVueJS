@@ -6,6 +6,7 @@ import { useRoute } from 'vue-router'
 import Handsontable from 'handsontable'
 import { type Word } from '@/model/Word'
 import 'handsontable/dist/handsontable.full.css'
+import { Language } from '@/model/enums/Language'
 
 // register Handsontable's modules
 registerAllModules()
@@ -17,7 +18,7 @@ const isLoading = ref<boolean>(false)
 const wordsData = ref<Word[]>([])
 const tableRef = ref<HTMLElement | null>(null)
 var table: Handsontable | null = null
-const languages = ['ID', 'Japanese', 'Furigana', 'English', 'Dutch', 'Swedish', 'Spanish', 'Portuguese', 'French', 'Hindi']
+const columns = ['ID', 'Japanese', 'Furigana'].concat(Object.values(Language))
 
 const updateWord = async (word: Word) => {
   try {
@@ -78,10 +79,10 @@ function updateTable() {
         }
       },
       // Header titles
-      colHeaders: languages,
+      colHeaders: columns,
       // Mapping with the model
       columns(column) {
-        return { data: languages[column].toLocaleLowerCase() }
+        return { data: columns[column].toLocaleLowerCase() }
       },
       afterChange(changes, source) {
         changes?.forEach((change) => {

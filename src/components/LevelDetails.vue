@@ -5,6 +5,7 @@ import type { LevelWord } from '@/model/LevelWord'
 import axios from 'axios'
 import { ref, watch } from 'vue'
 import { useRoute } from 'vue-router'
+import SearchField from '../components/inputs/SearchField.vue'
 
 const route = useRoute()
 
@@ -13,11 +14,10 @@ const allWords = ref<Word[]>()
 const levelWords = ref<Word[]>()
 const searchResultWords = ref<Word[]>()
 const levelId = ref(route.query['levelid'] as String)
-const searchInput = ref('')
 const isLoading = ref(false)
 
 const loadAllWords = async () => {
-  if(levelId.value == undefined) return
+  if (levelId.value == undefined) return
 
   isLoading.value = true
   try {
@@ -31,7 +31,7 @@ const loadAllWords = async () => {
 }
 
 const loadLevelDetails = async () => {
-  if(levelId.value == undefined) return
+  if (levelId.value == undefined) return
 
   isLoading.value = true
   try {
@@ -47,7 +47,7 @@ const loadLevelDetails = async () => {
 const loadLevelWords = async () => {
   levelId.value = route.query['levelid'] as String
 
-  if(levelId.value == undefined) return
+  if (levelId.value == undefined) return
 
   isLoading.value = true
   try {
@@ -69,7 +69,6 @@ const loadLevelWords = async () => {
 }
 
 const addWordToLevel = async (wordId: string) => {
-  searchInput.value = ''
   searchResultWords.value = []
   isLoading.value = true
   try {
@@ -135,10 +134,12 @@ watch(route, loadAllWords, { immediate: true })
       - loading</span
     >
 
-    <input
-      v-model="searchInput"
-      @input="onSearchInputUpdated($event as InputEvent)"
-      class="w-full mt-2 h-10 rounded-2xl px-5 ring-1 hover:ring-2 ring-mint-green-700 focus:outline-none focus:ring focus:ring-mint-green-800 hover:ring-mint-green-700"
+    <SearchField
+      :onSearchInputUpdated="
+        (event: InputEvent) => {
+          onSearchInputUpdated(event)
+        }
+      "
       placeholder="search a word"
     />
 

@@ -3,97 +3,159 @@
     {
       "id": "0",
       "chapterId": 0,
+      "languageCode": "en",
+      "description": "English description",
       "title": "Hiragana 1"
     },
     {
       "id": "1",
       "chapterId": 1,
-      "title": "Hiragana 2"
+      "title": "Hiragana 2",
+      "languageCode": "en"
     },
     {
       "id": "2",
       "chapterId": 2,
-      "title": "First words"
+      "title": "First words",
+      "languageCode": "en"
     },
     {
       "id": "3",
       "chapterId": 3,
-      "title": "Hiragana 3"
+      "title": "Hiragana 3",
+      "languageCode": "en"
     },
     {
       "id": "4",
       "chapterId": 4,
-      "title": "Hiragana 4"
+      "title": "Hiragana 4",
+      "languageCode": "en"
     },
     {
       "id": "5",
       "chapterId": 5,
-      "title": "Hiragana words 1"
+      "title": "Hiragana words 1",
+      "languageCode": "en"
     },
     {
       "id": "6",
       "chapterId": 6,
-      "title": "Hiragana words 2"
+      "title": "Hiragana words 2",
+      "languageCode": "en"
     },
     {
       "id": "7",
       "chapterId": 7,
-      "title": "Katakana 1"
+      "title": "Katakana 1",
+      "languageCode": "en"
     },
     {
       "id": "8",
       "chapterId": 8,
-      "title": "Katakana 2"
+      "title": "Katakana 2",
+      "languageCode": "en"
     },
     {
       "id": "9",
       "chapterId": 9,
-      "title": "Katakana 3"
+      "title": "Katakana 3",
+      "languageCode": "en"
     },
     {
       "id": "10",
       "chapterId": 10,
-      "title": "Katakana 4"
+      "title": "Katakana 4",
+      "languageCode": "en"
     },
     {
       "id": "11",
       "chapterId": 11,
-      "title": "Katakana words 1"
+      "title": "Katakana words 1",
+      "languageCode": "en"
     },
     {
       "id": "12",
       "chapterId": 12,
-      "title": "Katakana words 2"
+      "title": "Katakana words 2",
+      "languageCode": "en"
     },
     {
       "id": "13",
       "chapterId": 13,
-      "title": "Kanji 1"
+      "title": "Kanji 1",
+      "languageCode": "en"
     },
     {
       "id": "14",
       "chapterId": 14,
-      "title": "Kanji 2"
+      "title": "Kanji 2",
+      "languageCode": "en"
     },
     {
       "id": "15",
       "chapterId": 15,
-      "title": "Shopping"
+      "title": "Shopping",
+      "languageCode": "en"
     },
     {
       "id": "16",
       "chapterId": 16,
-      "title": "Food"
+      "title": "Food",
+      "languageCode": "en"
     },
     {
       "id": "17",
       "chapterId": 17,
-      "title": "School"
+      "title": "School",
+      "languageCode": "en"
     },
     {
       "id": "18",
       "chapterId": 18,
-      "title": "Expressing"
+      "title": "Expressing",
+      "languageCode": "en"
+    },
+    {
+      "id": "c61c",
+      "chapterId": 0,
+      "languageCode": "nl",
+      "title": "Hiragana 1",
+      "description": "De Nederlandse beschrijving"
+    },
+    {
+      "id": "8fa0",
+      "chapterId": 0,
+      "languageCode": "sv",
+      "title": "Hiragana 1",
+      "description": "swedish"
+    },
+    {
+      "id": "f6cd",
+      "chapterId": 0,
+      "languageCode": "es",
+      "title": "Hiragana 1",
+      "description": ""
+    },
+    {
+      "id": "1b7f",
+      "chapterId": 0,
+      "languageCode": "pt",
+      "title": "",
+      "description": ""
+    },
+    {
+      "id": "216d",
+      "chapterId": 0,
+      "languageCode": "fr",
+      "title": "Hiragana 1",
+      "description": ""
+    },
+    {
+      "id": "856b",
+      "chapterId": 0,
+      "languageCode": "hi",
+      "title": "Hiragana 1",
+      "description": ""
     }
   ],
   "levelConnections": [

@@ -9,9 +9,12 @@ import LevelDetails from '@/components/LevelDetails.vue'
 import type { Level } from '@/model/Level'
 import type { LevelConnection } from '@/model/LevelConnection'
 import type { LevelWord } from '@/model/LevelWord'
-import ChapterService from '@/data/ChapterService'
+import ChapterService from '@/data/chapterService'
 import LevelService from '@/data/LevelService'
 import ChapterDetailsSideBarContent from '@/components/ChapterDetailsSideBarContent.vue'
+import type { Language } from '@/model/enums/Language'
+import { selectElementIfAllowed } from 'node_modules/handsontable/helpers/dom'
+import { toast } from 'vue3-toastify';
 
 const route = useRoute()
 const router = useRouter()
@@ -40,11 +43,12 @@ async function fetchChapter() {
   }
 }
 
-const updateChapterDescription = async (newDescription: string) => {
-  if (chapter.value?.chapterId) {
-    const newChapter = await ChapterService.updateChapterDescription(chapter.value?.chapterId, newDescription)
-    chapter.value = newChapter
-  }
+const updateChapterDescription = async (newTitle: string, newDescription: string, selectedLanguage: Language) => {
+  const newChapter = await ChapterService.updateChapterLocalization(chapter.value?.chapterId, selectedLanguage, newTitle, newDescription)
+  chapter.value = newChapter
+  toast("Chapter updated!", {
+    autoClose: 1000
+  })
 }
 
 const onSideBarToggled = () => {
@@ -181,19 +185,6 @@ async function increaseLevelWords(latestLevelId: string) {
   }
 }
 
-async function getLatestLevel(): Promise<Level | null> {
-  const getLevelsResponse = await axios.get(`/api/levels?checkpointId=${chapterId.value}`)
-
-  if (getLevelsResponse.status >= 300) return null
-  const currentChapterLevels = getLevelsResponse.data as Level[]
-
-  const latestLevel = currentChapterLevels.reduce((prev, current) => {
-    return Number(current.levelId) > Number(prev.levelId) ? current : prev
-  })
-
-  return latestLevel
-}
-
 async function updateLevelType(type: string, level: Level): Promise<Boolean> {
   level.type = type
   const actualId = await (await axios.get(`/api/levels?levelId=${level.levelId}`)).data[0].id
@@ -287,8 +278,8 @@ watch(route, fetchChapter, { immediate: true })
           v-if="chapter != undefined"
           :chapter="chapter!!"
           :onChapterDescriptionUpdated="
-            (newDescription: string) => {
-              updateChapterDescription(newDescription)
+            (newTitle: string, newDescription: string, selectedLanguage: Language) => {
+              updateChapterDescription(newTitle, newDescription, selectedLanguage)
             }
           "
         />
