@@ -1,5 +1,5 @@
 export interface Chapter {
-    id: number | undefined,
+    id: string | undefined,
     chapterId: number,
     languageCode: string,
     title: string,

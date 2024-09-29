@@ -44,9 +44,11 @@ const loadChapters = async () => {
   exportChapters.value = JSON.stringify(
     chapters.map((chapter) => {
       return {
-        id: Number(chapter.id),
+        id: chapter.id,
+        chapterId: chapter.chapterId,
         title: chapter.title,
-        description: chapter.description ?? ''
+        description: chapter.description ?? '',
+        languageCode: chapter.languageCode
       }
     })
   )

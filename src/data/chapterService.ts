@@ -90,7 +90,6 @@ export default {
   async fixChapters() {
     const all = await this.getAllChapters()
     for (const chapter of all) {
-        console.log("update for " + chapter.id)
       const toUpdateChapter = (await axios.get(`/api/chapters/${chapter.id}`)).data as Chapter
       toUpdateChapter.languageCode = ''
       await axios.put(`/api/chapters/${chapter.id}`, toUpdateChapter)
