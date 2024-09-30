@@ -16,7 +16,7 @@ const addChapter = async () => {
 
 const loadChapters = async () => {
   try {
-    const response = await axios.get(`/api/chapters`)
+    const response = await axios.get(`/api/chapters?languageCode=en`)
     chapters.value = response.data
   } catch (error) {
     console.error('Error fetching chapter', error)

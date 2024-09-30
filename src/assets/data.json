@@ -156,6 +156,132 @@
       "languageCode": "hi",
       "title": "Hiragana 1",
       "description": ""
+    },
+    {
+      "id": "3904",
+      "chapterId": 2,
+      "languageCode": "nl",
+      "title": "Eerste woorden",
+      "description": ""
+    },
+    {
+      "id": "427a",
+      "chapterId": 1,
+      "languageCode": "nl",
+      "title": "Hiragana 2",
+      "description": ""
+    },
+    {
+      "id": "7fb7",
+      "chapterId": 3,
+      "languageCode": "nl",
+      "title": "Hiragana 3",
+      "description": ""
+    },
+    {
+      "id": "905e",
+      "chapterId": 4,
+      "languageCode": "nl",
+      "title": "Hiragana 4",
+      "description": ""
+    },
+    {
+      "id": "7485",
+      "chapterId": 5,
+      "languageCode": "nl",
+      "title": "Hiragana woorden 1",
+      "description": ""
+    },
+    {
+      "id": "fc05",
+      "chapterId": 6,
+      "languageCode": "nl",
+      "title": "Hiragana woorden 2",
+      "description": ""
+    },
+    {
+      "id": "776b",
+      "chapterId": 7,
+      "languageCode": "nl",
+      "title": "Katakana 1",
+      "description": ""
+    },
+    {
+      "id": "37b2",
+      "chapterId": 8,
+      "languageCode": "nl",
+      "title": "Katakana 2",
+      "description": ""
+    },
+    {
+      "id": "61ef",
+      "chapterId": 9,
+      "languageCode": "nl",
+      "title": "Katakana 3",
+      "description": ""
+    },
+    {
+      "id": "0609",
+      "chapterId": 10,
+      "languageCode": "nl",
+      "title": "Katakana 4",
+      "description": ""
+    },
+    {
+      "id": "f0c2",
+      "chapterId": 11,
+      "languageCode": "nl",
+      "title": "Katakana woorden 1",
+      "description": ""
+    },
+    {
+      "id": "a0bc",
+      "chapterId": 12,
+      "languageCode": "nl",
+      "title": "Katakana woorden 2",
+      "description": ""
+    },
+    {
+      "id": "7e52",
+      "chapterId": 13,
+      "languageCode": "nl",
+      "title": "Kanji 1",
+      "description": ""
+    },
+    {
+      "id": "433c",
+      "chapterId": 14,
+      "languageCode": "nl",
+      "title": "Kanji 2",
+      "description": ""
+    },
+    {
+      "id": "fc40",
+      "chapterId": 15,
+      "languageCode": "nl",
+      "title": "Winkelen",
+      "description": ""
+    },
+    {
+      "id": "d1b2",
+      "chapterId": 16,
+      "languageCode": "nl",
+      "title": "Eten",
+      "description": ""
+    },
+    {
+      "id": "fff7",
+      "chapterId": 17,
+      "languageCode": "nl",
+      "title": "School",
+      "description": ""
+    },
+    {
+      "id": "a77c",
+      "chapterId": 18,
+      "languageCode": "nl",
+      "title": "Uitdrukken",
+      "description": ""
     }
   ],
   "levelConnections": [
