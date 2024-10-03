@@ -4,26 +4,29 @@
       "id": "0",
       "chapterId": 0,
       "languageCode": "en",
-      "description": "Welcome to Nihongo Drop!\n\nIn the first chapter, you'll be introduced to hiragana characters. Hiragana is one of the Japanese alphabets, together with Katakana and Kanji.\n\nEach character represents a syllable and can be read as follows:\n\nあ - A like in \"bAth\"\nい - I like in \"pEA\"\nえ - E like in \"mEH\"\nお - O like in \"fOr\"\nう - U like in \"mUte\"",
+      "description": "Welcome to Nihongo Drop!\n\nIn the first chapter, you'll be introduced to hiragana characters. Hiragana is one of the Japanese alphabets, together with Katakana and Kanji.\n\nEach character represents a syllable and can be read as follows:\n\nあ - A like in \"bAth\"\nい - I like in \"pEA\"\nえ - E like in \"mEH\"\nお - O like in \"fOr\"\nう - U like in \"mUte\"\n\nThe same sound applies with character that have a consonants is in front of it. For example: \n\nき - ki Like in \"KEy\"",
       "title": "Hiragana 1"
     },
     {
       "id": "1",
       "chapterId": 1,
       "title": "Hiragana 2",
-      "languageCode": "en"
+      "languageCode": "en",
+      "description": "In this chapter you'll be introduced to even more of the hiragana characters. \n\nThe only special character here is を. Which is pronounced as \"o\" but officially Romanized as \"wo\"."
     },
     {
       "id": "2",
       "chapterId": 2,
       "title": "First words",
-      "languageCode": "en"
+      "languageCode": "en",
+      "description": "In this chapter you'll learn your first words. All of these words are written only with Hiragana. Even if some do have a Kanji writing, they are most commonly written in only Hiragana.\n\nOne word in this chapter might stand out: うさぎ(usagi). Notice how ぎ(gi) looks different from き(ki). It gets an extra symbol called \"tenten\". You'll learn more of these in the next chapters."
     },
     {
       "id": "3",
       "chapterId": 3,
       "title": "Hiragana 3",
-      "languageCode": "en"
+      "languageCode": "en",
+      "description": "In this chapter you'll see more hiragana characters with \"tenten\" (or formally \"dakuten\"). the tenten adjust the way the character is pronounced, changing it slightly.\n\nき(ki) -> ぎ(gi)\nか(ka) -> が(ga)\nく(ku) -> ぐ(gu)\nけ(ke) -> げ(ge)\nた(ta) -> だ(da)\nさ(sa) -> ざ(za)\netc..\n\nThey mostly do so in a predictable manner:\n\nk->g\nt->d\ns->z\nh->b\n\nBut there are a few exceptions, which in this chapter are:\n\nし(shi) -> じ(ji) as in \"JEEp\"\nち(chi) -> ぢ(ji/di) as in \"JEEp/DEEp\"\n\nSince they're very similar, you'll rarely encounter ぢ."
     },
     {
       "id": "4",
@@ -120,7 +123,7 @@
       "chapterId": 0,
       "languageCode": "nl",
       "title": "Hiragana 1",
-      "description": "Welkom bij Nihongo Drop!\n\nIn het eerste hoofdstuk maak je kennis met hiragana karakters. Hiragana is een van de Japanse alfabetten, samen met Katakana en Kanji.\n\nElke karakter staat voor een lettergreep en kan gelezen als:\n\nあ - A zoals in\n \"bAh\"\nい - I zoals in\n \"nIEt\"\nえ - E zoals in\n \"pEn\"\nお - O zoals in\n \"vOOr\"\nう - U zoals in\n \"vUUr\""
+      "description": "Welkom bij Nihongo Drop!\n\nIn het eerste hoofdstuk maak je kennis met hiragana karakters. Hiragana is een van de Japanse alfabetten, samen met Katakana en Kanji.\n\nElke karakter staat voor een lettergreep en kan gelezen als:\n\nあ - A zoals in\n \"bAh\"\nい - I zoals in\n \"nIEt\"\nえ - E zoals in\n \"pEn\"\nお - O zoals in\n \"vOOr\"\nう - U zoals in\n \"vUUr\"\n\nHetzelfde geluid geldt voor karakters met een medeklinker ervoor. Bijvoorbeeld:\n\nき - ki zoals in \"KIept\""
     },
     {
       "id": "8fa0",
@@ -162,14 +165,14 @@
       "chapterId": 2,
       "languageCode": "nl",
       "title": "Eerste woorden",
-      "description": ""
+      "description": "In dit hoofdstuk leer je je eerste woorden. Al deze woorden worden alleen met hiragana geschreven. Zelfs als sommige een kanji-schrijfwijze hebben, worden ze meestal alleen met hiragana geschreven.\n\nEen woord in dit hoofdstuk valt misschien op: うさぎ(usagi). Merk op hoe ぎ(gi) er anders uitziet dan き(ki). Het krijgt een extra symbool genaamd \"tenten\". Je leert meer over deze symbolen in de volgende hoofdstukken."
     },
     {
       "id": "427a",
       "chapterId": 1,
       "languageCode": "nl",
       "title": "Hiragana 2",
-      "description": ""
+      "description": "In dit hoofdstuk maak je kennis met nog meer hiragana-karakters.\n\nHet enige speciale karakter hier is を. Dit wordt uitgesproken als \"o\", maar is officieel geromaniseerd als \"wo\"."
     },
     {
       "id": "7fb7",
@@ -974,7 +977,7 @@
     {
       "id": "19",
       "checkpointId": 3,
-      "worldX": 1,
+      "worldX": 0,
       "worldY": 2,
       "type": "normal",
       "levelId": 19
@@ -990,7 +993,7 @@
     {
       "id": "21",
       "checkpointId": 3,
-      "worldX": 0,
+      "worldX": 1,
       "worldY": 4,
       "type": "normal",
       "levelId": 21
