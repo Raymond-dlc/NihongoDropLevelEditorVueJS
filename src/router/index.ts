@@ -1,6 +1,7 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import WordsView from '../views/WordsView.vue'
 import ExportView from '@/views/ExportView.vue'
+import QuizGeneratorView from '@/views/QuizGeneratorView.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -14,6 +15,11 @@ const router = createRouter({
       path: '/data-export',
       name: 'data-export',
       component: ExportView
+    },
+    {
+      path: '/quiz-generator',
+      name: 'quiz-generator',
+      component: QuizGeneratorView
     },
     {
       path: '/chapters/:id',
