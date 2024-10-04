@@ -32,25 +32,29 @@
       "id": "4",
       "chapterId": 4,
       "title": "Hiragana 4",
-      "languageCode": "en"
+      "languageCode": "en",
+      "description": "In this chapter you'll learn about character combinations\n\nHiragana combinations are created by combining a consonant character (like き, み) with a vowel sound (like ゆ, や). These combinations are essential in Japanese to represent various sounds and syllables.\n\nBreaking down きゅ (kyu) and みゃ (mya)\nきゅ (kyu):\n\nき (ki): The consonant \"k\" sound.\nゅ (yu): The vowel \"yu\" sound.\nWhen combined, they form the syllable \"kyu.\"\nみゃ (mya):\n\nみ (mi): The consonant \"m\" sound.\nゃ (ya): The vowel \"ya\" sound.\nWhen combined, they form the syllable \"mya.\"\nOther common combinations and patterns:\nConsonant + ゆ (yu): きゅ (kyu), ひゅ (hyu), etc.\nConsonant + や (ya): きゃ (kya), ひゃ (hya), etc.\nConsonant + ょ (yo): きょ (kyo), ひょ (hyo), etc."
     },
     {
       "id": "5",
       "chapterId": 5,
       "title": "Hiragana words 1",
-      "languageCode": "en"
+      "languageCode": "en",
+      "description": "This chapter will help you expand your vocabulary! \n\nFor now the words will still only consist out of hiragana characters. \n\nAnd they'll be mostly food related, because who doesn't like food!"
     },
     {
       "id": "6",
       "chapterId": 6,
       "title": "Hiragana words 2",
-      "languageCode": "en"
+      "languageCode": "en",
+      "description": "One more chapter with hiragana words. After that, it's time to dive into the next alphabet!"
     },
     {
       "id": "7",
       "chapterId": 7,
       "title": "Katakana 1",
-      "languageCode": "en"
+      "languageCode": "en",
+      "description": "In this chapter you'll be introduced to Katakana. This is the second alphabet that is used in Japanese.\n\nThe characters are largely the same as katakana, and are pronounced in the same way.\n\nYou might notice that some characters are very similar, like か(ka) and カ(ka), while some are not, like お(o) and オ(o)."
     },
     {
       "id": "8",
@@ -74,7 +78,8 @@
       "id": "11",
       "chapterId": 11,
       "title": "Katakana words 1",
-      "languageCode": "en"
+      "languageCode": "en",
+      "description": "In this chapter you'll learn your first Katakana words!\n\nKatakana is mostly used for loan words, words that have been introduced from other languages.\n\nEven if a lot of words come from English, definitely not all do, so it's not always as easy to assume the translation.\n\nFor example:\nピザ(piza) comes from the English word.. Pizza! :D\n\nパン(pan) comes from the Portuguese word \"pão\""
     },
     {
       "id": "12",
@@ -179,42 +184,42 @@
       "chapterId": 3,
       "languageCode": "nl",
       "title": "Hiragana 3",
-      "description": ""
+      "description": "In dit hoofdstuk zul je meer hiragana-karakters leren met \"tenten\" (of formeel \"dakuten\"). De tenten past de manier waarop het karakter wordt uitgesproken aan.\n\nき(ki) -> ぎ(gi)\nか(ka) -> が(ga)\nく(ku) -> ぐ(gu)\nけ(ke) -> げ(ge)\nた(ta) -> だ(da)\nさ(sa) -> ざ(za)\netc..\n\nDit gaat in de meeste gevallen op een voorspelbare manier:\n\nk->g\nt->d\ns->z\nh->b\n\nMaar er zijn een paar uitzonderingen. in dit hoofdstuk zijn dat:\n\nし(shi) -> じ(ji) zoals in \"JEEp\"\nち(chi) -> ぢ(ji/di) zoals in \"JEEp/DIEp\"\n\nOmdat ze erg op elkaar lijken, zul je ぢ zelden tegenkomen."
     },
     {
       "id": "905e",
       "chapterId": 4,
       "languageCode": "nl",
       "title": "Hiragana 4",
-      "description": ""
+      "description": "In dit hoofdstuk zal je karakter combinaties leren.\n\nHiragana-combinaties worden gevormd door een medeklinker-karakter (zoals き, み) te combineren met een klinker-geluid (zoals ゆ, や). Deze combinaties zijn essentieel in het Japans om verschillende klanken en lettergrepen te vertegenwoordigen.\n\nEen voorbeeld met きゅ (kyu) en みゃ (mya)\n\nきゅ (kyu):\n\nき (ki): De medeklinker \"k\" geluid.\nゅ (yu): De klinker \"yu\" geluid.\nWanneer gecombineerd, vormen ze de lettergreep \"kyu\".\n\nみゃ (mya):\n\nみ (mi): De medeklinker \"m\" geluid.\nゃ (ya): De klinker \"ya\" geluid.\nWanneer gecombineerd, vormen ze de lettergreep \"mya\".\n\nAndere veel voorkomende combinaties en patronen:\nMedeklinker + ゆ (yu): きゅ (kyu), ひゅ (hyu), etc.\nMedeklinker + や (ya): きゃ (kya), ひゃ (hya), etc.\nMedeklinker + ょ (yo): きょ (kyo), ひょ (hyo), etc."
     },
     {
       "id": "7485",
       "chapterId": 5,
       "languageCode": "nl",
       "title": "Hiragana woorden 1",
-      "description": ""
+      "description": "Dit hoofdstuk zal je helpen om je vocabulaire uit te breiden!\n\nVoor nu zullen de woorden nog steeds alleen uit hiragana-karakters bestaan.\n\nEn ze zullen meestal voedselgerelateerd zijn, want wie houdt niet van eten!"
     },
     {
       "id": "fc05",
       "chapterId": 6,
       "languageCode": "nl",
       "title": "Hiragana woorden 2",
-      "description": ""
+      "description": "Nog één hoofdstuk met hiragana-woorden. Daarna is het tijd om in het volgende alfabet te duiken!"
     },
     {
       "id": "776b",
       "chapterId": 7,
       "languageCode": "nl",
       "title": "Katakana 1",
-      "description": ""
+      "description": "In dit hoofdstuk maak je kennis met Katakana. Dit is het tweede alfabet dat in het Japans wordt gebruikt.\n\nDe karakters zijn grotendeels hetzelfde als Katakana en worden op dezelfde manier uitgesproken.\n\nJe zult misschien opmerken dat sommige karakters erg op elkaar lijken, zoals か(ka) en カ(ka), en andere juist niet, zoals お(o) en オ(o)."
     },
     {
       "id": "37b2",
       "chapterId": 8,
       "languageCode": "nl",
       "title": "Katakana 2",
-      "description": ""
+      "description": "In dit hoofdstuk leer je de rest van de reguliere katakana-karakters en hoe je ze uitspreekt."
     },
     {
       "id": "61ef",
@@ -235,7 +240,7 @@
       "chapterId": 11,
       "languageCode": "nl",
       "title": "Katakana woorden 1",
-      "description": ""
+      "description": "In dit hoofdstuk leer je je eerste Katakana-woorden!\n\nKatakana wordt meestal gebruikt voor leenwoorden, woorden die uit andere talen zijn geïntroduceerd.\n\nHoewel veel woorden uit het Engels komen, is dat zeker niet altijd het geval, dus het is niet altijd even gemakkelijk om de vertaling te raden.\n\nBijvoorbeeld:\nピザ(piza) komt van het Engelse woord.. Pizza! :D\n\nパン(pan) komt van het Portugese woord \"pão\""
     },
     {
       "id": "a0bc",
