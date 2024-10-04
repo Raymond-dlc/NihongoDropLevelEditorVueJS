@@ -60,19 +60,22 @@
       "id": "8",
       "chapterId": 8,
       "title": "Katakana 2",
-      "languageCode": "en"
+      "languageCode": "en",
+      "description": "In this chapter you'll learn the rest of the regular katakana characters and how to pronounce them."
     },
     {
       "id": "9",
       "chapterId": 9,
       "title": "Katakana 3",
-      "languageCode": "en"
+      "languageCode": "en",
+      "description": "In this chapter you'll learn the tenten variations of the Katakana characters. \n\nThey work exactly like how the tenten works with the hiragana characters."
     },
     {
       "id": "10",
       "chapterId": 10,
       "title": "Katakana 4",
-      "languageCode": "en"
+      "languageCode": "en",
+      "description": "In this chapter you'll learn the character combinations of the Katakana characters. \n\nThey work exactly like how the combinations work with the hiragana characters."
     },
     {
       "id": "11",
@@ -85,31 +88,36 @@
       "id": "12",
       "chapterId": 12,
       "title": "Katakana words 2",
-      "languageCode": "en"
+      "languageCode": "en",
+      "description": "In this chapter you'll learn more Katakana words. Put all your skills to the test!\n\nAfter this chapter, you'll have learned the basic alphabets!\n\nBut don't worry if you'll need more practice, there's plenty Hiragana and Katakana words you will learn in upcoming chapters."
     },
     {
       "id": "13",
       "chapterId": 13,
       "title": "Kanji 1",
-      "languageCode": "en"
+      "languageCode": "en",
+      "description": "In this chapter you'll be introduced to the last alphabet: Kanji. \n\nThese characters are adapted from Chinese into the Japanese language. Most words will consists out of 1 or 2 Kanji characters.\n\n人「ひと」(hito) - Person\n寿司「すし」(sushi) - Sushi\n\nBut later on, you'll learn more complex words as well, that can consist out of more Kanji.\n\n地下鉄「ちかてつ」(chikatetsu) - Subway\n\nThey can also sometimes be combined with Hiragana characters\n\n白い [しろい] (shiroi) - white\n\nFor now, you'll learn kanji with just 1 character.\n\nNOTE:\nFurigana (The hiragana characters above the kanji) are enabled by default. These will help you read the Kanji if you don't know the pronunciation yet. It can be turned off in the settings."
     },
     {
       "id": "14",
       "chapterId": 14,
       "title": "Kanji 2",
-      "languageCode": "en"
+      "languageCode": "en",
+      "description": "In this chapter you'll learn more Kanji. But now also with 2 Kanji words, also know as compound words.\n\nOnyomi and Kunyomi are two ways to read Kanji. Onyomi comes from Chinese, while Kunyomi is native to Japanese. Onyomi is often used for technical terms, while Kunyomi is used for everyday words. \n\nKnowing both is essential for reading Japanese.\n\nExample:\n\nOnyomi:\n人 (じん, jin): In many compound words, \"人\" is read as \"jin,\" like \"人類\" (jinrui, humanity).\n\nKunyomi:\n人 (ひと, hito): When used alone or in certain words, \"人\" is read as \"hito,\" like \"ひとり\" (hitori, one person)."
     },
     {
       "id": "15",
       "chapterId": 15,
       "title": "Shopping",
-      "languageCode": "en"
+      "languageCode": "en",
+      "description": "Starting from the chapter you'll learn more and more words. Chapters will now be based on a theme, like in this chapter \"Shopping\".\n\nThe words you learn will be related to shopping, and should help you if you would go shopping in Japan. Not all related words might be in this chapter already, since they might still be a bit too difficult.\n\nThe more difficult words will be introduced in a later chapter, so expect a \"Shopping 2\" in the future.\n\nChapter might also have some additional tips, if there's words that have a certain exception, or new grammar point.\n\nSo make sure to check all the chapter descriptions!"
     },
     {
       "id": "16",
       "chapterId": 16,
       "title": "Food",
-      "languageCode": "en"
+      "languageCode": "en",
+      "description": "In this chapter you'll learn words related to food! \n\nSo expect to learn about certain foods, and some verbs like 食べる「たべる」(taberu) - to eat."
     },
     {
       "id": "17",
@@ -121,7 +129,8 @@
       "id": "18",
       "chapterId": 18,
       "title": "Expressing",
-      "languageCode": "en"
+      "languageCode": "en",
+      "description": "Master Everyday Conversation!\n\nLearn a lot of Japanese that you can use in everyday life. We'll cover a wide range of expressions, from simple words like \"yes,\" \"no,\" and \"like,\" to more complex expressions like \"busy\" and \"okay.\" \n\nLet's become able to communicate smoothly in Japanese!"
     },
     {
       "id": "c61c",
@@ -226,14 +235,14 @@
       "chapterId": 9,
       "languageCode": "nl",
       "title": "Katakana 3",
-      "description": ""
+      "description": "In dit hoofdstuk leer je de tenten-variaties van de Katakana-karakters.\n\nZe werken precies zoals de tenten werken met de hiragana-karakters."
     },
     {
       "id": "0609",
       "chapterId": 10,
       "languageCode": "nl",
       "title": "Katakana 4",
-      "description": ""
+      "description": "In dit hoofdstuk leer je de karakter-combinatie van de Katakana-karakters.\n\nZe werken precies zoals de combinaties werken met de hiragana-karakters."
     },
     {
       "id": "f0c2",
@@ -247,48 +256,55 @@
       "chapterId": 12,
       "languageCode": "nl",
       "title": "Katakana woorden 2",
-      "description": ""
+      "description": "In dit hoofdstuk leer je meer Katakana-woorden. Zet al je vaardigheden op de proef!\n\nNa dit hoofdstuk heb je de basisalfabetten geleerd!\n\nMaar maak je geen zorgen als je meer wil oefenen, er zijn genoeg Hiragana- en Katakana-woorden die je in de komende hoofdstukken zult leren."
     },
     {
       "id": "7e52",
       "chapterId": 13,
       "languageCode": "nl",
       "title": "Kanji 1",
-      "description": ""
+      "description": "In dit hoofdstuk maak je kennis met het laatste alfabet: Kanji.\n\nDeze karakters zijn overgenomen van Chinees naar de Japanse taal. De meeste woorden bestaan uit 1 of 2 Kanji-karakters.\n\n人「ひと」(hito) - Persoon\n寿司「すし」(sushi) - Sushi\n\nMaar later zal je ook complexere woorden leren, die uit meer Kanji kunnen bestaan.\n\n地下鉄「ちかてつ」(chikatetsu) - Metro\n\nZe kunnen soms ook gecombineerd worden met Hiragana-karakters\n\n白い [しろい] (shiroi) - wit\n\nVoor nu leer je Kanji met slechts 1 karakter.\n\nLET OP:\nFurigana (de hiragana-karakters boven de kanji) zijn standaard ingeschakeld. Deze helpen je de Kanji te lezen als je de uitspraak nog niet kent. Je kunt ze uitschakelen in de instellingen."
     },
     {
       "id": "433c",
       "chapterId": 14,
       "languageCode": "nl",
       "title": "Kanji 2",
-      "description": ""
+      "description": "In dit hoofdstuk leer je meer Kanji. Maar nu ook met 2 Kanji-woorden, ook wel \"compound\" woorden genoemd.\n\nOnyomi en Kunyomi zijn twee manieren om Kanji te lezen. Onyomi komt uit het Chinees, terwijl Kunyomi oorspronkelijk Japans is. Onyomi wordt vaak gebruikt voor technische termen, terwijl Kunyomi voor alledaagse woorden wordt gebruikt.\n\nHet is essentieel voor het lezen van Japans om beide te kennen.\n\nVoorbeeld:\n\nOnyomi:\n人 (じん, jin): In veel samengestelde woorden wordt \"人\" gelezen als \"jin\", zoals \"人類\" (jinrui, mensheid).\n\nKunyomi:\n人 (ひと, hito): Wanneer het alleen wordt gebruikt of in bepaalde woorden, wordt \"人\" gelezen als \"hito\", zoals \"ひとり\" (hitori, één persoon)."
     },
     {
       "id": "fc40",
       "chapterId": 15,
       "languageCode": "nl",
       "title": "Winkelen",
-      "description": ""
+      "description": "Vanaf dit hoofdstuk leer je steeds meer woorden. Hoofdstukken zullen nu gebaseerd zijn op een thema, zoals in dit hoofdstuk \"Winkelen\".\n\nDe woorden die je leert, zullen verband houden met winkelen en je moeten helpen als je in Japan gaat winkelen. Niet alle gerelateerde woorden staan misschien al in dit hoofdstuk, omdat ze misschien nog iets te moeilijk zijn.\n\nDe moeilijkere woorden zullen in een later hoofdstuk geïntroduceerd, dus verwacht in de toekomst een \"Winkelen 2\".\n\nHoofdstukken kunnen ook extra tips bevatten, als er woorden zijn met een bepaalde uitzondering of een nieuw grammaticaal onderwerp.\n\nDus zorg ervoor dat je alle hoofdstukbeschrijvingen bekijkt!"
     },
     {
       "id": "d1b2",
       "chapterId": 16,
       "languageCode": "nl",
       "title": "Eten",
-      "description": ""
+      "description": "In dit hoofdstuk leer je woorden die verband houden met eten!\n\nDus verwacht om te leren over bepaalde voedingsmiddelen en enkele werkwoorden zoals 食べる「たべる」(taberu) - eten."
     },
     {
       "id": "fff7",
       "chapterId": 17,
       "languageCode": "nl",
       "title": "School",
-      "description": ""
+      "description": "In dit hoofdstuk leer je veel woorden die je in het dagelijks leven op school gebruikt! Leer veel woorden die je zeker zult gebruiken op school, zoals \"schrijven\", \"studeren\" en \"huiswerk\". Leer over school praten in het Japans!"
     },
     {
       "id": "a77c",
       "chapterId": 18,
       "languageCode": "nl",
       "title": "Uitdrukken",
+      "description": "In dit hoofdstuk leer je veel Japans dat je in het dagelijks leven kunt gebruiken. We behandelen een breed scala aan uitdrukkingen, van eenvoudige woorden zoals \"ja\", \"nee\" en \"leuk\", tot complexere uitdrukkingen zoals \"druk\" en \"oké\". \n\nLaten we leren om vloeiend in het Japans te communiceren!"
+    },
+    {
+      "id": "17c1",
+      "chapterId": 8,
+      "languageCode": "sv",
+      "title": "",
       "description": ""
     }
   ],
