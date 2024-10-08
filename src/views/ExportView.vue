@@ -60,7 +60,7 @@ const loadLevels = async () => {
     levels.map((level: Level) => {
       return {
         levelId: Number(level.levelId),
-        checkpointId: level.checkpointId,
+        chapterId: level.checkpointId,
         worldX: level.worldX,
         worldY: level.worldY,
         type: level.type
@@ -89,7 +89,7 @@ const loadLevelConnections = async () => {
         id: Number(levelConnection.id),
         startLevelId: levelConnection.startLevelId,
         endLevelId: levelConnection.endLevelId,
-        checkpointId: levelConnection.endLevelId
+        chapterId: levelConnection.checkpointId
       }
     })
   )
